@@ -37,7 +37,9 @@ Settings → Secrets and variables → Actions :
 Settings → Pages → Source : **GitHub Actions** (une fois). Site :
 `https://<propriétaire>.github.io/<dépôt>/`.
 
-Test : Actions → « AI veille — Monday & Thursday » → Run workflow.
+Test : Actions → « AI veille — Monday & Thursday » → Run workflow, **depuis `main`** : l'environnement
+`github-pages` n'accepte que la branche par défaut, donc un lancement depuis une autre branche échoue à
+l'étape de publication.
 
 ## En local
 
@@ -59,6 +61,11 @@ Test : Actions → « AI veille — Monday & Thursday » → Run workflow.
 - **PWA en `display: standalone`** : plein écran sans barre de navigateur, en gardant la barre
   d'état du téléphone. Service worker « réseau d'abord » : toujours la dernière veille, et les
   veilles déjà ouvertes restent lisibles hors ligne.
+- **Deux jobs** : `digest` (collecte + Claude + Discord) tourne en lecture seule, car il traite du
+  texte venu de flux externes ; `publish` (commit du JSON + déploiement Pages) est le seul à avoir le
+  droit d'écrire. Le JSON passe de l'un à l'autre par un artefact.
 - **Le commit du JSON a lieu même si le post Discord échoue**, et le site est publié quand même ;
   l'exécution reste rouge pour signaler l'échec Discord.
+- **Liens Hacker News** : la puce source porte le nom du site de l'article, et une seconde puce
+  « Hacker News (discussion) » ouvre le fil HN.
 - Scripts compatibles Bun (CI) et Node ≥ 23.6 (imports `.ts` explicites, zéro dépendance).

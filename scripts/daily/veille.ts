@@ -328,6 +328,7 @@ async function fromHN(): Promise<Item[]> {
       category: "discussion",
       title: decode(h.title ?? ""),
       url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+      discussionUrl: h.url ? `https://news.ycombinator.com/item?id=${h.objectID}` : undefined,
       score: h.points ?? 0,
       published: h.created_at,
       meta: `${h.points}pts · ${h.num_comments ?? 0} comments`,
@@ -493,6 +494,7 @@ function runClaude(prompt: string): Promise<{ code: number | null; stdout: strin
   return new Promise((resolve, reject) => {
     const env = { ...process.env };
     delete env.ANTHROPIC_API_KEY;
+    delete env.GITHUB_TOKEN; // only the collector needs it
     const child = spawn(
       "claude",
       [

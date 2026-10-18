@@ -42,6 +42,21 @@ test("resolveBrief maps ids to links, drops unknown ids and duplicates, caps not
   assert.deepEqual(brief.sorties, []);
 });
 
+test("an HN item links the article under its own site name, plus the HN thread", () => {
+  const hn: Item = {
+    source: "Hacker News",
+    category: "discussion",
+    title: "Story",
+    url: "https://www.example.org/post",
+    discussionUrl: "https://news.ycombinator.com/item?id=42",
+  };
+  const brief = resolveBrief({ essentiel: [{ title: "T", text: "x", sources: ["i1"], notions: [] }], papiers: [], sorties: [] }, new Map([["i1", hn]]));
+  assert.deepEqual(
+    brief?.essentiel[0].sources.map((s) => [s.source, s.url]),
+    [["example.org", "https://www.example.org/post"], ["Hacker News (discussion)", "https://news.ycombinator.com/item?id=42"]],
+  );
+});
+
 test("resolveBrief rejects garbage and empty briefs", () => {
   assert.equal(resolveBrief(null, new Map()), null);
   assert.equal(resolveBrief("nope", new Map()), null);

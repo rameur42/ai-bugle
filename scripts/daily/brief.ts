@@ -14,6 +14,7 @@ export interface Item {
   score?: number;
   meta?: string;
   published?: string;
+  discussionUrl?: string; // e.g. the HN thread when `url` is the article it links to
 }
 
 export interface SourceLink {
@@ -102,6 +103,16 @@ export function assignIds(items: Item[]): { id: string; item: Item }[] {
   return ordered.map((item, n) => ({ id: `i${n + 1}`, item }));
 }
 
+/** A link's label must name where it leads: an aggregator item (HN) pointing at an article shows the article's site. */
+export function linkLabel(it: Pick<Item, "source" | "url" | "discussionUrl">): string {
+  if (!it.discussionUrl) return it.source;
+  try {
+    return new URL(it.url).hostname.replace(/^www\./, "");
+  } catch {
+    return it.source;
+  }
+}
+
 const str = (v: unknown): string => (typeof v === "string" ? v.trim() : "");
 
 /** Raw Claude output → stored brief: ids become links, unknown ids are dropped, notions capped at 4. */
@@ -117,11 +128,16 @@ export function resolveBrief(raw: unknown, ids: Map<string, Item>): Brief | null
         if (!title && !text) return null;
         const seen = new Set<string>();
         const sources: SourceLink[] = [];
+        const add = (link: SourceLink): void => {
+          if (seen.has(link.url)) return;
+          seen.add(link.url);
+          sources.push(link);
+        };
         for (const id of Array.isArray(o.sources) ? o.sources : []) {
           const it = ids.get(str(id).replace(/^\[|\]$/g, ""));
-          if (!it || seen.has(it.url)) continue;
-          seen.add(it.url);
-          sources.push({ title: it.title, url: it.url, source: it.source });
+          if (!it) continue;
+          add({ title: it.title, url: it.url, source: linkLabel(it) });
+          if (it.discussionUrl) add({ title: it.title, url: it.discussionUrl, source: `${it.source} (discussion)` });
         }
         const notions = [...new Set((Array.isArray(o.notions) ? o.notions : []).map(str).filter(Boolean))].slice(0, 4);
         return { title: title || text, text, sources, notions };

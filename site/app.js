@@ -118,7 +118,7 @@ async function showVeille(date) {
   markRead(date);
   document.title = `Veille IA — ${formatDate(date)}`;
   const brief = v.brief;
-  const nav = [...(brief ? SECTIONS : []), { key: "approfondir", nav: "Pour approfondir" }];
+  const nav = [...(brief ? SECTIONS : []), { key: "approfondir", nav: "Approfondir" }];
   const sections = brief
     ? SECTIONS.map((s) => h("section", { id: s.key },
         h("h2", null, s.title),

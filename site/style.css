@@ -47,7 +47,7 @@ a { color: var(--accent); }
   padding: calc(14px + env(safe-area-inset-top)) 0 10px;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 1.1rem; }
-.brand img { border-radius: 7px; }
+.brand img { border-radius: 7px; box-shadow: 0 0 0 1px var(--line); }
 
 main { max-width: var(--max); margin: 0 auto; }
 h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.6rem 0 0.25rem; }
@@ -82,7 +82,7 @@ h1::first-letter { text-transform: uppercase; }
   top: 0;
   z-index: 5;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   overflow-x: auto;
   scrollbar-width: none;
   margin: 0 -16px 0.5rem;
@@ -101,7 +101,7 @@ h1::first-letter { text-transform: uppercase; }
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 5px 12px;
+  padding: 5px 11px;
   cursor: pointer;
 }
 .toc button:hover { border-color: var(--accent); }
