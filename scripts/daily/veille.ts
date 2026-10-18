@@ -6,12 +6,15 @@
  * dedupes + ranks them, optionally has Claude write an editor's brief, and posts the result to a
  * Discord channel. Runs on a GitHub Actions cron (`.github/workflows/ai-veille.yml`).
  *
- * Zero runtime deps (Bun native fetch). Nothing is required to produce a useful digest;
- * ANTHROPIC_API_KEY upgrades it from "ranked links" to "editor's brief", and
+ * Zero runtime deps (Bun native fetch). Nothing is required to produce a useful digest; the
+ * Claude Code CLI (logged in, or CLAUDE_CODE_OAUTH_TOKEN) upgrades it from "ranked links" to
+ * "editor's brief" on the Claude subscription, and
  * VEILLE_DISCORD_WEBHOOK_URL routes it to Discord (otherwise it prints to stdout).
  *
  *   bun scripts/daily/veille.ts
  */
+import { spawn } from "node:child_process";
+import { tmpdir } from "node:os";
 import { postDigestToDiscord } from "./discord";
 
 // ── Config (env-driven) ──────────────────────────────────────────────────────
@@ -463,20 +466,51 @@ const APPENDIX: { cat: Category; label: string; cap: number }[] = [
   { cat: "discussion", label: "💬 Discussions", cap: 6 },
 ];
 
-// ── Optional Claude editor's brief ───────────────────────────────────────────
-interface AnthropicResp {
-  content?: { text?: string }[];
+// ── Optional Claude editor's brief (via Claude Code on the user's subscription) ──
+// The brief runs through the Claude Code CLI (`claude -p`), so it is counted against the Claude
+// Pro/Max subscription instead of being billed through the API. In CI, auth is the long-lived
+// CLAUDE_CODE_OAUTH_TOKEN from `claude setup-token`; locally, the logged-in `claude` session.
+// ANTHROPIC_API_KEY is stripped from the child env: the CLI would otherwise prefer it and bill the API.
+interface ClaudeResult {
+  result?: string;
+  is_error?: boolean;
   stop_reason?: string;
 }
+function runClaude(prompt: string): Promise<{ code: number | null; stdout: string; stderr: string }> {
+  return new Promise((resolve, reject) => {
+    const env = { ...process.env };
+    delete env.ANTHROPIC_API_KEY;
+    const child = spawn(
+      "claude",
+      [
+        "-p",
+        "--model", MODEL,
+        "--tools", "", // pure text generation: no file, shell or web tools
+        "--strict-mcp-config", // and no MCP servers
+        "--no-session-persistence",
+        "--output-format", "json",
+        "--system-prompt", "Tu es un éditeur de veille technique. Réponds uniquement avec le brief demandé, en Markdown.",
+      ],
+      { env, cwd: tmpdir(), stdio: ["pipe", "pipe", "pipe"] },
+    );
+    let stdout = "";
+    let stderr = "";
+    const timer = setTimeout(() => child.kill("SIGTERM"), 300_000);
+    child.stdout.on("data", (d) => (stdout += d));
+    child.stderr.on("data", (d) => (stderr += d));
+    child.on("error", (e) => {
+      clearTimeout(timer);
+      reject(e);
+    });
+    child.on("close", (code) => {
+      clearTimeout(timer);
+      resolve({ code, stdout, stderr });
+    });
+    child.stdin.end(prompt); // ~60k tokens: stdin, not argv
+  });
+}
 async function llmBrief(items: Item[]): Promise<string | null> {
-  // `.trim()` defends against a trailing newline in the secret (a classic `echo "$k" | gh secret set`
-  // footgun) that would otherwise make the x-api-key header invalid.
-  const key = process.env.ANTHROPIC_API_KEY?.trim();
-  if (!key) {
-    log("LLM brief: ANTHROPIC_API_KEY is empty/unset in env — skipping");
-    return null;
-  }
-  log(`LLM brief: key present (len=${key.length}), model=${MODEL} — calling Anthropic…`);
+  log(`LLM brief: model=${MODEL} — calling Claude Code (subscription)…`);
   // The full arXiv window is ~1 500–2 500 papers: send those as bare titles (≈25 tokens each) so the
   // model can still spot the important ones; everything else keeps its meta + summary.
   const arxivOnly = items.filter((i) => i.source === "arXiv");
@@ -505,33 +539,24 @@ ${digest}
 TOUS LES NOUVEAUX PAPIERS ARXIV DE LA PÉRIODE (${arxivOnly.length}, titres seuls — repère les rares qui comptent, ignore le reste) :
 ${arxivTitles}`;
   try {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
-      // Thinking off: Claude Sonnet 5.5 (the default model) runs adaptive thinking when `thinking` is
-      // omitted, which can eat the max_tokens budget and return 200 with 0 chars of visible text.
-      // `{type: "disabled"}` is a 400 on Sonnet 5.5; `between_tools` is its thinking-off mode
-      // (valid at the default effort `high` or below). Other models (VEILLE_MODEL) may need
-      // `{type: "disabled"}` instead — check the model's thinking rules before switching.
-      body: JSON.stringify({
-        model: MODEL,
-        max_tokens: 8000,
-        thinking: { type: "between_tools" },
-        messages: [{ role: "user", content: prompt }],
-      }),
-      signal: AbortSignal.timeout(180_000),
-    });
-    if (!r.ok) {
-      log(`LLM brief skipped -> HTTP ${r.status}: ${clip(await r.text(), 300)}`);
+    const { code, stdout, stderr } = await runClaude(prompt);
+    let j: ClaudeResult = {};
+    try {
+      j = JSON.parse(stdout) as ClaudeResult;
+    } catch {
+      log(`LLM brief skipped -> claude exited ${code}: ${clip((stderr || stdout).trim(), 300)}`);
       return null;
     }
-    const j = (await r.json()) as AnthropicResp;
-    if (j.stop_reason === "refusal" || j.stop_reason === "max_tokens") log(`LLM brief: stop_reason=${j.stop_reason}`);
-    const text = (j.content?.map((c) => c.text ?? "").join("") ?? "").trim();
-    log(`LLM brief: HTTP 200, ${text.length} chars returned`);
+    if (j.is_error || code !== 0) {
+      log(`LLM brief skipped -> claude exited ${code}: ${clip(j.result ?? stderr.trim(), 300)}`);
+      return null;
+    }
+    if (j.stop_reason && j.stop_reason !== "end_turn") log(`LLM brief: stop_reason=${j.stop_reason}`);
+    const text = (j.result ?? "").trim();
+    log(`LLM brief: ${text.length} chars returned`);
     return text || null;
   } catch (e) {
-    log(`LLM brief skipped -> ${(e as Error).message}`);
+    log(`LLM brief skipped -> ${(e as Error).message}`); // e.g. ENOENT: Claude Code not installed
     return null;
   }
 }
@@ -539,11 +564,11 @@ ${arxivTitles}`;
 // ── Render ───────────────────────────────────────────────────────────────────
 function renderMarkdown(items: Item[], brief: string | null, dateStr: string): string {
   let md = `# 🛰️ Veille IA/Tech — ${dateStr}\n\n_${items.length} items, ${LOOKBACK_H} dernières heures._\n\n`;
-  // The French brief is the body. If it is missing (ANTHROPIC_API_KEY absent/empty), say so plainly
+  // The French brief is the body. If it is missing (Claude Code absent or failed), say so plainly
   // instead of silently degrading to a link dump — the slim appendix below is the fallback content.
   md += brief
     ? `${brief}\n\n---\n\n`
-    : "_Brief IA indisponible (ANTHROPIC_API_KEY absent) — voir les liens ci-dessous._\n\n";
+    : "_Brief IA indisponible (Claude Code non configuré ou en erreur) — voir les liens ci-dessous._\n\n";
   md += "## 📎 Pour approfondir\n\n";
   for (const a of APPENDIX) {
     const rows = section(items, a.cat).slice(0, a.cap);

@@ -1,7 +1,8 @@
 # Monday/Thursday AI/tech "veille technique" digest → Discord.
 # Runs scripts/daily/veille.ts, which pulls the latest research + model releases + tools +
 # discussion (arXiv, HF Daily Papers/models, OpenRouter, Hacker News, GitHub, lab RSS), dedupes +
-# ranks them, has Claude write an editor's brief (ANTHROPIC_API_KEY), and posts to Discord.
+# ranks them, has Claude write an editor's brief (Claude Code on the Claude subscription), and
+# posts to Discord.
 #
 # DISCORD TARGET:
 #   * VEILLE_DISCORD_WEBHOOK_URL (secret) — an incoming webhook bound to the target channel.
@@ -10,7 +11,9 @@
 #     true here); set the repo variable VEILLE_REQUIRE_DISCORD=false to just log the digest instead.
 #
 # OTHER:
-#   * ANTHROPIC_API_KEY — enables the editor's brief. A few cents/run.
+#   * CLAUDE_CODE_OAUTH_TOKEN — enables the editor's brief through Claude Code, counted against the
+#     Claude Pro/Max subscription (no API billing). Create it locally with `claude setup-token`.
+#     Do NOT also set ANTHROPIC_API_KEY: the script strips it, but it would switch billing to the API.
 #   * GITHUB_TOKEN is injected automatically (raises the GitHub search rate limit).
 #   * REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET (optional) — a reddit.com/prefs/apps "script" app;
 #     needed because Reddit 403s the public JSON from datacenter IPs.
@@ -51,9 +54,12 @@ jobs:
         with:
           bun-version: 1.4.1
 
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@2.1.301
+
       - name: Build & post the veille digest
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           VEILLE_MODEL: ${{ vars.VEILLE_MODEL || 'claude-sonnet-5-5' }}
           VEILLE_DISCORD_WEBHOOK_URL: ${{ secrets.VEILLE_DISCORD_WEBHOOK_URL }}
           VEILLE_REQUIRE_DISCORD: ${{ vars.VEILLE_REQUIRE_DISCORD || 'true' }}
