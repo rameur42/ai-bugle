@@ -14,8 +14,22 @@
  *   bun scripts/daily/veille.ts
  */
 import { spawn } from "node:child_process";
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { postDigestToDiscord } from "./discord";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
+import {
+  assignIds,
+  BRIEF_SCHEMA,
+  buildIndex,
+  type Brief,
+  type Category,
+  type Item,
+  renderMarkdown,
+  resolveBrief,
+  type Veille,
+} from "./brief.ts";
+import { postDigestToDiscord } from "./discord.ts";
 
 // ── Config (env-driven) ──────────────────────────────────────────────────────
 const UA = "prsnl-veille/1.0 (AI digest)";
@@ -37,6 +51,10 @@ const ARXIV_CATS = (process.env.VEILLE_ARXIV_CATS ?? "cs.AI,cs.LG,cs.CL,cs.CV,st
 const ARXIV_MAX = Number(process.env.VEILLE_ARXIV_MAX ?? 4000);
 const ARXIV_PAGE = 1000;
 const MODEL = process.env.VEILLE_MODEL ?? "claude-sonnet-5-5";
+// Each run writes its veille as JSON for the site (site/veilles/YYYY-MM-DD.json + index.json).
+const OUT_DIR = process.env.VEILLE_OUT_DIR ?? fileURLToPath(new URL("../../site/veilles/", import.meta.url));
+const WRITE_JSON = (process.env.VEILLE_WRITE_JSON ?? "true").toLowerCase() !== "false";
+const SITE_URL = process.env.VEILLE_SITE_URL; // optional "📖 Lire sur le site" link in the Discord post
 const CAPS: Record<Category, number> = { paper: 8, release: 8, tool: 6, discussion: 6 };
 const KEYWORDS = (
   process.env.VEILLE_KEYWORDS ??
@@ -58,19 +76,6 @@ const FEEDS: { name: string; url: string }[] = [
   { name: "Simon Willison", url: "https://simonwillison.net/atom/everything/" },
   { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
 ];
-
-// ── Types ────────────────────────────────────────────────────────────────────
-type Category = "paper" | "release" | "tool" | "discussion";
-interface Item {
-  source: string;
-  category: Category;
-  title: string;
-  url: string;
-  summary?: string;
-  score?: number;
-  meta?: string;
-  published?: string;
-}
 
 const log = (msg: string): void => {
   process.stderr.write(`[veille] ${msg}\n`);
@@ -473,6 +478,7 @@ const APPENDIX: { cat: Category; label: string; cap: number }[] = [
 // ANTHROPIC_API_KEY is stripped from the child env: the CLI would otherwise prefer it and bill the API.
 interface ClaudeResult {
   result?: string;
+  structured_output?: unknown;
   is_error?: boolean;
   stop_reason?: string;
   total_cost_usd?: number;
@@ -496,7 +502,8 @@ function runClaude(prompt: string): Promise<{ code: number | null; stdout: strin
         "--strict-mcp-config", // and no MCP servers
         "--no-session-persistence",
         "--output-format", "json",
-        "--system-prompt", "Tu es un éditeur de veille technique. Réponds uniquement avec le brief demandé, en Markdown.",
+        "--json-schema", JSON.stringify(BRIEF_SCHEMA), // validated JSON lands in `structured_output`
+        "--system-prompt", "Tu es un éditeur de veille technique. Réponds uniquement avec le brief demandé, au format JSON imposé.",
       ],
       { env, cwd: tmpdir(), stdio: ["pipe", "pipe", "pipe"] },
     );
@@ -516,29 +523,39 @@ function runClaude(prompt: string): Promise<{ code: number | null; stdout: strin
     child.stdin.end(prompt); // ~60k tokens: stdin, not argv
   });
 }
-async function llmBrief(items: Item[]): Promise<string | null> {
+async function llmBrief(items: Item[]): Promise<Brief | null> {
   log(`LLM brief: model=${MODEL} — calling Claude Code (subscription)…`);
-  // The full arXiv window is ~1 500–2 500 papers: send those as bare titles (≈25 tokens each) so the
-  // model can still spot the important ones; everything else keeps its meta + summary.
-  const arxivOnly = items.filter((i) => i.source === "arXiv");
-  const arxivTitles = arxivOnly.map((i) => `- ${i.title}`).join("\n");
-  const digest = items
-    .filter((i) => i.source !== "arXiv")
+  // Every item gets a short id (i12) that Claude cites instead of writing URLs; resolveBrief() maps the
+  // ids back to real links. The full arXiv window is ~1 500–2 500 papers: send those as bare titles
+  // (≈25 tokens each) so the model can still spot the important ones; everything else keeps meta + summary.
+  const withIds = assignIds(items);
+  const ids = new Map(withIds.map(({ id, item }) => [id, item]));
+  const arxivOnly = withIds.filter(({ item }) => item.source === "arXiv");
+  const arxivTitles = arxivOnly.map(({ id, item }) => `- ${id} ${item.title}`).join("\n");
+  const digest = withIds
+    .filter(({ item }) => item.source !== "arXiv")
     .map(
-      (i) =>
-        `- [${i.category}] ${i.source}: ${i.title}${i.meta ? ` (${i.meta})` : ""}${i.summary ? ` — ${clip(i.summary, 180)}` : ""}`,
+      ({ id, item: i }) =>
+        `- ${id} [${i.category}] ${i.source}: ${i.title}${i.meta ? ` (${i.meta})` : ""}${i.summary ? ` — ${clip(i.summary, 180)}` : ""}`,
     )
     .join("\n");
   const prompt = `Tu es l'éditeur d'une veille IA/tech publiée le lundi et le jeudi pour une équipe produit francophone.
-Voici les items bruts des ${LOOKBACK_H} dernières heures (arXiv, HF Daily Papers, modèles tendance Hugging Face, OpenRouter, Hacker News, GitHub, blogs de labos).
+Voici les items bruts des ${LOOKBACK_H} dernières heures (arXiv, HF Daily Papers, modèles tendance Hugging Face, OpenRouter, Hacker News, GitHub, blogs de labos). Chaque item commence par son identifiant (ex. i12).
 
-Écris un brief substantiel mais synthétique EN FRANÇAIS, en Markdown. Objectif : je dois COMPRENDRE ce qui s'est passé sur toute la période sans cliquer sur un seul lien. Donne le SAVOIR — le résultat, la thèse, ce que ça change — pas une liste de titres.
+Écris un brief substantiel mais synthétique EN FRANÇAIS, au format JSON imposé. Objectif : je dois COMPRENDRE ce qui s'est passé sur toute la période sans cliquer sur un seul lien. Donne le SAVOIR — le résultat, la thèse, ce que ça change — pas une liste de titres.
 
-1. "## ☕ L'essentiel" — 5 à 8 puces. Ce qui compte vraiment. Chaque puce énonce CE QU'ON APPREND (le résultat concret ou l'idée-clé), jamais juste le sujet ou le titre traduit.
-2. "## 🔬 Papiers à connaître" — 3 à 6 au maximum. Une ligne chacun, sur le résultat concret ("montre que…", "propose…", "obtient X sur Y"). Ignore le tout-venant de l'arXiv.
-3. "## 🚀 Sorties qui comptent" — UNIQUEMENT les vraies sorties majeures : un modèle phare dont les capacités sont DÉCRITES, ou un outil réellement utile. IGNORE le bruit : un simple identifiant de modèle "tendance" sur Hugging Face, un compteur de likes/téléchargements, un quantize GGUF, un dépôt GitHub récent sans changement décrit ne comptent PAS. S'il n'y a rien de majeur, écris exactement "Rien de majeur sur la période." — n'invente rien, ne remplis pas.
+Chaque news a :
+- "title" : un titre court en français clair (reformulé, jamais le titre traduit mot à mot) ;
+- "text" : CE QU'ON APPREND, 1 à 3 phrases (le résultat concret ou l'idée-clé, pas juste le sujet) ;
+- "sources" : 1 à 3 identifiants d'items bruts qui appuient la news (ex. ["i12", "i40"]) — uniquement des identifiants présents ci-dessous, n'invente jamais d'URL ;
+- "notions" : 2 à 4 notions clés à creuser (termes courts, techniques, qu'on peut taper dans Google : "speculative decoding", "Mixture of Experts", "RLHF"…).
 
-Règles : sceptique et concret, zéro hype, pas de traduction mot-à-mot des titres (reformule en français clair). Si deux items sont la même histoire, fusionne-les. Réponds intégralement en français.
+Sections :
+1. "essentiel" — 5 à 8 news. Ce qui compte vraiment.
+2. "papiers" — 3 à 6 au maximum, sur le résultat concret ("montre que…", "propose…", "obtient X sur Y"). Ignore le tout-venant de l'arXiv.
+3. "sorties" — UNIQUEMENT les vraies sorties majeures : un modèle phare dont les capacités sont DÉCRITES, ou un outil réellement utile. IGNORE le bruit : un simple identifiant de modèle "tendance" sur Hugging Face, un compteur de likes/téléchargements, un quantize GGUF, un dépôt GitHub récent sans changement décrit ne comptent PAS. S'il n'y a rien de majeur, renvoie une liste vide — n'invente rien, ne remplis pas.
+
+Règles : sceptique et concret, zéro hype. Si deux items sont la même histoire, fusionne-les en une news (avec leurs deux identifiants). Réponds intégralement en français.
 
 ITEMS BRUTS :
 ${digest}
@@ -558,7 +575,8 @@ ${arxivTitles}`;
       log(`LLM brief skipped -> claude exited ${code}: ${clip(j.result ?? stderr.trim(), 300)}`);
       return null;
     }
-    if (j.stop_reason && j.stop_reason !== "end_turn") log(`LLM brief: stop_reason=${j.stop_reason}`);
+    // With --json-schema the answer arrives as a tool call, so stop_reason is "tool_use" on success.
+    if (j.stop_reason && !["end_turn", "tool_use"].includes(j.stop_reason)) log(`LLM brief: stop_reason=${j.stop_reason}`);
     // Usage against the subscription; the $ figure is the API list-price equivalent, not a charge.
     const u = j.usage ?? {};
     const input = (u.input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0);
@@ -566,40 +584,61 @@ ${arxivTitles}`;
       `LLM usage: ${input.toLocaleString("en-US")} input + ${(u.output_tokens ?? 0).toLocaleString("en-US")} output tokens` +
         ` (≈$${(j.total_cost_usd ?? 0).toFixed(3)} at API list price, not billed)`,
     );
-    const text = (j.result ?? "").trim();
-    log(`LLM brief: ${text.length} chars returned`);
-    return text || null;
+    let raw = j.structured_output;
+    if (raw === undefined) {
+      try {
+        raw = JSON.parse((j.result ?? "").replace(/^\s*```(?:json)?|```\s*$/g, ""));
+      } catch {
+        log(`LLM brief skipped -> no structured output: ${clip(j.result ?? "", 300)}`);
+        return null;
+      }
+    }
+    const brief = resolveBrief(raw, ids);
+    if (!brief) log("LLM brief skipped -> structured output was empty");
+    return brief;
   } catch (e) {
     log(`LLM brief skipped -> ${(e as Error).message}`); // e.g. ENOENT: Claude Code not installed
     return null;
   }
 }
 
-// ── Render ───────────────────────────────────────────────────────────────────
-function renderMarkdown(items: Item[], brief: string | null, dateStr: string): string {
-  let md = `# 🛰️ Veille IA/Tech — ${dateStr}\n\n_${items.length} items, ${LOOKBACK_H} dernières heures._\n\n`;
-  // The French brief is the body. If it is missing (Claude Code absent or failed), say so plainly
-  // instead of silently degrading to a link dump — the slim appendix below is the fallback content.
-  md += brief
-    ? `${brief}\n\n---\n\n`
-    : "_Brief IA indisponible (Claude Code non configuré ou en erreur) — voir les liens ci-dessous._\n\n";
-  md += "## 📎 Pour approfondir\n\n";
-  for (const a of APPENDIX) {
-    const rows = section(items, a.cat).slice(0, a.cap);
-    if (!rows.length) continue;
-    md += `*${a.label}*\n`;
-    for (const it of rows) md += `- **[${it.title}](${it.url})** — ${it.source}${it.meta ? ` · ${it.meta}` : ""}\n`;
-    md += "\n";
-  }
-  return md;
+// ── Veille document + site files ─────────────────────────────────────────────
+function buildVeille(items: Item[], brief: Brief | null, date: string): Veille {
+  return {
+    version: 1,
+    date,
+    generatedAt: new Date(NOW).toISOString(),
+    lookbackHours: LOOKBACK_H,
+    itemCount: items.length,
+    model: MODEL,
+    brief,
+    approfondir: APPENDIX.map((a) => ({
+      label: a.label,
+      items: section(items, a.cat)
+        .slice(0, a.cap)
+        .map((it) => ({ title: it.title, url: it.url, source: it.source, meta: it.meta })),
+    })).filter((g) => g.items.length),
+  };
+}
+
+// Writes site/veilles/<date>.json (a same-day rerun replaces it) and rebuilds index.json from every veille.
+function writeVeille(v: Veille): void {
+  mkdirSync(OUT_DIR, { recursive: true });
+  writeFileSync(join(OUT_DIR, `${v.date}.json`), `${JSON.stringify(v, null, 2)}\n`);
+  const all = readdirSync(OUT_DIR)
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+    .map((f) => JSON.parse(readFileSync(join(OUT_DIR, f), "utf8")) as Veille);
+  writeFileSync(join(OUT_DIR, "index.json"), `${JSON.stringify(buildIndex(all), null, 2)}\n`);
+  log(`wrote ${join(OUT_DIR, `${v.date}.json`)} (+ index.json, ${all.length} veille(s))`);
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
-const dateStr = new Date().toISOString().slice(0, 10);
+const dateStr = new Date(NOW).toISOString().slice(0, 10);
 log(`collecting (last ${LOOKBACK_H}h)…`);
 const items = await collect();
 log(`collected ${items.length} unique items`);
 const brief = await llmBrief(items);
-log(brief ? `LLM brief: on (${brief.length} chars)` : "LLM brief: off (see reason above)");
-const md = renderMarkdown(items, brief, dateStr);
-await postDigestToDiscord(md); // throws on a failed post → non-zero exit, red run
+log(brief ? `LLM brief: on (${brief.essentiel.length + brief.papiers.length + brief.sorties.length} news)` : "LLM brief: off (see reason above)");
+const veille = buildVeille(items, brief, dateStr);
+if (WRITE_JSON) writeVeille(veille); // before Discord: a failed post must not lose the veille
+await postDigestToDiscord(renderMarkdown(veille, SITE_URL)); // throws on a failed post → non-zero exit, red run
