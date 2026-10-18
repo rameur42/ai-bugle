@@ -40,6 +40,8 @@ Settings → Pages → Source : **GitHub Actions** (une fois). Site :
 Test : Actions → « AI Bugle — Monday & Thursday » → Run workflow, **depuis `main`** : l'environnement
 `github-pages` n'accepte que la branche par défaut, donc un lancement depuis une autre branche échoue à
 l'étape de publication.
+Pour republier le site seul (après une modification du site, sans appel Claude ni post Discord) :
+Run workflow en cochant « Redeploy the site only ».
 
 ## En local
 
