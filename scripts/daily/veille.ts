@@ -475,6 +475,13 @@ interface ClaudeResult {
   result?: string;
   is_error?: boolean;
   stop_reason?: string;
+  total_cost_usd?: number;
+  usage?: {
+    input_tokens?: number;
+    cache_creation_input_tokens?: number;
+    cache_read_input_tokens?: number;
+    output_tokens?: number;
+  };
 }
 function runClaude(prompt: string): Promise<{ code: number | null; stdout: string; stderr: string }> {
   return new Promise((resolve, reject) => {
@@ -552,6 +559,13 @@ ${arxivTitles}`;
       return null;
     }
     if (j.stop_reason && j.stop_reason !== "end_turn") log(`LLM brief: stop_reason=${j.stop_reason}`);
+    // Usage against the subscription; the $ figure is the API list-price equivalent, not a charge.
+    const u = j.usage ?? {};
+    const input = (u.input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0);
+    log(
+      `LLM usage: ${input.toLocaleString("en-US")} input + ${(u.output_tokens ?? 0).toLocaleString("en-US")} output tokens` +
+        ` (≈$${(j.total_cost_usd ?? 0).toFixed(3)} at API list price, not billed)`,
+    );
     const text = (j.result ?? "").trim();
     log(`LLM brief: ${text.length} chars returned`);
     return text || null;
