@@ -4,7 +4,7 @@
  * Pulls the latest research + model releases + tools + discussion from automation-friendly
  * sources (arXiv, Hugging Face Daily Papers/models, OpenRouter, Hacker News, GitHub, lab RSS),
  * dedupes + ranks them, optionally has Claude write an editor's brief, and posts the result to a
- * Discord channel. Runs on a GitHub Actions cron (`.github/workflows/ai-veille.yml`).
+ * Discord channel. Runs on a GitHub Actions cron (`.github/workflows/ai-bugle.yml`).
  *
  * Zero runtime deps (Bun native fetch). Nothing is required to produce a useful digest; the
  * Claude Code CLI (logged in, or CLAUDE_CODE_OAUTH_TOKEN) upgrades it from "ranked links" to

@@ -169,7 +169,7 @@ export function buildIndex(veilles: Veille[]): VeilleIndex {
 const mdLink = (label: string, url: string): string => `[${label.replace(/[[\]]/g, "")}](${url})`;
 
 export function renderMarkdown(v: Veille, siteUrl?: string): string {
-  let md = `# 🛰️ Veille IA/Tech — ${v.date}\n\n_${v.itemCount} items, ${v.lookbackHours} dernières heures._`;
+  let md = `# 🛰️ AI Bugle — ${v.date}\n\n_${v.itemCount} items, ${v.lookbackHours} dernières heures._`;
   if (siteUrl) md += ` ${mdLink("📖 Lire sur le site", `${siteUrl.replace(/\/?$/, "/")}#/${v.date}`)}`;
   md += "\n\n";
   if (v.brief) {

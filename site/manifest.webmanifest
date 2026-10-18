@@ -1,6 +1,6 @@
 {
-  "name": "Veille IA",
-  "short_name": "Veille IA",
+  "name": "AI Bugle",
+  "short_name": "AI Bugle",
   "description": "La veille IA/tech du lundi et du jeudi, en français.",
   "lang": "fr",
   "start_url": "./",

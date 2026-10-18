@@ -1,4 +1,4 @@
-// Veille IA — static reader. Data: veilles/index.json + veilles/YYYY-MM-DD.json (written by scripts/daily/veille.ts).
+// AI Bugle — static reader. Data: veilles/index.json + veilles/YYYY-MM-DD.json (written by scripts/daily/veille.ts).
 // Routes: #/ (list) and #/YYYY-MM-DD (one veille). Read/unread is kept in this browser only (localStorage).
 "use strict";
 
@@ -36,7 +36,7 @@ function formatDate(iso) {
 const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
 
 // ── Read / unread (local only) ───────────────────────────────────────────────
-const READ_KEY = "veille-ia:read";
+const READ_KEY = "veille-ia:read"; // pre-rename key, kept so read state survives
 function readSet() {
   try { return new Set(JSON.parse(localStorage.getItem(READ_KEY) || "[]")); } catch { return new Set(); }
 }
@@ -64,7 +64,7 @@ function failure(msg) {
 
 // ── Home ─────────────────────────────────────────────────────────────────────
 async function showHome() {
-  document.title = "Veille IA";
+  document.title = "AI Bugle";
   let index;
   try {
     index = await getJson("veilles/index.json");
@@ -116,7 +116,7 @@ async function showVeille(date) {
     return failure(`Veille du ${date} introuvable.`);
   }
   markRead(date);
-  document.title = `Veille IA — ${formatDate(date)}`;
+  document.title = `AI Bugle — ${formatDate(date)}`;
   const brief = v.brief;
   const nav = [...(brief ? SECTIONS : []), { key: "approfondir", nav: "Approfondir" }];
   const sections = brief

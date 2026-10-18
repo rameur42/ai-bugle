@@ -27,7 +27,7 @@
 # effect once merged to main. Test the wiring from the Actions tab via "Run workflow".
 # Scheduled workflows auto-disable after 60 days with no repo commits (each veille commit counts).
 
-name: AI veille — Monday & Thursday
+name: AI Bugle — Monday & Thursday
 
 on:
   schedule:
@@ -40,7 +40,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: daily-ai-veille
+  group: daily-ai-bugle
   cancel-in-progress: false
 
 jobs:

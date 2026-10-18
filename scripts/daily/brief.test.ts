@@ -91,8 +91,8 @@ test("buildIndex sorts newest first and summarises", () => {
 });
 
 test("renderMarkdown keeps the sections, links and the empty-section line", () => {
-  const md = renderMarkdown(veille("2026-10-20"), "https://rameur42.github.io/ai-veille");
-  assert.match(md, /\[📖 Lire sur le site\]\(https:\/\/rameur42\.github\.io\/ai-veille\/#\/2026-10-20\)/);
+  const md = renderMarkdown(veille("2026-10-20"), "https://rameur42.github.io/ai-bugle");
+  assert.match(md, /\[📖 Lire sur le site\]\(https:\/\/rameur42\.github\.io\/ai-bugle\/#\/2026-10-20\)/);
   assert.match(md, /## ☕ L'essentiel\n\n- \*\*Une news\*\* — Ce qu'on apprend\. \(\[Hacker News\]\(https:\/\/example\.com\/hn\)\)/);
   assert.match(md, /## 🚀 Sorties qui comptent\n\nRien de majeur sur la période\./);
   assert.match(md, /\*\*\[Paper A\]\(https:\/\/arxiv\.org\/abs\/2610\.00001\)\*\* — arXiv · X et al\./);

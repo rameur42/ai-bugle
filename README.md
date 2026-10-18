@@ -1,6 +1,6 @@
-# AI veille
+# AI Bugle
 
-Veille IA/tech en français, le lundi et le jeudi à 08:17 (Paris) par GitHub Actions : postée sur
+AI Bugle : veille IA/tech en français, le lundi et le jeudi à 08:17 (Paris) par GitHub Actions : postée sur
 Discord et publiée sur un site statique (GitHub Pages, installable sur mobile).
 
 Sources : arXiv (toute la fenêtre d'annonce), HF Daily Papers, modèles tendance Hugging Face,
@@ -37,7 +37,7 @@ Settings → Secrets and variables → Actions :
 Settings → Pages → Source : **GitHub Actions** (une fois). Site :
 `https://<propriétaire>.github.io/<dépôt>/`.
 
-Test : Actions → « AI veille — Monday & Thursday » → Run workflow, **depuis `main`** : l'environnement
+Test : Actions → « AI Bugle — Monday & Thursday » → Run workflow, **depuis `main`** : l'environnement
 `github-pages` n'accepte que la branche par défaut, donc un lancement depuis une autre branche échoue à
 l'étape de publication.
 
