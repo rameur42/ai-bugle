@@ -3,13 +3,13 @@
   "veilles": [
     {
       "date": "2026-10-18",
-      "headline": "Meta ouvre Muse Spark : un MoE frontier à poids ouverts",
+      "headline": "Meta publie Muse Spark Open, un modèle open-weight de 816B",
       "counts": {
-        "essentiel": 8,
-        "papiers": 5,
-        "sorties": 4
+        "essentiel": 7,
+        "papiers": 4,
+        "sorties": 2
       },
-      "itemCount": 157
+      "itemCount": 158
     }
   ]
 }

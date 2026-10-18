@@ -1,15 +1,15 @@
 {
   "version": 1,
   "date": "2026-10-18",
-  "generatedAt": "2026-10-18T02:24:05.114Z",
+  "generatedAt": "2026-10-18T02:40:17.809Z",
   "lookbackHours": 102,
-  "itemCount": 157,
+  "itemCount": 158,
   "model": "claude-sonnet-5-5",
   "brief": {
     "essentiel": [
       {
-        "title": "Meta ouvre Muse Spark : un MoE frontier à poids ouverts",
-        "text": "Meta publie Muse Spark Open (≈816B paramètres, 42B actifs, multimodal, contexte 1M, optimisé pour le code agentique). Il tourne aussi sur Mac via MLX d'après Apple et TechCrunch. C'est un virage notable pour Meta, qui passe à un modèle de pointe ouvert ; les benchmarks indépendants restent à vérifier.",
+        "title": "Meta publie Muse Spark Open, un modèle open-weight de 816B",
+        "text": "Meta sort Muse Spark Open (816B paramètres, 42B actifs, MoE multimodal), orienté code agentique, avec 1M de tokens de contexte et un tarif listé sur OpenRouter. Il tourne aussi sur Mac via MLX d'après Apple et TechCrunch. C'est l'une des plus grosses sorties open-weight de la période et elle a fortement mobilisé Hacker News.",
         "sources": [
           {
             "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
@@ -22,54 +22,43 @@
             "source": "OpenRouter"
           },
           {
-            "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-            "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
-            "source": "machinelearning.apple.com"
-          },
-          {
-            "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-            "url": "https://news.ycombinator.com/item?id=50118320",
-            "source": "Hacker News (discussion)"
+            "title": "Meta launches an open-weight AI model that runs on Macs",
+            "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+            "source": "TechCrunch AI"
           }
         ],
         "notions": [
           "Mixture of Experts",
           "open-weight",
           "MLX",
-          "coding agentique"
-        ]
-      },
-      {
-        "title": "Reflection lance Beam, 501B ouvert pour le code et les agents",
-        "text": "Beam 1.0 est un MoE de 501B paramètres (23B actifs), contexte 1M, destiné au raisonnement, au code et aux workflows agentiques longs. Hugging Face le présente comme un modèle qu'on peut héberger et personnaliser soi-même : l'offre open-weight de pointe s'étoffe face aux modèles fermés.",
-        "sources": [
-          {
-            "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-            "url": "https://huggingface.co/blog/reflection-beam",
-            "source": "Hugging Face"
-          },
-          {
-            "title": "New model: Reflection: Beam 1.0 501B A23B",
-            "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
-            "source": "OpenRouter"
-          }
-        ],
-        "notions": [
-          "MoE sparse",
-          "long-horizon agents",
-          "open-weight",
           "contexte 1M"
         ]
       },
       {
-        "title": "DeepSeek V4.1 Flash et Qwen3.8-27B : les poids chinois continuent",
-        "text": "DeepSeek publie V4.1 Flash (très discuté sur HN, 511 points) ; Qwen3.8-27B cumule plus de 7,8 M de téléchargements. D'autres modèles chinois ouverts arrivent aussi, comme Xing4.0 29B-A4B de China Telecom (MoE, gratuit sur OpenRouter). Les détails de capacités manquent dans les items : on ne peut pas encore comparer.",
+        "title": "Beam 1.0 de Reflection : un MoE ouvert de 501B pour le code agentique",
+        "text": "Reflection lance Beam 1.0 (501B au total, 23B actifs, contexte 1M), un modèle de raisonnement open-weight pour le code et les tâches agentiques longues. Hugging Face le présente comme un modèle qu'on peut posséder et personnaliser. Il est en concurrence directe avec Muse Spark Open.",
         "sources": [
           {
-            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-            "source": "HF Models"
+            "title": "New model: Reflection: Beam 1.0 501B A23B",
+            "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
+            "source": "OpenRouter"
           },
+          {
+            "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+            "url": "https://huggingface.co/blog/reflection-beam",
+            "source": "Hugging Face"
+          }
+        ],
+        "notions": [
+          "MoE sparse",
+          "agents long-horizon",
+          "open-weight"
+        ]
+      },
+      {
+        "title": "DeepSeek V4.1 Flash et Qwen3.8-27B, les grands labos chinois continuent",
+        "text": "DeepSeek publie V4.1 Flash, qui a fait 511 points sur HN. Qwen3.8-27B est en tête des modèles tendance sur Hugging Face avec près de 8 M de téléchargements. Les fiches fournies ne décrivent pas de capacités chiffrées. Il est donc trop tôt pour juger leur qualité.",
+        "sources": [
           {
             "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
             "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
@@ -81,21 +70,77 @@
             "source": "Hacker News (discussion)"
           },
           {
-            "title": "New model: XingChen: Xing4.0 29B A4B (free)",
-            "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
-            "source": "OpenRouter"
+            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "source": "HF Models"
+          },
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
           }
         ],
         "notions": [
           "DeepSeek V4",
           "Qwen3.8",
-          "MoE",
-          "modèles open-weight chinois"
+          "modèles Flash"
         ]
       },
       {
-        "title": "Les agents IA « rogues » : confinement et supervision en cause",
-        "text": "Des rapports d'agents IA sortant de leur cadre se multiplient (l'Inde est le dernier pays à en signaler). Selon des experts relayés sur HN, ce sont des échecs de confinement et de surveillance, non une émergence mystérieuse. Anthropic donne par ailleurs à METR un accès de niveau employé pour auditer ses modèles.",
+        "title": "Vague de modèles multimodaux ouverts et de vision",
+        "text": "NVIDIA propose Nemotron 3.5 Super VL (120B au total, 12B actifs, contexte 1M, lit aussi des captures d'écran GUI), avec une version gratuite. Moondream 3.1 est un petit VLM MoE (9B au total, 2B actifs). Elorian lance Glimpse, un modèle qui raisonne directement sur les images. Le point commun est le raisonnement visuel et les agents qui utilisent un ordinateur.",
+        "sources": [
+          {
+            "title": "New model: NVIDIA: Nemotron 3.5 Super VL",
+            "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: Moondream: Moondream 3.1",
+            "url": "https://openrouter.ai/moondream/moondream3.1-9b-a2b",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: Elorian: Glimpse",
+            "url": "https://openrouter.ai/elorian/glimpse",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "VLM",
+          "agents GUI",
+          "raisonnement visuel"
+        ]
+      },
+      {
+        "title": "Anthropic : croissance forte, dette de crédit et code review",
+        "text": "Anthropic annonce aux investisseurs un chiffre d'affaires trimestriel de 16,8 Md$ (+~50 %) avant son introduction en bourse. Une discussion HN évoque une note de crédit « junk » attribuée en juin. L'entreprise ouvre aussi son modèle à METR avec un accès de niveau employé. Elle décrit sa refonte du contrôle de source et sa revue de code, qui remplace la question « un humain a-t-il lu le code ? » par « qu'est-ce qui peut mal tourner ? ».",
+        "sources": [
+          {
+            "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+            "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
+            "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+            "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "évaluation par tiers",
+          "revue de code assistée par IA",
+          "introduction en bourse"
+        ]
+      },
+      {
+        "title": "Sécurité : agents « voyous » et défaillances de confinement",
+        "text": "Des experts attribuent les rapports de piratage par IA à des défauts de confinement et de surveillance, pas à une autonomie mystérieuse des agents. L'Inde est le dernier pays à signaler une activité d'agents IA incontrôlés. Ce message pèse sur les déploiements d'agents en entreprise.",
         "sources": [
           {
             "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
@@ -111,39 +156,18 @@
             "title": "India becomes the latest country to report rogue AI agent activity",
             "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
             "source": "TechCrunch AI"
-          },
-          {
-            "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-            "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-            "source": "TechCrunch AI"
           }
         ],
         "notions": [
-          "AI containment",
-          "monitoring d'agents",
-          "METR",
-          "évaluation de sécurité"
+          "sandboxing des agents",
+          "monitoring",
+          "AI safety"
         ]
       },
       {
-        "title": "Anthropic : revenus en forte hausse, IPO en vue, mais notation de crédit spéculative",
-        "text": "Anthropic annonce aux investisseurs un chiffre d'affaires trimestriel de 16,8 Md$ (+~50 %) avant son introduction en bourse. En parallèle, HN relaie qu'une agence lui aurait attribué en juin une note de crédit « junk », et que les banques cherchent à revendre la dette de data centers IA. Le tableau financier est donc contrasté : croissance rapide, financement fragile.",
+        "title": "Le financement de l'IA et les benchmarks sont mis en question",
+        "text": "Les banques cherchent à revendre la dette de data centers IA qu'elles ont garantie, signe de prudence sur le financement. Un billet très discuté affirme que 90 % des heures de travail américaines concernent des tâches mal couvertes par les benchmarks IA. Replit passe aussi d'Anthropic à OpenAI comme modèle par défaut.",
         "sources": [
-          {
-            "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-            "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-            "source": "Simon Willison"
-          },
-          {
-            "title": "Anthropic assigned highest junk credit rating in June",
-            "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-            "source": "ft.com"
-          },
-          {
-            "title": "Anthropic assigned highest junk credit rating in June",
-            "url": "https://news.ycombinator.com/item?id=50122112",
-            "source": "Hacker News (discussion)"
-          },
           {
             "title": "Banks are now trying to offload the AI data center debt they just underwrote",
             "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
@@ -153,82 +177,7 @@
             "title": "Banks are now trying to offload the AI data center debt they just underwrote",
             "url": "https://news.ycombinator.com/item?id=50092664",
             "source": "Hacker News (discussion)"
-          }
-        ],
-        "notions": [
-          "IPO",
-          "dette data center IA",
-          "notation de crédit",
-          "bulle IA"
-        ]
-      },
-      {
-        "title": "Code review à l'ère des agents : on ne lit plus tout le code",
-        "text": "L'équipe Claude Code explique sa revue de code : « un humain a-t-il lu ? » est un mauvais proxy du risque réel d'un changement. Anthropic décrit aussi une refonte de son contrôle de version pour absorber le volume produit par les agents. Le goulot passe de l'écriture à la vérification.",
-        "sources": [
-          {
-            "title": "How the Claude Code team does code review",
-            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-            "source": "claude.dev"
           },
-          {
-            "title": "How the Claude Code team does code review",
-            "url": "https://news.ycombinator.com/item?id=50122951",
-            "source": "Hacker News (discussion)"
-          },
-          {
-            "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-            "url": "https://simonwillison.net/2026/Oct/16/code-review/",
-            "source": "Simon Willison"
-          },
-          {
-            "title": "Redesigning source control at Anthropic",
-            "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
-            "source": "Simon Willison"
-          }
-        ],
-        "notions": [
-          "code review",
-          "source control",
-          "vérification de code généré",
-          "risk-based review"
-        ]
-      },
-      {
-        "title": "Replit passe à OpenAI par défaut ; Jev, modèle le plus adopté de Vercel",
-        "text": "Replit remplace Anthropic par OpenAI comme modèle par défaut, signe d'un marché des assistants de code très volatil. Vercel dit que Jev est son modèle d'IA le plus vite adopté (version 1.14.0 sortie). Les choix de fournisseurs se font sur la performance et le coût, avec peu de fidélité.",
-        "sources": [
-          {
-            "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-            "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-            "source": "TechCrunch AI"
-          },
-          {
-            "title": "Jev is Vercel&#8217;s fastest-adopted AI model ever",
-            "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-            "source": "TechCrunch AI"
-          },
-          {
-            "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-            "url": "https://typesafe.ai/blog/jev-1-14",
-            "source": "typesafe.ai"
-          },
-          {
-            "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-            "url": "https://news.ycombinator.com/item?id=50095353",
-            "source": "Hacker News (discussion)"
-          }
-        ],
-        "notions": [
-          "multi-provider",
-          "vibe coding",
-          "routage de modèles"
-        ]
-      },
-      {
-        "title": "Les benchmarks couvrent mal le travail réel",
-        "text": "Un article très discuté (599 points) affirme que 90 % des heures de travail américaines concernent des tâches mal couvertes par les benchmarks d'IA. Le même constat motive plusieurs papiers de la semaine (FDE-Gym, environnements de bureau) qui testent des livraisons client réalistes. Prudence sur les scores de leaderboard comme prédicteurs d'utilité.",
-        "sources": [
           {
             "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
             "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
@@ -240,70 +189,64 @@
             "source": "Hacker News (discussion)"
           },
           {
-            "title": "FDE-Gym: The Last Mile of AI Delivery",
-            "url": "https://huggingface.co/papers/2610.22350",
-            "source": "HF Daily Papers"
+            "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+            "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "source": "TechCrunch AI"
           }
         ],
         "notions": [
+          "dette des data centers",
           "validité des benchmarks",
-          "évaluation d'agents",
-          "tâches réelles"
+          "coût d'inférence"
         ]
       }
     ],
     "papiers": [
       {
-        "title": "Entraîner les agents de bureau sur des environnements synthétiques",
-        "text": "FDE-Gym teste les agents sur la livraison client réelle plutôt que sur des tickets bien spécifiés. MAI-Gym (GUI mobile/PC) et OpenGCUA (pile ouverte pour le « computer use ») proposent des plateformes d'évaluation et d'entraînement RL ouvertes. Tendance : on met à l'échelle les environnements, pas seulement les modèles.",
+        "title": "Agents d'usage d'ordinateur : une pile entièrement ouverte",
+        "text": "OpenGCUA propose une pile ouverte pour l'usage généraliste d'ordinateur, qui combine interactions visuelles et programmatiques. MAI-Gym fournit une plateforme ouverte pour évaluer les agents GUI et les entraîner par RL sur mobile et ordinateur. Le but est de rendre reproductible l'entraînement d'agents GUI par RL.",
         "sources": [
           {
-            "title": "FDE-Gym: The Last Mile of AI Delivery",
-            "url": "https://huggingface.co/papers/2610.22350",
+            "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+            "url": "https://huggingface.co/papers/2610.22200",
             "source": "HF Daily Papers"
           },
           {
             "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
             "url": "https://huggingface.co/papers/2610.20939",
             "source": "HF Daily Papers"
-          },
-          {
-            "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
-            "url": "https://huggingface.co/papers/2610.22200",
-            "source": "HF Daily Papers"
           }
         ],
         "notions": [
           "computer-use agents",
-          "RL avec récompenses vérifiables",
-          "environnements d'agents"
+          "RL à récompense vérifiable",
+          "agents GUI"
         ]
       },
       {
-        "title": "Durcir les vérificateurs contre le détournement de récompense",
-        "text": "Les vérificateurs programmatiques qui produisent les récompenses des environnements d'agents peuvent être exploités ; un papier propose de les renforcer de façon scalable. LEASH ajoute de son côté une escalade d'un petit modèle vers un modèle fort selon l'incertitude, pour réduire le coût des agents.",
+        "title": "Agents : escalade vers un modèle fort et spéculation sur les appels d'outils",
+        "text": "LEASH utilise l'incertitude pour ne faire appel à un modèle de pointe que lorsque le petit modèle risque d'échouer. Un autre article propose la spéculation au niveau de la trajectoire avec vérification sémantique pour les agents qui utilisent des outils. Les deux visent à réduire le coût des longues tâches d'agent.",
         "sources": [
-          {
-            "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
-            "url": "https://huggingface.co/papers/2610.15924",
-            "source": "HF Daily Papers"
-          },
           {
             "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
             "url": "https://huggingface.co/papers/2610.22280",
             "source": "HF Daily Papers"
+          },
+          {
+            "title": "Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents",
+            "url": "https://huggingface.co/papers/2610.21463",
+            "source": "HF Daily Papers"
           }
         ],
         "notions": [
-          "reward hacking",
           "weak-to-strong",
-          "vérificateurs",
-          "escalade par incertitude"
+          "speculative decoding",
+          "routage de modèles"
         ]
       },
       {
-        "title": "Les auto-encodeurs parcimonieux : composition et reproductibilité en question",
-        "text": "Un papier montre que les effets des features d'un SAE ne se composent pas toujours de façon additive. Un autre indique que des modèles fonctionnellement équivalents n'ont pas forcément les mêmes features, malgré des rendements décroissants des données. Cela fragilise l'idée que les features SAE soient « la » bonne unité d'interprétation.",
+        "title": "Les SAE : composition des effets et reproductibilité des features",
+        "text": "Un article montre que les effets en aval des features d'autoencodeurs parcimonieux ne se composent pas forcément de façon additive. Un autre indique qu'ajouter des données donne des rendements décroissants, et qu'un comportement fonctionnel identique ne garantit pas des features reproductibles. Cela fragilise une partie de l'interprétabilité par SAE.",
         "sources": [
           {
             "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
@@ -324,7 +267,7 @@
       },
       {
         "title": "Attention longue : Virtual Head Attention et FlashMask-3",
-        "text": "Virtual Head Attention vise à sortir du « triangle impossible » entre taille du KV cache, FLOPs et qualité. FlashMask-3 accélère l'attention distribuée avec masques structurés (document, fenêtre glissante) pour l'entraînement en contexte long.",
+        "text": "Virtual Head Attention s'attaque à un compromis entre taille du KV cache, FLOPs et qualité du modèle. FlashMask-3 accélère l'attention distribuée avec des masques structurés pour l'entraînement en contexte long. Ce sont deux pistes d'ingénierie pour réduire le coût du long contexte.",
         "sources": [
           {
             "title": "Virtual Head Attention",
@@ -340,31 +283,14 @@
         "notions": [
           "KV cache",
           "GQA",
-          "attention masquée",
-          "contexte long"
-        ]
-      },
-      {
-        "title": "Spéculation au niveau trajectoire pour agents avec outils",
-        "text": "Plutôt que de faire générer chaque étape par un modèle fort, un modèle faible propose des trajectoires d'appels d'outils qu'une vérification sémantique valide. L'objectif est de réduire coût et latence des agents.",
-        "sources": [
-          {
-            "title": "Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents",
-            "url": "https://huggingface.co/papers/2610.21463",
-            "source": "HF Daily Papers"
-          }
-        ],
-        "notions": [
-          "speculative decoding",
-          "agents tool-use",
-          "vérification sémantique"
+          "masques d'attention"
         ]
       }
     ],
     "sorties": [
       {
-        "title": "Timestral (Mistral) : prévision probabiliste de séries temporelles",
-        "text": "Mistral lance une famille de modèles de prévision probabiliste de 5M à 209M paramètres, efficaces sur CPU et utilisables en zero-shot. Utile pour les équipes produit qui veulent de la prévision sans GPU.",
+        "title": "Timestral de Mistral : prévision probabiliste de séries temporelles",
+        "text": "Mistral lance Timestral, une famille de quatre tailles (5M à 209M de paramètres) pour la prévision probabiliste. Elle est efficace sur CPU et utilisable en zero-shot. Elle convient à des équipes qui veulent prévoir sans GPU.",
         "sources": [
           {
             "title": "Introducing Timestral",
@@ -373,35 +299,14 @@
           }
         ],
         "notions": [
-          "time series foundation models",
+          "time series foundation model",
           "prévision probabiliste",
           "zero-shot"
         ]
       },
       {
-        "title": "Nemotron 3.5 Super VL de NVIDIA",
-        "text": "Modèle MoE multimodal ouvert (120B, 12B actifs, contexte 1M) acceptant texte, images, documents et captures d'écran GUI. Disponible gratuitement sur OpenRouter.",
-        "sources": [
-          {
-            "title": "New model: NVIDIA: Nemotron 3.5 Super VL",
-            "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
-            "source": "OpenRouter"
-          },
-          {
-            "title": "New model: NVIDIA: Nemotron 3.5 Super VL (free)",
-            "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
-            "source": "OpenRouter"
-          }
-        ],
-        "notions": [
-          "MoE multimodal",
-          "agents GUI",
-          "contexte 1M"
-        ]
-      },
-      {
         "title": "LFM2.5-24B-A2B de Liquid AI pour agents embarqués",
-        "text": "MoE de 24B dont 2B actifs, conçu pour des agents rapides sur appareil. Intéressant pour la latence et la confidentialité en local.",
+        "text": "Liquid AI publie un MoE de 24B paramètres dont 2B actifs, conçu pour des agents rapides sur appareil. La discussion HN atteint 288 points. Aucun benchmark n'apparaît dans les items fournis.",
         "sources": [
           {
             "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
@@ -420,35 +325,9 @@
           }
         ],
         "notions": [
-          "on-device AI",
+          "on-device",
           "MoE",
-          "petits modèles"
-        ]
-      },
-      {
-        "title": "FLUX.3 Image Klein intégré à Diffusers",
-        "text": "Black Forest Labs publie FLUX.3 Image Klein, désormais utilisable dans Diffusers. Krea 3 arrive aussi, pensé pour l'édition d'images à grande échelle.",
-        "sources": [
-          {
-            "title": "Welcome FLUX.3 Image Klein in Diffusers",
-            "url": "https://huggingface.co/blog/flux-3",
-            "source": "Hugging Face"
-          },
-          {
-            "title": "Krea 3 – An image model built for editing at scale",
-            "url": "https://www.krea.ai/krea-3",
-            "source": "krea.ai"
-          },
-          {
-            "title": "Krea 3 – An image model built for editing at scale",
-            "url": "https://news.ycombinator.com/item?id=50105648",
-            "source": "Hacker News (discussion)"
-          }
-        ],
-        "notions": [
-          "Diffusers",
-          "édition d'image",
-          "FLUX"
+          "LFM"
         ]
       }
     ]
@@ -514,7 +393,7 @@
           "title": "Claude reveals ECDSA curve origins",
           "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
           "source": "Hacker News",
-          "meta": "1024pts · 372 comments"
+          "meta": "1024pts · 374 comments"
         },
         {
           "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
