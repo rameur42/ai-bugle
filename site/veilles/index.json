@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-10-19",
+      "headline": "Meta publie Muse Spark Open, un modèle ouvert pour le code qui tourne sur Mac",
+      "counts": {
+        "essentiel": 7,
+        "papiers": 5,
+        "sorties": 2
+      },
+      "itemCount": 147
+    },
+    {
       "date": "2026-10-18",
       "headline": "Meta publie Muse Spark Open, un modèle open-weight de 816B",
       "counts": {

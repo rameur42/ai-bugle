@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T13:05:02.373Z",
+  "lookbackHours": 102,
+  "itemCount": 147,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "title": "Meta publie Muse Spark Open, un modèle ouvert pour le code qui tourne sur Mac",
+        "text": "Meta sort Muse Spark Open (≈816B de paramètres, 42B actifs, MoE), un modèle à poids ouverts optimisé pour le code agentique, avec 1M de contexte sur OpenRouter. Apple ML Research publie un guide pour le faire tourner avec MLX sur Mac Studio, et la presse insiste sur l'exécution locale. L'annonce a beaucoup réagi sur HN (plus de 900 points), mais les benchmarks indépendants manquent encore.",
+        "sources": [
+          {
+            "title": "New model: Meta: Muse Spark Open",
+            "url": "https://openrouter.ai/meta/muse-spark-open",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Muse Spark Open",
+            "url": "https://research.meta.ai/blog/muse-spark-open",
+            "source": "research.meta.ai"
+          },
+          {
+            "title": "Muse Spark Open",
+            "url": "https://news.ycombinator.com/item?id=50107379",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Meta launches an open-weight AI model that runs on Macs",
+            "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "poids ouverts",
+          "MLX",
+          "agentic coding"
+        ]
+      },
+      {
+        "title": "Reflection lance Beam 1.0, un gros modèle ouvert (501B)",
+        "text": "Reflection publie Beam 1.0, un MoE à poids ouverts de 501B paramètres dont 23B actifs, pensé pour le code et les agents longs, avec 1M de contexte. Hugging Face le présente comme un modèle qu'on peut posséder, personnaliser et déployer soi-même. Le positionnement concurrence directement Meta et les labos chinois sur l'open-weight haut de gamme.",
+        "sources": [
+          {
+            "title": "New model: Reflection: Beam 1.0 501B A23B",
+            "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+            "url": "https://huggingface.co/blog/reflection-beam",
+            "source": "Hugging Face"
+          }
+        ],
+        "notions": [
+          "open-weight",
+          "MoE sparse",
+          "long-horizon agents"
+        ]
+      },
+      {
+        "title": "DeepSeek V4.1 Flash et une API de recherche web à bas prix",
+        "text": "DeepSeek publie V4.1 Flash (version 1017), très téléchargée et discutée sur HN. Il propose aussi un service de recherche et de récupération de pages à 0,75 $ les 1000 requêtes réussies, ce qui baisse le coût du grounding web pour les agents.",
+        "sources": [
+          {
+            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "source": "HF Models"
+          },
+          {
+            "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+            "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+            "source": "openrouter.ai"
+          },
+          {
+            "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+            "url": "https://news.ycombinator.com/item?id=50129121",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+            "url": "https://api-docs.deepseek.com/guides/search/",
+            "source": "api-docs.deepseek.com"
+          },
+          {
+            "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+            "url": "https://news.ycombinator.com/item?id=50138531",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "DeepSeek V4",
+          "search API",
+          "grounding web"
+        ]
+      },
+      {
+        "title": "Vague de modèles ouverts multimodaux et efficaces",
+        "text": "Plusieurs modèles arrivent : Qwen3.8-27B (déjà très téléchargé), NVIDIA Nemotron 3.5 Super VL (120B, 12B actifs, entrée GUI et documents), MiniMax M3.1 Flash (gratuit, 1M de contexte, tâches agentiques), Xing4.0 de TeleAI (29B, 4B actifs) et Moondream 3.1 (9B, 2B actifs). La tendance est à des MoE à peu de paramètres actifs, avec grand contexte et usage agentique ou GUI. Il manque encore des évaluations indépendantes.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          },
+          {
+            "title": "New model: NVIDIA: Nemotron 3.5 Super VL",
+            "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: MiniMax: MiniMax M3.1 Flash (free)",
+            "url": "https://openrouter.ai/minimax/minimax-m3.1-flash:free",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "paramètres actifs",
+          "vision-language model",
+          "computer-use agents"
+        ]
+      },
+      {
+        "title": "Anthropic : IPO en préparation, revenus en forte hausse et audit externe",
+        "text": "Anthropic annonce à ses investisseurs un chiffre d'affaires trimestriel de 16,8 Md$ (+~50 %) avant son introduction en bourse. L'entreprise réserve 5 % de ses actions à un fonds d'intérêt public et ouvre un accès de niveau employé aux chercheurs de METR. Une discussion HN évoque aussi une note de crédit « junk » en juin, dont le contexte reste flou.",
+        "sources": [
+          {
+            "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+            "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+            "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
+            "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "METR",
+          "évaluation de sécurité"
+        ]
+      },
+      {
+        "title": "Les agents de code : revue de code et choix du modèle par défaut",
+        "text": "Anthropic explique comment son équipe fait la revue de code : la question « un humain a-t-il lu le code ? » est jugée un mauvais indicateur de risque, et les contrôles se concentrent sur ce qui peut mal tourner. Replit passe par ailleurs à OpenAI comme modèle par défaut, ce qui montre que la fidélité aux fournisseurs reste faible. Vercel vante l'adoption rapide de son modèle Jev.",
+        "sources": [
+          {
+            "title": "How the Claude Code team does code review",
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "source": "claude.dev"
+          },
+          {
+            "title": "How the Claude Code team does code review",
+            "url": "https://news.ycombinator.com/item?id=50122951",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+            "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+            "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "code review",
+          "agents de code",
+          "routage de modèles"
+        ]
+      },
+      {
+        "title": "Les benchmarks d'IA couvrent mal le travail réel",
+        "text": "Un billet très discuté estime que 90 % des heures de travail américaines portent sur des tâches mal couvertes par les benchmarks d'IA. Cela rejoint plusieurs papiers de la semaine qui évaluent les agents sur des processus longs, comme BizBench et LiveMACE, plutôt que sur le seul résultat final.",
+        "sources": [
+          {
+            "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+            "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+            "source": "mercor.com"
+          },
+          {
+            "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+            "url": "https://news.ycombinator.com/item?id=50121179",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+            "url": "https://huggingface.co/papers/2610.20424",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "évaluation d'agents",
+          "benchmarks",
+          "long-horizon"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "title": "BizBench : les agents échouent sur les étapes intermédiaires en entreprise",
+        "text": "Ce benchmark d'opérations business longues juge la validité de l'exécution étape par étape, pas seulement le succès final. Il met au jour des difficultés cachées dans le déploiement d'agents à long horizon.",
+        "sources": [
+          {
+            "title": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+            "url": "https://huggingface.co/papers/2610.20424",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "long-horizon agents",
+          "process evaluation"
+        ]
+      },
+      {
+        "title": "CarryOn : un contexte orienté objet pour les agents longs",
+        "text": "Au lieu de retraiter tout l'historique d'interactions, l'agent conserve un état de tâche persistant sous forme d'objets. Cela réduit le contexte à retraiter.",
+        "sources": [
+          {
+            "title": "Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents",
+            "url": "https://huggingface.co/papers/2610.18784",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "gestion du contexte",
+          "état persistant"
+        ]
+      },
+      {
+        "title": "Coding agents : des fichiers entiers valent mieux que des contextes compressés",
+        "text": "Pour corriger des issues, laisser l'agent choisir des fichiers complets donne de meilleurs résultats que passer par des compresseurs de prompt ou des retrievers.",
+        "sources": [
+          {
+            "title": "Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files",
+            "url": "https://huggingface.co/papers/2610.21073",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "context compression",
+          "SWE-bench",
+          "retrieval"
+        ]
+      },
+      {
+        "title": "Les agents face à la recherche scientifique ouverte",
+        "text": "« Into the Unknown » et PhysClosureBench testent si les agents mènent des investigations aboutissant à des conclusions étayées sur des problèmes ouverts. Les deux privilégient la qualité des preuves plutôt que le résultat seul.",
+        "sources": [
+          {
+            "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
+            "url": "https://huggingface.co/papers/2610.19159",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research",
+            "url": "https://huggingface.co/papers/2610.21767",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "AI scientist",
+          "benchmark de recherche"
+        ]
+      },
+      {
+        "title": "Décodage spéculatif adapté aux agents et aux modèles hybrides",
+        "text": "DLite propose un décodage spéculatif sans historique pour les charges agentiques. ReaDy exploite les états récurrents des modèles à attention linéaire hybride pour mieux drafter.",
+        "sources": [
+          {
+            "title": "DLite: History-free Speculative Decoding for Agentic AI",
+            "url": "https://huggingface.co/papers/2610.23787",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models",
+            "url": "https://huggingface.co/papers/2610.20503",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "speculative decoding",
+          "linear attention"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "title": "LTX-2.5 : génération image-vers-vidéo ouverte",
+        "text": "Lightricks publie LTX-2.5, un modèle image-vers-vidéo très téléchargé (plus de 2 M). Les capacités ne sont toutefois pas décrites dans les items fournis.",
+        "sources": [
+          {
+            "title": "Lightricks/LTX-2.5",
+            "url": "https://huggingface.co/Lightricks/LTX-2.5",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "image-to-video",
+          "diffusion vidéo"
+        ]
+      },
+      {
+        "title": "Timestral : prévision probabiliste légère par Mistral",
+        "text": "Mistral présente Timestral, une famille de modèles de prévision de séries temporelles de 5M à 209M de paramètres, utilisables zero-shot et efficaces sur CPU. Une option intéressante pour la prévision sans GPU.",
+        "sources": [
+          {
+            "title": "Introducing Timestral",
+            "url": "https://mistral.ai/news/timestral/",
+            "source": "Mistral"
+          }
+        ],
+        "notions": [
+          "time series forecasting",
+          "zero-shot",
+          "probabilistic forecasting"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+          "url": "https://huggingface.co/papers/2610.20424",
+          "source": "HF Daily Papers",
+          "meta": "▲187 · Enhan Zhao, Yongqi Tong, Xuejun Yu, Hang Wang et al."
+        },
+        {
+          "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+          "url": "https://huggingface.co/papers/2610.22471",
+          "source": "HF Daily Papers",
+          "meta": "▲154 · SenseNova, Joint Research Team, Zhongang Cai, Ziang Cao et al."
+        },
+        {
+          "title": "Learning to Think and Explore in 3D World",
+          "url": "https://huggingface.co/papers/2610.21783",
+          "source": "HF Daily Papers",
+          "meta": "▲126 · Yijiang Li, Bingyang Wang, Nuno Vasconcelos"
+        },
+        {
+          "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
+          "url": "https://huggingface.co/papers/2610.19159",
+          "source": "HF Daily Papers",
+          "meta": "▲118 · Seungone Kim, Jiayi Geng, Young-Jun Lee, Bo Liu et al."
+        },
+        {
+          "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+          "url": "https://huggingface.co/papers/2610.21261",
+          "source": "HF Daily Papers",
+          "meta": "▲107 · Haotian Ma, Ziye Mei, Frederic Sala"
+        },
+        {
+          "title": "LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets",
+          "url": "https://huggingface.co/papers/2610.09872",
+          "source": "HF Daily Papers",
+          "meta": "▲101 · Jun Zhao, Leiming Fu, Yanbo Wen, Yiding Wang et al."
+        },
+        {
+          "title": "Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents",
+          "url": "https://huggingface.co/papers/2610.18784",
+          "source": "HF Daily Papers",
+          "meta": "▲93 · Yuchen Lu, Julian McAuley, Lei Zhang"
+        },
+        {
+          "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
+          "url": "https://huggingface.co/papers/2610.23479",
+          "source": "HF Daily Papers",
+          "meta": "▲86 · Hongcheng Gao, Alex Zhou, Jay Zhu, Zelin Zheng et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Claude reveals ECDSA curve origins",
+          "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+          "source": "Hacker News",
+          "meta": "1054pts · 388 comments"
+        },
+        {
+          "title": "Muse Spark Open",
+          "url": "https://research.meta.ai/blog/muse-spark-open",
+          "source": "Hacker News",
+          "meta": "918pts · 478 comments"
+        },
+        {
+          "title": "Neural networks are clean",
+          "url": "https://already-clean.goodfire.com/",
+          "source": "Hacker News",
+          "meta": "824pts · 337 comments"
+        },
+        {
+          "title": "You could have invented transformers from memory",
+          "url": "https://alexwang.ai/posts/associative-memory/",
+          "source": "Hacker News",
+          "meta": "638pts · 142 comments"
+        },
+        {
+          "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+          "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+          "source": "Hacker News",
+          "meta": "623pts · 571 comments"
+        },
+        {
+          "title": "Namecheap just seized and disabled all my domains",
+          "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+          "source": "Hacker News",
+          "meta": "603pts · 311 comments"
+        }
+      ]
+    }
+  ]
+}
