@@ -55,7 +55,8 @@ Run workflow en cochant « Redeploy the site only ».
   `site/veilles/` (`VEILLE_WRITE_JSON=false` pour ne rien écrire, `VEILLE_OUT_DIR` pour un autre dossier).
 - Site : `python3 -m http.server -d site 8000`, puis http://localhost:8000.
 - Tests : `node --test scripts/daily/brief.test.ts`.
-- Icônes : `node scripts/site/icons.ts` régénère les PNG de `site/icons/`.
+- Logo et icônes : les originaux (version noire et version blanche, fond transparent) sont dans
+  `assets/logo/` ; `site/icons/` en contient les déclinaisons (logo d'en-tête, favicons, icônes d'app).
 
 ## Choix techniques
 

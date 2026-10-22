@@ -7,7 +7,6 @@
   --muted: #61646b;
   --rule: #e2e2de;
   --chip: #f3f3ef;
-  --logo-bg: #111214;
   --accent: #e8441a;
   --accent-text: #b8330f;
   --sans: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -18,13 +17,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0b0d10; --text: #f2f4f7; --text2: #b9bec8; --body: #d3d7de; --muted: #a1a7b3;
-    --rule: #262b33; --chip: #1b1f26; --logo-bg: #f2f4f7; --accent-text: #ff8a63;
+    --rule: #262b33; --chip: #1b1f26; --accent-text: #ff8a63;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0b0d10; --text: #f2f4f7; --text2: #b9bec8; --body: #d3d7de; --muted: #a1a7b3;
-  --rule: #262b33; --chip: #1b1f26; --logo-bg: #f2f4f7; --accent-text: #ff8a63;
+  --rule: #262b33; --chip: #1b1f26; --accent-text: #ff8a63;
   color-scheme: dark;
 }
 
@@ -58,7 +57,15 @@ button { font: inherit; color: inherit; }
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
 }
 .brand { display: flex; align-items: center; gap: 10px; margin-right: auto; min-height: 44px; font-size: 20px; font-weight: 900; letter-spacing: -0.02em; }
-.logo { width: 32px; height: 32px; border-radius: 8px; background: var(--logo-bg); color: var(--accent); display: flex; align-items: center; justify-content: center; }
+/* Black emblem on light, white emblem on dark (system or toggle). */
+.logo { height: 36px; width: auto; display: block; }
+.logo-d { display: none; }
+:root[data-theme="dark"] .logo-l { display: none; }
+:root[data-theme="dark"] .logo-d { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-l { display: none; }
+  :root:not([data-theme="light"]) .logo-d { display: block; }
+}
 .nav { display: flex; gap: 2px; flex-wrap: wrap; }
 .nav a, .nav button {
   padding: 12px; min-height: 44px; border: 0; background: none; cursor: pointer;
