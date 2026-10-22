@@ -360,8 +360,10 @@ function placeSel() {
   const bw = selBtn.offsetWidth;
   const bh = selBtn.offsetHeight;
   const gap = coarse ? 30 : 10; // clear the touch selection handles
+  // Stay clear of the phone's bottom menu bar.
+  const bottom = getComputedStyle(nav).position === "fixed" ? nav.getBoundingClientRect().top : window.innerHeight;
   let top = r.bottom + gap;
-  if (top + bh > window.innerHeight - 8) top = Math.max(8, r.top - bh - gap);
+  if (top + bh > bottom - 8) top = Math.max(8, r.top - bh - gap);
   const left = Math.min(Math.max(8, r.left + r.width / 2 - bw / 2), window.innerWidth - bw - 8);
   selBtn.style.transform = `translate(${Math.round(left)}px, ${Math.round(top)}px)`;
 }

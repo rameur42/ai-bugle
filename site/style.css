@@ -210,10 +210,20 @@ button { font: inherit; color: inherit; }
 /* ── Phone ──────────────────────────────────────────────────────────────── */
 @media (max-width: 760px) {
   .top-in { padding: 6px 16px; gap: 4px; }
-  .nav { order: 3; width: 100%; flex-wrap: nowrap; overflow-x: auto; margin: 0 -8px; scrollbar-width: none; }
-  .nav::-webkit-scrollbar { display: none; }
-  .nav a, .nav button { white-space: nowrap; padding: 12px 7px; font-size: 14px; }
-  html { scroll-padding-top: 120px; }
+  /* Sections menu as a bottom bar, within thumb reach. */
+  .nav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 6;
+    flex-wrap: nowrap; justify-content: space-around; gap: 0;
+    background: var(--bg); border-top: 1px solid var(--rule);
+    padding: 0 4px env(safe-area-inset-bottom);
+  }
+  .nav a, .nav button {
+    flex: 1 1 0; min-width: 0; justify-content: center; white-space: nowrap;
+    padding: 14px 2px; min-height: 52px; font-size: 13px;
+  }
+  .nav .on { color: var(--accent-text); }
+  html { scroll-padding-top: 76px; }
+  .foot-in { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
   .wrap { padding: 28px 16px 56px; }
   .side { display: none; }
   .page { gap: 0; }
