@@ -66,11 +66,13 @@ Le site est du HTML, CSS et JavaScript sans framework ni étape de build : le do
 | `app.js` | Routeur, rendu des pages, recherche Google, sélection, partage, thème, lu / non lu |
 | `style.css` | Design « Le fil » : Schibsted Grotesk, Source Serif 4 et JetBrains Mono, accent orange, thème clair et sombre, menu en bas sur téléphone |
 | `sw.js` | Service worker : réseau d'abord, cache en secours hors ligne |
-| `manifest.webmanifest` + `icons/` | Installation comme application (`display: standalone`) |
+| `manifest.webmanifest` + `icons/` | Logo, favicons et icônes ; installation comme application (`display: standalone`) |
 
 **Trois routes.** `#/` affiche directement la dernière veille. `#/AAAA-MM-JJ` affiche une veille précise : c'est le lien posté sur Discord. `#/archives` liste toutes les veilles, la plus récente en haut, avec un badge « Nouveau » ; le logo AI Bugle y mène.
 
 **Une page de veille.** En tête : jour de la semaine, date, nombre d'items, de sujets et temps de lecture estimé. Sur ordinateur, un sommaire « Dans cette édition » reste à gauche. Les news de L'essentiel sont numérotées, avec leur catégorie et leur accroche ; « Lire plus » ouvre la suite, les sources, la recherche Google et les notions, et « Partager » ouvre le partage du téléphone ou copie le lien. Les sorties sont des cartes inversées, et Pour approfondir aligne le score (▲ votes ou points Hacker News) à gauche de chaque lien. Le menu met en gras la section en cours ; sur téléphone, il devient une barre fixée en bas de l'écran.
+
+**Le logo.** Un œil géométrique à pupille orange, en deux versions sur fond transparent : noire pour le mode clair, blanche pour le mode sombre. Dans l'en-tête, il suit le thème, y compris quand on le force avec le bouton. Le favicon suit le thème du navigateur ou du système, car le navigateur le choisit avant de lire le site. L'icône de l'application ne peut pas changer avec le thème : c'est l'œil blanc sur fond #111214, avec plus de marge dans la version « maskable » qu'Android découpe en rond. Les originaux sont dans `assets/logo/`, leurs déclinaisons dans `site/icons/`.
 
 **Recherche Google, trois entrées.**
 

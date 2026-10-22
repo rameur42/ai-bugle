@@ -77,3 +77,6 @@ Run workflow en cochant « Redeploy the site only ».
 - **Liens Hacker News** : la puce source porte le nom du site de l'article, et une seconde puce
   « Hacker News (discussion) » ouvre le fil HN.
 - Scripts compatibles Bun (CI) et Node ≥ 23.6 (imports `.ts` explicites, zéro dépendance).
+- **Messages de commit au format [Conventional Commits](https://www.conventionalcommits.org/fr/)** :
+  `type(portée): sujet` (`feat`, `fix`, `docs`, `chore`, `ci`…). Le workflow commite chaque veille
+  en `chore(veille): AAAA-MM-JJ`.
