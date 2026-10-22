@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-10-22",
+      "headline": "Failles PHP découvertes par des IA",
+      "counts": {
+        "essentiel": 8,
+        "papiers": 4,
+        "sorties": 1
+      },
+      "itemCount": 151
+    },
+    {
       "date": "2026-10-19",
       "headline": "Meta publie Muse Spark Open, un modèle ouvert pour le code qui tourne sur Mac",
       "counts": {

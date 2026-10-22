@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T11:57:41.961Z",
+  "lookbackHours": 78,
+  "itemCount": 151,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "title": "Failles PHP découvertes par des IA",
+        "text": "OpenAI et Wiz (Google) ont trouvé des failles anciennes et critiques dont une exécution de code à distance (RCE) dans PHP, ce qui a provoqué une version de sécurité de la fondation PHP. OpenAI parle d'une coordination mondiale de la réponse (« Patch the Planet ») et d'un partenariat avec Cloudflare. La découverte de vulnérabilités par des agents dépasse désormais la capacité des mainteneurs à les corriger.",
+        "sources": [
+          {
+            "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+            "url": "https://www.wiz.io/blog/php2shell-php-rce",
+            "source": "wiz.io"
+          },
+          {
+            "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+            "url": "https://news.ycombinator.com/item?id=50180836",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "PHP Armageddon: OpenAI, Google&#8217;s Wiz find ancient holes, panicking the internet",
+            "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+            "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "RCE",
+          "découverte de vulnérabilités par agents",
+          "divulgation coordonnée"
+        ]
+      },
+      {
+        "title": "LiteLLM piégé et autorité de certification compromise",
+        "text": "La version 1.107.0 de LiteLLM sur PyPI installait un voleur d'identifiants et une porte dérobée. Une autre alerte signale la compromission de clés privées d'une autorité intermédiaire (eMudhra). Ces deux incidents rappellent le risque de la chaîne d'approvisionnement logicielle autour des outils LLM.",
+        "sources": [
+          {
+            "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+            "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+            "source": "safedep.io"
+          },
+          {
+            "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+            "url": "https://news.ycombinator.com/item?id=50181114",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "eMudhra Intermediate CA Compromise",
+            "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "supply chain attack",
+          "PyPI",
+          "autorité de certification"
+        ]
+      },
+      {
+        "title": "Recursive publie Flint, un modèle conçu en grande partie par IA",
+        "text": "Flint est un modèle ouvert Mixture of Experts (40 milliards de paramètres au total, environ 2,5 milliards actifs, contexte de 262 000 tokens), conçu pour tourner sur laptop pour le code. Recursive affirme qu'il a été largement construit par son système autonome « Eureka Machine ». Il est gratuit sur OpenRouter. Cette affirmation reste à vérifier de façon indépendante.",
+        "sources": [
+          {
+            "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+            "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "New model: Recursive: Flint (free)",
+            "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "RecursiveSI/flint",
+            "url": "https://huggingface.co/RecursiveSI/flint",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "autoresearch",
+          "modèle local de code"
+        ]
+      },
+      {
+        "title": "Mistral : Large 4, Voxtral 3, Timestral et partenariats",
+        "text": "Mistral a sorti Large 4 et Voxtral 3 (voix). Il a aussi lancé Timestral, des modèles de fondation pour séries temporelles dont une version de 209 millions de paramètres. Il a signé une intention de partenariat avec le CERN et collabore avec NVIDIA sur l'ingénierie assistée par IA. Mistral élargit donc ses modèles au-delà du texte.",
+        "sources": [
+          {
+            "title": "Mistral Large 4",
+            "url": "https://mistral.ai/news/mistral-large-4/",
+            "source": "mistral.ai"
+          },
+          {
+            "title": "Mistral Large 4",
+            "url": "https://news.ycombinator.com/item?id=50186129",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Timestral: Mistral's time-series foundation models",
+            "url": "https://mistral.ai/news/timestral/",
+            "source": "mistral.ai"
+          },
+          {
+            "title": "Timestral: Mistral's time-series foundation models",
+            "url": "https://news.ycombinator.com/item?id=50150434",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+            "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+            "source": "home.cern"
+          },
+          {
+            "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+            "url": "https://news.ycombinator.com/item?id=50153630",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "modèle de fondation séries temporelles",
+          "Voxtral",
+          "Mistral Large"
+        ]
+      },
+      {
+        "title": "DeepSeek : interdit aux agences fédérales américaines, inférence dédiée",
+        "text": "Un ordre du DHS interdit DeepSeek dans les agences civiles fédérales américaines. En parallèle, DeepSeek-V4.1-Flash est tendance sur Hugging Face et le framework DeepInfer, dédié à l'inférence des modèles DeepSeek, a fait beaucoup de bruit sur Hacker News. L'adoption technique se poursuit malgré la pression politique.",
+        "sources": [
+          {
+            "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+            "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
+            "source": "reuters.com"
+          },
+          {
+            "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+            "url": "https://news.ycombinator.com/item?id=50154244",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+            "url": "https://github.com/deepseek-ai/DeepInfer",
+            "source": "github.com"
+          },
+          {
+            "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+            "url": "https://news.ycombinator.com/item?id=50163277",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "DeepSeek V4",
+          "inférence haute performance",
+          "restrictions réglementaires"
+        ]
+      },
+      {
+        "title": "Les TPU deviennent utilisables nativement avec PyTorch",
+        "text": "Google ouvre TorchTPU, un backend PyTorch natif pour TPU, soutenu par Hugging Face. TechCrunch y voit une attaque contre l'emprise de Nvidia sur les développeurs, à la suite d'Amazon. Cela peut réduire le coût de migration depuis CUDA.",
+        "sources": [
+          {
+            "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+            "url": "https://github.com/google-pytorch/torch_tpu",
+            "source": "github.com"
+          },
+          {
+            "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+            "url": "https://news.ycombinator.com/item?id=50169053",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+            "url": "https://huggingface.co/blog/hf-torchtpu",
+            "source": "Hugging Face"
+          },
+          {
+            "title": "Google has joined Amazon in attacking Nvidia&#8217;s stronghold with AI app developers",
+            "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "TorchTPU",
+          "backend PyTorch",
+          "dépendance à CUDA"
+        ]
+      },
+      {
+        "title": "Publicité dans ChatGPT et acquisitions d'OpenAI",
+        "text": "ChatGPT Ads arrive dans 26 nouveaux pays et OpenAI revendique plus de 100 000 annonceurs. L'entreprise détaille sa pile publicitaire en parlant de confiance et de pertinence. Elle rachète aussi Orchestra Bio pour renforcer son activité en biotechnologie, et ajoute le verrouillage des conversations. Ces annonces confirment une monétisation par la publicité et une diversification vers la biologie.",
+        "sources": [
+          {
+            "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+            "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+            "source": "OpenAI"
+          },
+          {
+            "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+            "url": "https://openai.com/index/building-chatgpt-ad-stack",
+            "source": "OpenAI"
+          },
+          {
+            "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+            "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "publicité dans les LLM",
+          "ChatGPT Ads",
+          "IA et biotechnologie"
+        ]
+      },
+      {
+        "title": "Fiabilité des réponses IA : instructions cachées et stats falsifiées",
+        "text": "Des pages d'aide de WhatsApp contenaient des instructions cachées à destination des LLM, dont celle de ne pas recommander de régulateur. Une expérience montre aussi qu'on peut publier de fausses statistiques pour qu'elles soient citées par des LLM. Les sources web ne sont ni neutres ni fiables par défaut pour les assistants.",
+        "sources": [
+          {
+            "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+            "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+            "source": "redact.dev"
+          },
+          {
+            "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+            "url": "https://news.ycombinator.com/item?id=50159341",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Publish fake stats, get cited in LLMs",
+            "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+            "source": "peec.ai"
+          },
+          {
+            "title": "Publish fake stats, get cited in LLMs",
+            "url": "https://news.ycombinator.com/item?id=50165801",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "prompt injection indirecte",
+          "GEO",
+          "empoisonnement de sources"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "title": "Les agents autonomes face à la recherche en ML pour la science",
+        "text": "L'étude, cosignée entre autres par Nicholas Carlini, teste si les agents de code de pointe peuvent améliorer des modèles scientifiques en conditions réelles, au-delà de benchmarks simplifiés. Elle remet en question l'idée du chercheur automatisé de bout en bout.",
+        "sources": [
+          {
+            "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+            "url": "https://huggingface.co/papers/2610.28763",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "agents de recherche autonomes",
+          "ML pour la science"
+        ]
+      },
+      {
+        "title": "Des world models pour vérifier les actions des agents GUI",
+        "text": "La sécurité d'un agent d'interface graphique dépend de la transition, pas de l'écran : une page de connexion est normale après « Sign in » mais suspecte après « View order ». Les auteurs utilisent un world model comme vérificateur de ces transitions.",
+        "sources": [
+          {
+            "title": "Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents",
+            "url": "https://huggingface.co/papers/2610.11942",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "agents GUI",
+          "world model",
+          "vérification de transitions"
+        ]
+      },
+      {
+        "title": "Ingénierie de cache pour agents longs",
+        "text": "Les trajectoires longues d'agents gonflent le cache clé-valeur (KV), et l'article défend une gestion explicite de ce cache comme levier de coût et de latence. Il a reçu un fort intérêt sur HF.",
+        "sources": [
+          {
+            "title": "Cache Engineering for Agents",
+            "url": "https://huggingface.co/papers/2610.28577",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "KV cache",
+          "agents long-horizon"
+        ]
+      },
+      {
+        "title": "PACE : états récurrents compressés en 4 bits",
+        "text": "Pour les modèles à attention linéaire, l'état récurrent est stocké pour chaque séquence décodée. PACE le quantifie en 4 bits avec un encodage périodique aligné sur les canaux, afin de réduire la mémoire d'inférence.",
+        "sources": [
+          {
+            "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
+            "url": "https://huggingface.co/papers/2610.29545",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "attention linéaire",
+          "quantification 4 bits",
+          "état récurrent"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "title": "Qwen3.8-27B",
+        "text": "Modèle multimodal ouvert de Qwen en 27 milliards de paramètres, très téléchargé (environ 7,8 millions). Le contenu des items ne décrit pas ses capacités, donc ses performances restent à vérifier.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "Qwen3.8",
+          "modèle multimodal ouvert"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
+          "url": "https://huggingface.co/papers/2610.28402",
+          "source": "HF Daily Papers",
+          "meta": "▲99 · StreamEval Team"
+        },
+        {
+          "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+          "url": "https://huggingface.co/papers/2610.26659",
+          "source": "HF Daily Papers",
+          "meta": "▲90 · Zhaoxi Zhang, Hao Liang, Linxuan Wu, Yiming Wu et al."
+        },
+        {
+          "title": "Cache Engineering for Agents",
+          "url": "https://huggingface.co/papers/2610.28577",
+          "source": "HF Daily Papers",
+          "meta": "▲76 · Tianyu Fu, Ruoxi Wang, Zihan Min, Zhongqi Ren et al."
+        },
+        {
+          "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+          "url": "https://huggingface.co/papers/2610.29989",
+          "source": "HF Daily Papers",
+          "meta": "▲75 · Ruopeng Gao, Yukun Huang, Jiarui Hu, Shuai Wang et al."
+        },
+        {
+          "title": "DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations",
+          "url": "https://huggingface.co/papers/2610.29997",
+          "source": "HF Daily Papers",
+          "meta": "▲64 · Mingze Sun, Ziang Cao, Yuan Fei, Qiankuan Tao et al."
+        },
+        {
+          "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+          "url": "https://huggingface.co/papers/2610.26828",
+          "source": "HF Daily Papers",
+          "meta": "▲60 · Zhaoyang Wang, Qianhui Wu, Haorui Wang, Simon Yu et al."
+        },
+        {
+          "title": "Spectral-Spatial Interpretation",
+          "url": "https://huggingface.co/papers/2610.21114",
+          "source": "HF Daily Papers",
+          "meta": "▲50 · Haotian Ma, Ruqi Yang, Philip Townsend"
+        },
+        {
+          "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+          "url": "https://huggingface.co/papers/2610.20538",
+          "source": "HF Daily Papers",
+          "meta": "▲48 · Qiushi Sun, Jingyang Gong, Yang Liu, Qiaosheng Chen et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "source": "Hacker News",
+          "meta": "2322pts · 886 comments"
+        },
+        {
+          "title": "Show HN: SimCity, but with Permits",
+          "url": "https://permit.petercai.com/",
+          "source": "Hacker News",
+          "meta": "915pts · 413 comments"
+        },
+        {
+          "title": "Voxtral 3",
+          "url": "https://mistral.ai/news/voxtral-3/",
+          "source": "Hacker News",
+          "meta": "762pts · 198 comments"
+        },
+        {
+          "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+          "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+          "source": "Hacker News",
+          "meta": "739pts · 217 comments"
+        },
+        {
+          "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
+          "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
+          "source": "Hacker News",
+          "meta": "647pts · 372 comments"
+        },
+        {
+          "title": "Timestral: Mistral's time-series foundation models",
+          "url": "https://mistral.ai/news/timestral/",
+          "source": "Hacker News",
+          "meta": "620pts · 124 comments"
+        }
+      ]
+    }
+  ]
+}
