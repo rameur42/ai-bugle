@@ -1,6 +1,6 @@
 # AI Bugle
 
-AI Bugle : veille IA/tech en français, le lundi et le jeudi à 08:17 (Paris) par GitHub Actions : postée sur
+AI Bugle : veille IA/tech en français, le lundi et le jeudi tôt le matin (cron 04:17 UTC, souvent retardé par GitHub) par GitHub Actions : postée sur
 Discord et publiée sur un site statique (GitHub Pages, installable sur mobile).
 
 Sources : arXiv (toute la fenêtre d'annonce), HF Daily Papers, modèles tendance Hugging Face,

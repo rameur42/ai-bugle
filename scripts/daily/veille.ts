@@ -49,7 +49,9 @@ const ARXIV_CATS = (process.env.VEILLE_ARXIV_CATS ?? "cs.AI,cs.LG,cs.CL,cs.CV,st
 // arXiv: the whole announcement window is fetched (≈700 papers per weekday across these cats), in
 // pages, up to ARXIV_MAX. See arxivWindow() for why the window is not simply [SINCE, NOW].
 const ARXIV_MAX = Number(process.env.VEILLE_ARXIV_MAX ?? 4000);
-const ARXIV_PAGE = 1000;
+// Smaller pages answer faster: 1000-result pages timed out or got HTTP 429 from GitHub runners.
+const ARXIV_PAGE = 500;
+const ARXIV_ATTEMPTS = 4;
 const MODEL = process.env.VEILLE_MODEL ?? "claude-sonnet-5-5";
 // Each run writes its veille as JSON for the site (site/veilles/YYYY-MM-DD.json + index.json).
 const OUT_DIR = process.env.VEILLE_OUT_DIR ?? fileURLToPath(new URL("../../site/veilles/", import.meta.url));
@@ -237,6 +239,32 @@ function arxivWindow(): { from: number; to: number } {
 }
 const arxivStamp = (t: number): string => new Date(t).toISOString().slice(0, 16).replace(/[-T:]/g, "");
 
+const sleep = (ms: number): Promise<void> => new Promise((r) => setTimeout(r, ms));
+
+// One arXiv API call, retried on HTTP 429/5xx and timeouts with growing pauses (15 s, 45 s, 135 s),
+// honouring Retry-After when arXiv sends one (capped at 5 min). Other errors give up at once.
+async function getArxiv(url: string): Promise<string | null> {
+  for (let attempt = 1; attempt <= ARXIV_ATTEMPTS; attempt++) {
+    let wait = 15_000 * 3 ** (attempt - 1);
+    try {
+      const r = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(60_000) });
+      if (r.ok) return await r.text();
+      if (r.status !== 429 && r.status < 500) {
+        log(`skip ${url} -> HTTP ${r.status}`);
+        return null;
+      }
+      const retryAfter = Number(r.headers.get("retry-after"));
+      if (retryAfter > 0) wait = Math.min(retryAfter * 1000, 300_000);
+      log(`arXiv HTTP ${r.status} (attempt ${attempt}/${ARXIV_ATTEMPTS})`);
+    } catch (e) {
+      log(`arXiv ${(e as Error).message} (attempt ${attempt}/${ARXIV_ATTEMPTS})`);
+    }
+    if (attempt < ARXIV_ATTEMPTS) await sleep(wait);
+  }
+  log(`skip ${url} -> gave up after ${ARXIV_ATTEMPTS} attempts`);
+  return null;
+}
+
 // arXiv — every submission in the watched categories over the announcement window (the firehose).
 async function fromArxiv(): Promise<Item[]> {
   const { from, to } = arxivWindow();
@@ -246,12 +274,14 @@ async function fromArxiv(): Promise<Item[]> {
   log(`arXiv window ${new Date(from).toISOString()} → ${new Date(to).toISOString()}`);
   const items: Item[] = [];
   for (let start = 0; start < ARXIV_MAX; start += ARXIV_PAGE) {
-    if (start > 0) await new Promise((r) => setTimeout(r, 3000)); // arXiv API terms: ≥3 s between calls
-    const xml = await getText(
+    if (start > 0) await sleep(3000); // arXiv API terms: ≥3 s between calls
+    const xml = await getArxiv(
       `https://export.arxiv.org/api/query?search_query=${q}&sortBy=submittedDate&sortOrder=descending&start=${start}&max_results=${ARXIV_PAGE}`,
-      60_000,
     );
-    if (!xml) break;
+    if (!xml) {
+      if (start === 0) return fromArxivRss();
+      break;
+    }
     const entries = xml.match(/<entry\b[\s\S]*?<\/entry>/g) ?? [];
     for (const e of entries) {
       const title = decode((e.match(/<title>([\s\S]*?)<\/title>/) ?? [])[1] ?? "");
@@ -276,6 +306,34 @@ async function fromArxiv(): Promise<Item[]> {
     if (entries.length < ARXIV_PAGE || start + ARXIV_PAGE >= total) break;
   }
   log(`arXiv: ${items.length} papers`);
+  return items;
+}
+
+// Fallback when the API stays unavailable: the RSS feed is served from a cache and answers at once,
+// but only holds the latest announcement (one day of the window). Replacements are skipped.
+async function fromArxivRss(): Promise<Item[]> {
+  const xml = await getText(`https://rss.arxiv.org/rss/${ARXIV_CATS.map((c) => c.trim()).join("+")}`, 60_000);
+  const items: Item[] = [];
+  for (const e of xml?.match(/<item>[\s\S]*?<\/item>/g) ?? []) {
+    const type = ((e.match(/<arxiv:announce_type>([\s\S]*?)</) ?? [])[1] ?? "").trim();
+    if (type !== "new" && type !== "cross") continue;
+    const title = decode((e.match(/<title>([\s\S]*?)<\/title>/) ?? [])[1] ?? "");
+    const url = ((e.match(/<link>([\s\S]*?)<\/link>/) ?? [])[1] ?? "").trim();
+    const desc = stripTags((e.match(/<description>([\s\S]*?)<\/description>/) ?? [])[1] ?? "");
+    const pub = Date.parse(((e.match(/<pubDate>([\s\S]*?)<\/pubDate>/) ?? [])[1] ?? "").trim());
+    const authors = decode((e.match(/<dc:creator>([\s\S]*?)<\/dc:creator>/) ?? [])[1] ?? "").split(", ");
+    if (!title || !url) continue;
+    items.push({
+      source: "arXiv",
+      category: "paper",
+      title,
+      url: url.replace("http://", "https://"),
+      summary: clip(desc.replace(/^.*?Abstract:\s*/, ""), 300),
+      published: Number.isNaN(pub) ? undefined : new Date(pub).toISOString(),
+      meta: authors.slice(0, 4).join(", ") + (authors.length > 4 ? " et al." : ""),
+    });
+  }
+  log(`arXiv (RSS fallback, latest announcement only): ${items.length} papers`);
   return items;
 }
 
