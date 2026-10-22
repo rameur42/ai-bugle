@@ -84,8 +84,14 @@ function markRead(date) {
 const themeBtn = document.getElementById("theme");
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
 const isDark = () => (document.documentElement.dataset.theme || (systemDark.matches ? "dark" : "light")) === "dark";
+// The installed app's Android status and navigation bars take the page's theme-color: keep a single
+// tag, without `media`, that follows the theme actually shown (system or forced with the button).
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m !== themeMeta && m.remove());
+themeMeta.removeAttribute("media");
 function syncThemeButton() {
   themeBtn.setAttribute("aria-label", isDark() ? "Passer en mode clair" : "Passer en mode sombre");
+  themeMeta.setAttribute("content", isDark() ? "#0b0d10" : "#ffffff");
 }
 themeBtn.addEventListener("click", () => {
   const next = isDark() ? "light" : "dark";
