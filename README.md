@@ -7,6 +7,8 @@ Sources : arXiv (toute la fenêtre d'annonce), HF Daily Papers, modèles tendanc
 OpenRouter, Hacker News, GitHub, blogs de labos, Reddit (optionnel). Claude rédige le brief via
 Claude Code, sur l'abonnement Claude Pro/Max (pas de facturation API).
 
+Documentation technique détaillée, avec le schéma d'architecture : [`docs/documentation.md`](docs/documentation.md).
+
 ## Fonctionnement
 
 1. `scripts/daily/veille.ts` collecte les sources et demande à Claude un brief **structuré** (JSON,
