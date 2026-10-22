@@ -3,13 +3,13 @@
   "veilles": [
     {
       "date": "2026-10-22",
-      "headline": "Failles PHP découvertes par des IA",
+      "headline": "PHP : une vague de failles critiques trouvées par IA",
       "counts": {
         "essentiel": 8,
         "papiers": 4,
         "sorties": 1
       },
-      "itemCount": 151
+      "itemCount": 2382
     },
     {
       "date": "2026-10-19",
