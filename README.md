@@ -10,17 +10,20 @@ Claude Code, sur l'abonnement Claude Pro/Max (pas de facturation API).
 ## Fonctionnement
 
 1. `scripts/daily/veille.ts` collecte les sources et demande à Claude un brief **structuré** (JSON,
-   via `claude -p --json-schema`) : par news, un titre, le texte, 1 à 3 sources et 2 à 4 notions clés.
+   via `claude -p --json-schema`) : par news, une catégorie, un titre, une accroche, la suite du texte, 1 à 3 sources et 2 à 4
+   notions clés.
 2. La veille est écrite dans `site/veilles/AAAA-MM-JJ.json`, puis `site/veilles/index.json` est
    reconstruit à partir de toutes les veilles.
 3. Le même JSON est rendu en Markdown pour Discord (messages ≤ 2 000 caractères, aperçus de liens
    désactivés), avec un lien vers la page de la veille sur le site.
 4. Le workflow commit le JSON, puis déploie `site/` sur GitHub Pages.
 
-Le site (`site/`, HTML/CSS/JS sans build) : liste des veilles, une page par veille (L'essentiel,
-Papiers, Sorties, Pour approfondir), bouton 🔎 Google par news, notions cliquables, et un bouton
-flottant « Rechercher sur Google » quand on sélectionne du texte. Lu / non lu est gardé dans le
-navigateur (pas de compte, pas de synchronisation).
+Le site (`site/`, HTML/CSS/JS sans build) : l'accueil affiche la dernière veille (L'essentiel avec
+« Lire plus » et « Partager », Papiers, Sorties, Pour approfondir), les archives listent toutes les
+veilles. Par news : sources, recherche Google et notions cliquables ; un bouton flottant
+« Rechercher sur Google » apparaît quand on sélectionne du texte. Thème clair/sombre (suit le
+système, bouton pour forcer). Lu / non lu et le thème sont gardés dans le navigateur (pas de compte,
+pas de synchronisation).
 
 ## Configuration
 

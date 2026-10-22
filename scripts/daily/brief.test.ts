@@ -57,6 +57,17 @@ test("an HN item links the article under its own site name, plus the HN thread",
   );
 });
 
+test("resolveBrief keeps the category and the lead, and Discord prints the lead before the text", () => {
+  const brief = resolveBrief(
+    { essentiel: [{ cat: " Sécurité ", title: "T", lead: "Le fait.", text: "La suite.", sources: [], notions: [] }], papiers: [], sorties: [] },
+    new Map(),
+  );
+  assert.deepEqual(brief?.essentiel[0], { cat: "Sécurité", title: "T", lead: "Le fait.", text: "La suite.", sources: [], notions: [] });
+  const v = veille("2026-10-22");
+  v.brief = brief;
+  assert.match(renderMarkdown(v), /- \*\*T\*\* — Le fait\. La suite\.\n/);
+});
+
 test("resolveBrief rejects garbage and empty briefs", () => {
   assert.equal(resolveBrief(null, new Map()), null);
   assert.equal(resolveBrief("nope", new Map()), null);

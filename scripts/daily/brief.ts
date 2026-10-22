@@ -23,8 +23,10 @@ export interface SourceLink {
   source: string;
 }
 export interface News {
+  cat?: string; // short French label (Sécurité, Modèles…); absent on veilles before 2026-10-22
   title: string;
-  text: string;
+  lead?: string; // one-sentence hook shown first; absent on older veilles (the site splits `text`)
+  text: string; // with `lead`: the details that follow it; without: the whole news
   sources: SourceLink[];
   notions: string[];
 }
@@ -68,7 +70,9 @@ export const NOTHING_MAJOR = "Rien de majeur sur la période.";
 
 // ── What Claude answers (validated by `claude -p --json-schema`) ───────────────
 interface RawNews {
+  cat: string;
   title: string;
+  lead: string;
   text: string;
   sources: string[];
   notions: string[];
@@ -78,12 +82,14 @@ export type RawBrief = Record<keyof Brief, RawNews[]>;
 const rawNews = {
   type: "object",
   properties: {
+    cat: { type: "string", description: "Catégorie en 1 ou 2 mots (Sécurité, Modèles, Infra, Recherche, Outils, Business, Régulation…)" },
     title: { type: "string", description: "Titre court reformulé en français (pas le titre traduit mot à mot)" },
-    text: { type: "string", description: "Ce qu'on apprend : le résultat, la thèse, ce que ça change. 1 à 3 phrases." },
+    lead: { type: "string", description: "Accroche : une seule phrase, le fait principal" },
+    text: { type: "string", description: "La suite : détails, contexte, ce que ça change. 1 à 2 phrases, sans répéter l'accroche." },
     sources: { type: "array", items: { type: "string" }, description: "Identifiants des items bruts cités (ex. i12), 1 à 3" },
     notions: { type: "array", items: { type: "string" }, description: "2 à 4 notions clés à creuser, termes courts" },
   },
-  required: ["title", "text", "sources", "notions"],
+  required: ["cat", "title", "lead", "text", "sources", "notions"],
   additionalProperties: false,
 };
 export const BRIEF_SCHEMA = {
@@ -124,8 +130,10 @@ export function resolveBrief(raw: unknown, ids: Map<string, Item>): Brief | null
       .map((n): News | null => {
         const o = (n ?? {}) as Partial<Record<keyof RawNews, unknown>>;
         const title = str(o.title);
+        const lead = str(o.lead);
         const text = str(o.text);
-        if (!title && !text) return null;
+        if (!title && !lead && !text) return null;
+        const cat = str(o.cat).slice(0, 24);
         const seen = new Set<string>();
         const sources: SourceLink[] = [];
         const add = (link: SourceLink): void => {
@@ -140,7 +148,14 @@ export function resolveBrief(raw: unknown, ids: Map<string, Item>): Brief | null
           if (it.discussionUrl) add({ title: it.title, url: it.discussionUrl, source: `${it.source} (discussion)` });
         }
         const notions = [...new Set((Array.isArray(o.notions) ? o.notions : []).map(str).filter(Boolean))].slice(0, 4);
-        return { title: title || text, text, sources, notions };
+        return {
+          ...(cat ? { cat } : {}),
+          title: title || lead || text,
+          ...(lead ? { lead } : {}),
+          text,
+          sources,
+          notions,
+        };
       })
       .filter((n): n is News => n !== null);
   const brief: Brief = { essentiel: section(r.essentiel), papiers: section(r.papiers), sorties: section(r.sorties) };
@@ -182,7 +197,8 @@ export function renderMarkdown(v: Veille, siteUrl?: string): string {
       }
       for (const n of rows) {
         const links = n.sources.map((l) => mdLink(l.source, l.url)).join(", ");
-        md += `- **${n.title}** — ${n.text}${links ? ` (${links})` : ""}\n`;
+        const body = [n.lead, n.text].filter(Boolean).join(" ");
+        md += `- **${n.title}** — ${body}${links ? ` (${links})` : ""}\n`;
       }
       md += "\n";
     }

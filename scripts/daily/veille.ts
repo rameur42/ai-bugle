@@ -605,8 +605,10 @@ Voici les items bruts des ${LOOKBACK_H} dernières heures (arXiv, HF Daily Paper
 Écris un brief substantiel mais synthétique EN FRANÇAIS, au format JSON imposé. Objectif : je dois COMPRENDRE ce qui s'est passé sur toute la période sans cliquer sur un seul lien. Donne le SAVOIR — le résultat, la thèse, ce que ça change — pas une liste de titres.
 
 Chaque news a :
+- "cat" : sa catégorie en 1 ou 2 mots (Sécurité, Modèles, Infra, Recherche, Outils, Business, Régulation…) ;
 - "title" : un titre court en français clair (reformulé, jamais le titre traduit mot à mot) ;
-- "text" : CE QU'ON APPREND, 1 à 3 phrases (le résultat concret ou l'idée-clé, pas juste le sujet) ;
+- "lead" : l'accroche, UNE phrase qui donne le fait principal (lue seule dans la liste) ;
+- "text" : la suite, 1 à 2 phrases — détails, contexte, ce que ça change — sans répéter l'accroche ;
 - "sources" : 1 à 3 identifiants d'items bruts qui appuient la news (ex. ["i12", "i40"]) — uniquement des identifiants présents ci-dessous, n'invente jamais d'URL ;
 - "notions" : 2 à 4 notions clés à creuser (termes courts, techniques, qu'on peut taper dans Google : "speculative decoding", "Mixture of Experts", "RLHF"…).
 

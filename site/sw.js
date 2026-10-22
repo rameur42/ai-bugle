@@ -1,6 +1,6 @@
 // Service worker: network first (always the latest veille), cache as the offline fallback.
 // Every successful same-origin GET is cached, so any veille opened once stays readable offline.
-const CACHE = "ai-bugle-v1";
+const CACHE = "ai-bugle-v2";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "veilles/index.json"];
 
 self.addEventListener("install", (e) => {
