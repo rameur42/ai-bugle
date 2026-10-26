@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T10:11:23.178Z",
+  "lookbackHours": 102,
+  "itemCount": 1044,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Modèles",
+        "title": "Kimi K3.1 Pro arrive chez Moonshot",
+        "lead": "Moonshot AI lance Kimi K3.1 Pro, modèle de raisonnement multimodal à 1 M de tokens de contexte, et sa variante « Highspeed ».",
+        "text": "Il est décrit comme successeur post-entraîné de K3 et listé sur OpenRouter. D'après Simon Willison, il est pour l'instant disponible via l'API seulement, pas en open weights, ce qui contredit la description « open-weight » d'OpenRouter. Le sujet a fortement mobilisé Hacker News (plus de 1 000 points).",
+        "sources": [
+          {
+            "title": "New model: MoonshotAI: Kimi K3.1 Pro",
+            "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+            "source": "kimi.ai"
+          },
+          {
+            "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+            "url": "https://news.ycombinator.com/item?id=50212065",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Introducing Kimi K3.1 Pro",
+            "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "Fenêtre de contexte 1M",
+          "Open weights",
+          "Modèle de raisonnement"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "OpenAI arrête d'entraîner sur le web en direct",
+        "lead": "OpenAI dit qu'il n'entraînera plus ses modèles sur l'internet « live », invoquant des « risques significatifs ».",
+        "text": "Cette annonce s'accompagne d'un article sur la sécurisation de son environnement d'entraînement des modèles frontière. Les risques probables sont l'empoisonnement de données et les injections ; les détails techniques ne figurent pas dans les extraits.",
+        "sources": [
+          {
+            "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+            "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Securing our frontier model training environment",
+            "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "Data poisoning",
+          "Prompt injection",
+          "Sécurité de l'entraînement"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "OpenAI prépare une levée de 30 Md$ avant son IPO",
+        "lead": "OpenAI négocierait une nouvelle levée de 30 Md$ sur une valorisation de 1 250 Md$, avant une introduction en bourse.",
+        "text": "En parallèle, Uber équipe ses 30 000 employés de ChatGPT Work. Ce sont des signaux de déploiement en entreprise, alors que le sceptiscisme monte sur le retour sur investissement.",
+        "sources": [
+          {
+            "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+            "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Uber puts all 30,000 employees on ChatGPT Work",
+            "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "Valorisation",
+          "ChatGPT Work"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Le ROI de l'IA reste contesté",
+        "lead": "Un économiste d'Apollo estime que l'IA n'apporte « aucun gain financier » à la plupart des entreprises, thème repris en tête de Hacker News.",
+        "text": "La discussion « pas de signe de retour sur investissement hors du secteur tech » a dépassé 600 points. Elle croise une autre question sur les baisses de prix de 80 % chez OpenAI et Anthropic en quelques mois.",
+        "sources": [
+          {
+            "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+            "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "No signs of AI payoff outside the tech sector",
+            "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+            "source": "apollo.com"
+          },
+          {
+            "title": "No signs of AI payoff outside the tech sector",
+            "url": "https://news.ycombinator.com/item?id=50224463",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "url": "https://minimaxir.com/2026/10/cheap-llms/",
+            "source": "minimaxir.com"
+          },
+          {
+            "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+            "url": "https://news.ycombinator.com/item?id=50236102",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "ROI de l'IA",
+          "Prix par token",
+          "Productivité"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "La Suède envisage d'interdire ChatGPT et Claude dans ses bureaux gouvernementaux",
+        "lead": "Des bureaux du gouvernement suédois vont interdire ChatGPT et Claude.",
+        "text": "Le motif exact n'apparaît pas dans les extraits. On peut supposer des inquiétudes de confidentialité et de souveraineté, à vérifier. Dans le même temps, Google dit pouvoir utiliser les données Gmail et Photos pour cibler les publicités.",
+        "sources": [
+          {
+            "title": "Swedish government offices to ban ChatGPT and Claude",
+            "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+            "source": "sverigesradio.se"
+          },
+          {
+            "title": "Swedish government offices to ban ChatGPT and Claude",
+            "url": "https://news.ycombinator.com/item?id=50207405",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+            "source": "theverge.com"
+          },
+          {
+            "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "url": "https://news.ycombinator.com/item?id=50214218",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Souveraineté des données",
+          "IA en administration",
+          "Ciblage publicitaire"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Agents : identifiants, runtimes sûrs et standards",
+        "lead": "L'écosystème d'agents se structure : 1Password permet à un agent de se connecter sans voir le mot de passe, OpenShell propose un runtime sûr, et Anthropic donne les Agent Skills à l'Agentic AI Foundation.",
+        "text": "Ces briques traitent les deux freins du déploiement : la gestion des secrets et l'isolation. La donation des Skills vise un format ouvert partagé.",
+        "sources": [
+          {
+            "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+            "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+            "url": "https://github.com/NVIDIA/OpenShell",
+            "source": "github.com"
+          },
+          {
+            "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+            "url": "https://news.ycombinator.com/item?id=50198675",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Donating Agent Skills to the Agentic AI Foundation",
+            "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "Agent Skills",
+          "Sandbox d'agents",
+          "Gestion des secrets"
+        ]
+      },
+      {
+        "cat": "Infra",
+        "title": "Cerebras sert des modèles à mille milliards de paramètres",
+        "lead": "Cerebras annonce le déploiement de modèles de plus de mille milliards de paramètres.",
+        "text": "Aucun détail de performance dans les extraits. En parallèle, OpenAI décrit le passage à l'échelle de son stockage pour plus d'un milliard d'utilisateurs de ChatGPT.",
+        "sources": [
+          {
+            "title": "Cerebras Deploys Trillion-Parameter AI Models",
+            "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+            "source": "cerebras.ai"
+          },
+          {
+            "title": "Cerebras Deploys Trillion-Parameter AI Models",
+            "url": "https://news.ycombinator.com/item?id=50227356",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+            "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "Wafer-scale",
+          "Inférence à grande échelle"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Intrusion chinoise via ConnectWise",
+        "lead": "Des pirates chinois auraient espionné des milliers d'entreprises après avoir compromis l'éditeur IT ConnectWise.",
+        "text": "C'est une attaque de chaîne d'approvisionnement. Une CVE sur une autorité de certification intermédiaire compromise a aussi suscité l'attention.",
+        "sources": [
+          {
+            "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
+            "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
+            "source": "nvd.nist.gov"
+          },
+          {
+            "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+            "url": "https://news.ycombinator.com/item?id=50192900",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Supply chain attack",
+          "Autorité de certification intermédiaire"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Modèles",
+        "title": "IQuest-Q1 : un MoE pour les agents en ligne de commande",
+        "lead": "IQuest-Q1 est un modèle MoE de 320 Md de paramètres totaux (15 Md activés) conçu pour les systèmes agentiques en CLI.",
+        "text": "Il a été entraîné en trois étapes. Le papier a reçu 101 votes sur HF Daily Papers. Les résultats chiffrés ne figurent pas dans l'extrait.",
+        "sources": [
+          {
+            "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+            "url": "https://huggingface.co/papers/2610.30949",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "Agents CLI"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "WeVisOne-VL : perception visuelle fine unifiée",
+        "lead": "WeChat présente WeVisOne-VL, un modèle vision-langage unifiant la perception visuelle des objets aux pixels.",
+        "text": "Il vise le manque de fiabilité des VLM sur la perception fine. Il est le plus voté de la période (244).",
+        "sources": [
+          {
+            "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+            "url": "https://huggingface.co/papers/2610.31329",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Vision-language model",
+          "Segmentation"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Quantification de modèles de diffusion de langage selon la tâche",
+        "lead": "Des travaux montrent que la sensibilité à la quantification des modèles de langage à diffusion dépend à la fois de la tâche et du pas de débruitage.",
+        "text": "Ils proposent une quantification tenant compte du temps et de la tâche. Un autre papier observe que la vitesse de ces modèles varie selon les tâches et les langues.",
+        "sources": [
+          {
+            "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
+            "url": "https://huggingface.co/papers/2610.31198",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
+            "url": "https://huggingface.co/papers/2610.25835",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Diffusion language model",
+          "Quantification"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Entraîner un MoE en MXFP4",
+        "lead": "Un papier explique comment un MoE entraîné en MXFP4 a rattrapé l'écart avec le BF16.",
+        "text": "Cela réduit potentiellement le coût d'entraînement. Les détails ne sont pas dans l'extrait.",
+        "sources": [
+          {
+            "title": "Training an MoE LLM in MXFP4: How We Closed the Gap to BF16",
+            "url": "https://arxiv.org/abs/2610.32229v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "MXFP4",
+          "Entraînement basse précision"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Kimi K3.1 Pro",
+        "lead": "Kimi K3.1 Pro est le modèle phare de Moonshot, multimodal, avec raisonnement et 1 M de tokens de contexte.",
+        "text": "Disponible via l'API Kimi et OpenRouter. L'ouverture des poids reste à confirmer.",
+        "sources": [
+          {
+            "title": "New model: MoonshotAI: Kimi K3.1 Pro",
+            "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Introducing Kimi K3.1 Pro",
+            "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "Long contexte",
+          "Raisonnement multimodal"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+          "url": "https://huggingface.co/papers/2610.31329",
+          "source": "HF Daily Papers",
+          "meta": "▲244 · Tianming Liang, Junyi Pan, Yuxi Li, Canmiao Fu et al."
+        },
+        {
+          "title": "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
+          "url": "https://huggingface.co/papers/2610.24738",
+          "source": "HF Daily Papers",
+          "meta": "▲186 · Wen Xue, Yong Liu, Xueheng Li, Si Wu et al."
+        },
+        {
+          "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+          "url": "https://huggingface.co/papers/2610.30949",
+          "source": "HF Daily Papers",
+          "meta": "▲101 · A. Jian Yang, An Huang, Bo Dan, Chen Mu et al."
+        },
+        {
+          "title": "Toward Recursive Self-Improvement in Physical AI",
+          "url": "https://huggingface.co/papers/2610.29677",
+          "source": "HF Daily Papers",
+          "meta": "▲62 · Meng Luo, Zechen Bai, Shanqing Xu, Yanlin Li et al."
+        },
+        {
+          "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+          "url": "https://huggingface.co/papers/2610.30932",
+          "source": "HF Daily Papers",
+          "meta": "▲41 · Jujia Zhao, Jiakai Tang, Jing Yu, Wen Chen et al."
+        },
+        {
+          "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
+          "url": "https://huggingface.co/papers/2610.23987",
+          "source": "HF Daily Papers",
+          "meta": "▲40 · Tengju Ru, Weitong Lian, Zecong Tang, Zhiheng Liu et al."
+        },
+        {
+          "title": "Self-Distilling Future Video Representations for World Action Models",
+          "url": "https://huggingface.co/papers/2610.30320",
+          "source": "HF Daily Papers",
+          "meta": "▲39 · Huiwon Jang, Suhyeok Jang, Hyeonmo Kang, Seungku Kim et al."
+        },
+        {
+          "title": "FilmFlow: Agentic System for 3D Virtual Film Cinematography",
+          "url": "https://huggingface.co/papers/2610.30753",
+          "source": "HF Daily Papers",
+          "meta": "▲32 · Yiming Zhang, Jiarui Guo, Haojia Wei, Yifei Liu et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "source": "Hacker News",
+          "meta": "1085pts · 673 comments"
+        },
+        {
+          "title": "Jailbreaking the Switch 2",
+          "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+          "source": "Hacker News",
+          "meta": "835pts · 306 comments"
+        },
+        {
+          "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+          "url": "https://news.ycombinator.com/item?id=50200997",
+          "source": "Hacker News",
+          "meta": "673pts · 744 comments"
+        },
+        {
+          "title": "Every AI model has the same \"controversial\" take on humans",
+          "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+          "source": "Hacker News",
+          "meta": "658pts · 638 comments"
+        },
+        {
+          "title": "No signs of AI payoff outside the tech sector",
+          "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+          "source": "Hacker News",
+          "meta": "624pts · 659 comments"
+        },
+        {
+          "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+          "url": "https://lynchlab.net/llm-skin-cancer",
+          "source": "Hacker News",
+          "meta": "560pts · 238 comments"
+        }
+      ]
+    }
+  ]
+}

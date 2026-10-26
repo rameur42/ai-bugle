@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-10-26",
+      "headline": "Kimi K3.1 Pro arrive chez Moonshot",
+      "counts": {
+        "essentiel": 8,
+        "papiers": 4,
+        "sorties": 1
+      },
+      "itemCount": 1044
+    },
+    {
       "date": "2026-10-22",
       "headline": "PHP : une vague de failles critiques trouvées par IA",
       "counts": {
