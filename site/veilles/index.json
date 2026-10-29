@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-10-29",
+      "headline": "OpenAI lance GPT-6.1 Terra, niveau intermédiaire",
+      "counts": {
+        "essentiel": 8,
+        "papiers": 5,
+        "sorties": 2
+      },
+      "itemCount": 1621
+    },
+    {
       "date": "2026-10-26",
       "headline": "Kimi K3.1 Pro arrive chez Moonshot",
       "counts": {

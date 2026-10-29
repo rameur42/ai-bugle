@@ -1,0 +1,512 @@
+{
+  "version": 1,
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T10:55:19.288Z",
+  "lookbackHours": 78,
+  "itemCount": 1621,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Modèles",
+        "title": "OpenAI lance GPT-6.1 Terra, niveau intermédiaire",
+        "lead": "OpenAI a sorti GPT-6.1 Terra, modèle de milieu de gamme de la série GPT-6.1, moins cher que GPT-6.1 Sol, avec une variante « Pro » et des versions batch.",
+        "text": "Contexte d'environ 1,05 M de tokens, ciblé sur le travail agentique, le code et l'écriture. La variante Pro est le même modèle avec un mode de raisonnement renforcé (reasoning.mode=pro). Plusieurs clients (CodeRabbit, Greptile) citent déjà les modèles GPT-6.1 pour la détection de bugs et la sécurité du code.",
+        "sources": [
+          {
+            "title": "New model: OpenAI: GPT-6.1 Terra Pro",
+            "url": "https://openrouter.ai/openai/gpt-6.1-terra-pro",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: OpenAI: GPT-6.1 Terra",
+            "url": "https://openrouter.ai/openai/gpt-6.1-terra",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "GPT-6.1 Terra",
+            "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+            "source": "openai.com"
+          },
+          {
+            "title": "GPT-6.1 Terra",
+            "url": "https://news.ycombinator.com/item?id=50248124",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "reasoning effort",
+          "fenêtre de contexte",
+          "API batch"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Google dévoile Gemini 4 Carbon et Genie 4",
+        "lead": "Google DeepMind présente Gemini 4 Carbon, son prochain modèle frontière, ainsi que Genie 4, un modèle de monde pour la simulation en temps réel.",
+        "text": "Gemini 4 Carbon a fait l'un des plus gros scores Hacker News de la période (943 points). Les annonces sont encore surtout éditoriales : il faudra attendre des évaluations indépendantes avant de juger l'écart avec GPT-6.1.",
+        "sources": [
+          {
+            "title": "Gemini 4 Carbon: Our next frontier model",
+            "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "Genie 4: A new generation of world simulation",
+            "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "Gemini 4 Carbon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "source": "blog.google"
+          },
+          {
+            "title": "Gemini 4 Carbon",
+            "url": "https://news.ycombinator.com/item?id=50276792",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "world model",
+          "Genie",
+          "modèle frontière"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic dépose son S-1 et prépare son IPO",
+        "lead": "Anthropic a déposé son document d'introduction en Bourse (S-1), ce qui a déclenché débats sur la gouvernance et sur les gains des investisseurs.",
+        "text": "Amazon serait le grand gagnant financier devant les fonds de capital-risque, et la question du contrôle réel après l'IPO est posée. En parallèle, Anthropic lance des outils pour montrer aux entreprises ce que leurs dépenses d'IA achètent.",
+        "sources": [
+          {
+            "title": "Anthropic S-1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+            "source": "sec.gov"
+          },
+          {
+            "title": "Anthropic S-1",
+            "url": "https://news.ycombinator.com/item?id=50242939",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "VCs will make billions on Anthropic&#8217;s IPO, but Amazon is set to make much (much) more",
+            "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Who&#8217;s really in charge at Anthropic after the IPO?",
+            "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "S-1",
+          "IPO",
+          "gouvernance d'entreprise"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Des labos affirment avoir réfuté l'hypothèse du temps exponentiel",
+        "lead": "Des laboratoires d'IA de pointe disent que leurs modèles ont réfuté l'Exponential Time Hypothesis, un pilier de la théorie de la complexité.",
+        "text": "Le résultat circule sous forme de PDF et d'annonces sur « trois nouvelles découvertes » en maths, informatique et physique. Il reste à vérifier : une preuve de ce calibre exige une validation formelle ou par les pairs, que la communauté (via Lean notamment) commence à outiller.",
+        "sources": [
+          {
+            "title": "The Exponential Time Hypothesis Is False [pdf]",
+            "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+            "source": "github.com"
+          },
+          {
+            "title": "The Exponential Time Hypothesis Is False [pdf]",
+            "url": "https://news.ycombinator.com/item?id=50251661",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+            "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Three new discoveries in mathematics, computer science, and physics",
+            "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+            "source": "openai.com"
+          },
+          {
+            "title": "Three new discoveries in mathematics, computer science, and physics",
+            "url": "https://news.ycombinator.com/item?id=50251344",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Exponential Time Hypothesis",
+          "complexité",
+          "preuve formelle Lean"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "« Vulnpocalypse » : l'IA accélère la découverte de failles",
+        "lead": "Le CTO de Wiz avertit qu'une vague de vulnérabilités va frapper le vieux code d'Internet, à l'image de la faille PHP2Shell.",
+        "text": "Les agents capables de trouver des failles à grande échelle changent l'équilibre attaque/défense ; OpenAI met en avant des usages défensifs (Check Point, Daybreak). Sur le versant agents, un article montre que l'accès web médié par IA modifie l'exploitation des vulnérabilités.",
+        "sources": [
+          {
+            "title": "Wiz’s CTO on PHP2Shell and the coming &#8216;vulnpocalypse&#8217;",
+            "url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "The &#8216;Vulnpocalypse&#8217; is coming for the internet’s aging code, says Wiz’s CTO",
+            "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "How Check Point accelerates vulnerability research with Daybreak",
+            "url": "https://openai.com/index/check-point-daybreak",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "PHP2Shell",
+          "vulnérabilité zero-day",
+          "agents de sécurité"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "DeepSeek V4.1 Flash : adoption massive et évaluation de risques",
+        "lead": "DeepSeek-V4.1-Flash-1017 domine les téléchargements Hugging Face et sert de base à d'autres modèles, tandis qu'une évaluation étudie ses risques de perte de contrôle et de manipulation.",
+        "text": "Particle AI en a tiré Particle-1, un modèle de code agentique (contexte 1 M). Des variantes « abliterated » (sans garde-fous) circulent déjà, et un post HN signale un comportement préoccupant d'un modèle open-weight populaire.",
+        "sources": [
+          {
+            "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "source": "HF Models"
+          },
+          {
+            "title": "New model: Particle AI: Particle-1",
+            "url": "https://openrouter.ai/particle-ai/particle-1",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+            "url": "https://arxiv.org/abs/2610.35671v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "abliteration",
+          "open-weight",
+          "post-training agentique"
+        ]
+      },
+      {
+        "cat": "Juridique",
+        "title": "Contentieux : données d'entraînement et ChatGPT",
+        "lead": "Anthropic est accusé d'avoir entraîné Claude sur des livres de professeurs de Stanford obtenus illégalement, et des parents poursuivent OpenAI pour un conseil médical fatal de GPT-4o.",
+        "text": "S'y ajoutent des plaintes sur le scraping de modèles (Roblox aurait téléchargé 145 Go) et sur des fuites de transcriptions d'agents dans Claude Code. Les risques juridiques sur données et sécurité des produits s'accumulent.",
+        "sources": [
+          {
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+            "source": "stanforddaily.com"
+          },
+          {
+            "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+            "url": "https://news.ycombinator.com/item?id=50260814",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+            "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Claude Code regularly sends each background agent’s transcript to its model",
+            "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+            "source": "gist.github.com"
+          },
+          {
+            "title": "Claude Code regularly sends each background agent’s transcript to its model",
+            "url": "https://news.ycombinator.com/item?id=50284255",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "copyright et entraînement",
+          "responsabilité produit",
+          "télémétrie d'agents"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Microsoft : Azure à 33,2 Md$ et 10 Md$ liés à OpenAI",
+        "lead": "Microsoft publie pour la première fois le chiffre d'affaires d'Azure en dollars (33,2 Md$) et dit avoir enregistré 10 Md$ de revenus issus d'OpenAI.",
+        "text": "Dixième trimestre consécutif de records. Google étend les pubs dans AI Search alors que la croissance de ses pubs historiques ralentit ; Amazon est accusé de réduire sa division IA après des échecs.",
+        "sources": [
+          {
+            "title": "Microsoft just shared Azure&#8217;s actual revenue in dollars: $33.2 billion",
+            "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+            "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Google expands AI Search ads globally as core ad growth slows",
+            "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "Azure",
+          "monétisation de la recherche IA",
+          "capex IA"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Agents",
+        "title": "Le coût net de la mémoire d'agent",
+        "lead": "« Memory Tax » évalue à grande échelle si construire une mémoire d'agent vaut mieux que récupérer directement dans l'historique brut.",
+        "text": "L'étude questionne l'intérêt net de la mémoire pour les agents longue durée, souvent supposée bénéfique sans mesure. Utile pour décider quoi bâtir dans un produit d'agent.",
+        "sources": [
+          {
+            "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+            "url": "https://huggingface.co/papers/2610.34073",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "agent memory",
+          "RAG",
+          "long-horizon agents"
+        ]
+      },
+      {
+        "cat": "RL",
+        "title": "Optimisation multi-échelle pour agents longs",
+        "lead": "Multiscale Policy Optimization observe que les valeurs du critique varient surtout à l'échelle du tour d'assistant complet, plutôt que du token.",
+        "text": "Elle propose de traiter l'apprentissage par renforcement à plusieurs échelles pour les agents LLM à horizon long. Le papier a fortement attiré l'attention (377 votes).",
+        "sources": [
+          {
+            "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+            "url": "https://huggingface.co/papers/2610.35013",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "credit assignment",
+          "PPO",
+          "RL pour agents"
+        ]
+      },
+      {
+        "cat": "Infra",
+        "title": "Décodage MoE sans données de calibration",
+        "lead": "Un papier propose de sélectionner les canaux des experts MoE au décodage sans données de calibration.",
+        "text": "Le goulot est le chargement des poids d'experts en mémoire à petit batch ; réduire les canaux chargés accélère l'inférence interactive.",
+        "sources": [
+          {
+            "title": "Channel Selection for Mixture-of-Experts Decoding Needs No Calibration Data",
+            "url": "https://huggingface.co/papers/2610.37386",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "décodage",
+          "bande passante mémoire"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Diffusion LLM : meilleur apprentissage par renforcement",
+        "lead": "DTCA propose une attribution de crédit par token de débruitage pour entraîner des modèles de langage à diffusion par RL.",
+        "text": "Les DLM génèrent par débruitage itératif et le RL standard s'y applique mal ; en parallèle, SPOT accélère leur décodage spéculatif via la prédiction de l'ordre de validation.",
+        "sources": [
+          {
+            "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+            "url": "https://huggingface.co/papers/2610.35201",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "On the SPOT: Enhancing Speculative Decoding for Diffusion Language Models via Commit-Order Prediction",
+            "url": "https://huggingface.co/papers/2610.22543",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "diffusion language models",
+          "speculative decoding",
+          "credit assignment"
+        ]
+      },
+      {
+        "cat": "Évaluation",
+        "title": "Effort de raisonnement : l'économie du réglage",
+        "lead": "Une étude analyse quel niveau d'effort de raisonnement choisir pour des agents LLM au regard du coût et de la performance.",
+        "text": "Elle traite le réglage d'effort comme un arbitrage économique, pertinent pour budgéter des produits à base d'agents.",
+        "sources": [
+          {
+            "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
+            "url": "https://huggingface.co/papers/2610.34491",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "inference-time compute",
+          "reasoning effort",
+          "coût par tâche"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B",
+        "lead": "Qwen publie Qwen3.8-27B, modèle multimodal image-texte de 27 milliards de paramètres, déjà massivement téléchargé (plus de 7,5 M).",
+        "text": "Les capacités précises ne sont pas décrites dans les items ; l'adoption est le seul signal à ce stade.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "Qwen",
+          "multimodal",
+          "modèles open-weight"
+        ]
+      },
+      {
+        "cat": "Audio",
+        "title": "NVIDIA Nemotron 3.5 Transcribe",
+        "lead": "NVIDIA publie un modèle de transcription ouvert, multilingue, pilotable par prompt et adaptable, accompagné du jeu de données Granary v2.",
+        "text": "Basé sur une architecture MoE 30B à 4B actifs, il s'inscrit dans la poussée de l'IA vocale.",
+        "sources": [
+          {
+            "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+            "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "source": "Hugging Face"
+          },
+          {
+            "title": "Voice AI in vogue: Nvidia releases new open transcription model",
+            "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+            "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "ASR",
+          "Mixture of Experts",
+          "transcription multilingue"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+          "url": "https://huggingface.co/papers/2610.36077",
+          "source": "HF Daily Papers",
+          "meta": "▲540 · Weidong Tang, Ruiheng Wang, Jingxuan Zhang, Hexin Wang et al."
+        },
+        {
+          "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+          "url": "https://huggingface.co/papers/2610.34283",
+          "source": "HF Daily Papers",
+          "meta": "▲378 · Yihao Hu, Yitong Lin, Pan Wang, Zhihao Wen et al."
+        },
+        {
+          "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+          "url": "https://huggingface.co/papers/2610.35013",
+          "source": "HF Daily Papers",
+          "meta": "▲377 · Tao Ren, Hui Yang, Jia Deng, Tingyang Chen et al."
+        },
+        {
+          "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+          "url": "https://huggingface.co/papers/2610.35201",
+          "source": "HF Daily Papers",
+          "meta": "▲256 · Hongze Chen, Miao Pan, Lizhou Liang, Qinfeng Li et al."
+        },
+        {
+          "title": "VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation",
+          "url": "https://huggingface.co/papers/2610.35864",
+          "source": "HF Daily Papers",
+          "meta": "▲174 · Muxi Diao, Wenbin Xu, Lele Yang, Xuyang Ma et al."
+        },
+        {
+          "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+          "url": "https://huggingface.co/papers/2610.34073",
+          "source": "HF Daily Papers",
+          "meta": "▲147 · Xuan He, Sining Zhoubian, Ruozhen Yang, Yuhao Wen et al."
+        },
+        {
+          "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+          "url": "https://huggingface.co/papers/2610.32749",
+          "source": "HF Daily Papers",
+          "meta": "▲146 · Wendi Sang, Kai Li, Yifan Li, Jianqiang Huang et al."
+        },
+        {
+          "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+          "url": "https://huggingface.co/papers/2610.37381",
+          "source": "HF Daily Papers",
+          "meta": "▲144 · Hanqing Wang, Zhaotian Cai, Ruichuan An, Bohan Zeng et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Anthropic S-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+          "source": "Hacker News",
+          "meta": "1702pts · 1674 comments"
+        },
+        {
+          "title": "Three new discoveries in mathematics, computer science, and physics",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "source": "Hacker News",
+          "meta": "1151pts · 696 comments"
+        },
+        {
+          "title": "Evidence of a spying operation by ICE against left-wing social movements",
+          "url": "https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/",
+          "source": "Hacker News",
+          "meta": "1144pts · 941 comments"
+        },
+        {
+          "title": "Gemini 4 Carbon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "source": "Hacker News",
+          "meta": "943pts · 760 comments"
+        },
+        {
+          "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+          "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+          "source": "Hacker News",
+          "meta": "848pts · 116 comments"
+        },
+        {
+          "title": "The Exponential Time Hypothesis Is False [pdf]",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+          "source": "Hacker News",
+          "meta": "796pts · 300 comments"
+        }
+      ]
+    }
+  ]
+}
