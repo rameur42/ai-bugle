@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T12:30:23.306Z",
+  "lookbackHours": 102,
+  "itemCount": 1104,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Sécurité",
+        "title": "Extension Claude Code piégée sur le marketplace Cursor",
+        "lead": "Une extension VS Code se faisant passer pour Claude Code, contenant une porte dérobée, a été publiée sur le marketplace de Cursor.",
+        "text": "Les signalements évoquent aussi des portes dérobées dans des extensions « officielles » Claude Code. Cela rappelle que les marketplaces d'extensions d'éditeurs IA, souvent des forks de VS Code, offrent peu de vérification d'éditeur, alors que ces outils tournent avec les droits du développeur.",
+        "sources": [
+          {
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "source": "phorion.io"
+          },
+          {
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "url": "https://news.ycombinator.com/item?id=50300683",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Backdoors in official Claude Code extensions",
+            "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+            "source": "cyberplace.social"
+          },
+          {
+            "title": "Backdoors in official Claude Code extensions",
+            "url": "https://news.ycombinator.com/item?id=50302334",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+            "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+            "source": "doublepulsar.com"
+          },
+          {
+            "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+            "url": "https://news.ycombinator.com/item?id=50301983",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "supply chain attack",
+          "VS Code extension marketplace",
+          "Open VSX"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Prise de contrôle de comptes ChatGPT",
+        "lead": "Parameter Labs décrit une faille permettant de prendre le contrôle de comptes ChatGPT, qui a beaucoup circulé.",
+        "text": "Le détail de l'exploit n'est pas dans nos items. Retenir qu'un fournisseur majeur reste exposé à des failles d'authentification classiques, pas seulement à des attaques propres aux LLM.",
+        "sources": [
+          {
+            "title": "Do the math: How we took over ChatGPT accounts",
+            "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+            "source": "parameter.ai"
+          },
+          {
+            "title": "Do the math: How we took over ChatGPT accounts",
+            "url": "https://news.ycombinator.com/item?id=50314699",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "How We Took Over ChatGPT Accounts",
+            "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "account takeover",
+          "OAuth",
+          "responsible disclosure"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Mistral Large 4 publié en poids ouverts",
+        "lead": "Mistral publie les poids de Mistral Large 4, un modèle d'environ 1T de paramètres dont 52B actifs, multimodal (image-texte).",
+        "text": "C'est un MoE très large, donc coûteux à héberger, mais c'est un des plus gros modèles à poids ouverts. L'annonce a fait 1720 points sur Hacker News. Les benchmarks ne figurent pas dans nos sources.",
+        "sources": [
+          {
+            "title": "mistralai/Mistral-Large-4-1T-A52B",
+            "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+            "source": "HF Models"
+          },
+          {
+            "title": "We're releasing the weights of Mistral Large 4",
+            "url": "https://mistral.ai/news/mistral-large-4-oss/",
+            "source": "mistral.ai"
+          },
+          {
+            "title": "We're releasing the weights of Mistral Large 4",
+            "url": "https://news.ycombinator.com/item?id=50289418",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "open weights",
+          "paramètres actifs"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B : petit modèle ouvert très utilisé, et équipes de modèles",
+        "lead": "Qwen3.8-27B cumule près de 8 millions de téléchargements, et un projet affirme que 5 de ces modèles coordonnés battent Fable 5 sur LiveCodeBench Hard.",
+        "text": "Le résultat « Memdoor » est une revendication communautaire sur un benchmark de code. Il suggère que l'orchestration de petits modèles ouverts peut rivaliser avec un modèle fermé sur certaines tâches, mais ce n'est pas vérifié ici.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          },
+          {
+            "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+            "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+            "source": "github.com"
+          },
+          {
+            "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+            "url": "https://news.ycombinator.com/item?id=50320995",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "LiveCodeBench",
+          "orchestration multi-agents",
+          "modèles ouverts"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic : IPO et notation de crédit",
+        "lead": "Des agences de notation devraient attribuer à Anthropic une note « junk » après son IPO, selon le FT, et Blackstone doute d'une note investment grade.",
+        "text": "Cela signale une dette jugée risquée malgré la croissance. Dans le même temps, OpenAI aurait abaissé l'objectif de sa levée de fonds, et TechCrunch parle de « fissures » dans le boom des dépenses IA.",
+        "sources": [
+          {
+            "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+            "source": "ft.com"
+          },
+          {
+            "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+            "url": "https://news.ycombinator.com/item?id=50307219",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says",
+            "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "OpenAI reportedly lowers funding target for new round",
+            "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "notation de crédit",
+          "IPO",
+          "bulle IA"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic bloque les usages liés à l'entraînement de modèles plus grands",
+        "lead": "Des utilisateurs rapportent qu'Anthropic bloque les demandes touchant à l'entraînement de modèles plus grands.",
+        "text": "Cette restriction d'usage, très discutée (262 commentaires), pose la question de la dépendance des équipes produit à un fournisseur dont les règles peuvent bloquer des cas légitimes.",
+        "sources": [
+          {
+            "title": "Anthropic blocks users for anything touching training larger models",
+            "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+            "source": "twitter.com"
+          },
+          {
+            "title": "Anthropic blocks users for anything touching training larger models",
+            "url": "https://news.ycombinator.com/item?id=50319358",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "politique d'usage",
+          "distillation",
+          "dépendance fournisseur"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Gemini 4 Carbon en tête de l'Artificial Analysis Index",
+        "lead": "Gemini 4 Carbon passe n°1 de l'Artificial Analysis Intelligence Index v5.",
+        "text": "C'est un classement agrégé tiers, à prendre avec prudence : les écarts sont souvent faibles et dépendent de la pondération des tests.",
+        "sources": [
+          {
+            "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+            "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+            "source": "artificialanalysis.ai"
+          },
+          {
+            "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+            "url": "https://news.ycombinator.com/item?id=50288019",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Artificial Analysis",
+          "benchmark agrégé",
+          "Gemini"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "OpenAI : droit d'auteur et sécurité des mineurs",
+        "lead": "OpenAI défend le fair use, propose un mécanisme pour que les sites expriment leurs préférences d'entraînement et publie un Model Spec mis à jour.",
+        "text": "Elle publie aussi des protections pour les ados et une méthode de détection du désalignement de ses modèles de pointe. Ce sont surtout des positions de l'entreprise, sans détails dans nos sources.",
+        "sources": [
+          {
+            "title": "Making it easier for websites to express AI training preferences",
+            "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Fair use benefits everyone",
+            "url": "https://openai.com/index/fair-use-benefits-everyone",
+            "source": "OpenAI"
+          },
+          {
+            "title": "An updated Model Spec for more capable and beneficial AI",
+            "url": "https://openai.com/index/updated-model-spec",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "fair use",
+          "robots.txt IA",
+          "Model Spec"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Désaccord entraînement/inférence en RL des LLM",
+        "lead": "Deux papiers montrent que l'écart entre moteur d'inférence et entraînement dégrade le RL des LLM, et que l'arrondi bf16 supprime en silence la plupart des mises à jour.",
+        "text": "Le second propose un correctif non biaisé en une ligne. Cela touche directement la fiabilité des pipelines RL.",
+        "sources": [
+          {
+            "title": "On the Origin and Evolution of Training-Inference Mismatch in LLM Reinforcement Learning",
+            "url": "https://huggingface.co/papers/2610.40945",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "bf16 Rounding Silently Discards Most RL Policy Updates: A Hidden Training-Inference Mismatch and an Unbiased One-Line Fix",
+            "url": "https://arxiv.org/abs/2610.41073v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "training-inference mismatch",
+          "bf16",
+          "RL on-policy"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Quantifiés cassés dans les registres publics",
+        "lead": "Une étude constate que des LLM quantifiés téléchargeables sur les registres publics sont non fonctionnels, sans test fonctionnel documenté.",
+        "text": "Elle propose des moyens de les détecter. Un test de sanité avant déploiement est donc utile.",
+        "sources": [
+          {
+            "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
+            "url": "https://huggingface.co/papers/2609.05881",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "quantization",
+          "model registry",
+          "tests fonctionnels"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "MCP contre CLI pour les agents",
+        "lead": "Une étude contrôlée compare les interfaces MCP et CLI pour agents à capacités égales.",
+        "text": "Elle montre que les comportements diffèrent, donc le choix d'interface n'est pas neutre.",
+        "sources": [
+          {
+            "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
+            "url": "https://huggingface.co/papers/2610.34298",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Model Context Protocol",
+          "tool use",
+          "agents"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Hypothèse platonicienne prouvée avec les JEPA",
+        "lead": "LeCun et Balestriero démontrent et améliorent l'hypothèse de représentation platonicienne avec les JEPA.",
+        "text": "Elle suppose que des modèles de modalités différentes convergent vers la même représentation du monde.",
+        "sources": [
+          {
+            "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+            "url": "https://huggingface.co/papers/2610.39302",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Platonic Representation Hypothesis",
+          "JEPA",
+          "représentations"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Mistral Large 4 (poids ouverts)",
+        "lead": "Modèle MoE d'environ 1T de paramètres dont 52B actifs, multimodal, aux poids publiés.",
+        "text": "Un des plus gros modèles ouverts, utilisable en auto-hébergement par des équipes disposant de beaucoup de GPU.",
+        "sources": [
+          {
+            "title": "mistralai/Mistral-Large-4-1T-A52B",
+            "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+            "source": "HF Models"
+          },
+          {
+            "title": "We're releasing the weights of Mistral Large 4",
+            "url": "https://mistral.ai/news/mistral-large-4-oss/",
+            "source": "mistral.ai"
+          },
+          {
+            "title": "We're releasing the weights of Mistral Large 4",
+            "url": "https://news.ycombinator.com/item?id=50289418",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "open weights"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
+          "url": "https://huggingface.co/papers/2610.36671",
+          "source": "HF Daily Papers",
+          "meta": "▲113 · Donghyeon Cho, Joowon Kim, Seungho Shin, Eunho Yang et al."
+        },
+        {
+          "title": "Your Benchmark Is an Empirical Measure Over Difficulty",
+          "url": "https://huggingface.co/papers/2610.29927",
+          "source": "HF Daily Papers",
+          "meta": "▲97 · Yifan Sun, Naicheng Yu, Jiawen Gong, Jingyan Shen et al."
+        },
+        {
+          "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+          "url": "https://huggingface.co/papers/2610.38568",
+          "source": "HF Daily Papers",
+          "meta": "▲76 · Yu Liu, Youxing Li, Yuedong Tan, Zhiwei Yang et al."
+        },
+        {
+          "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+          "url": "https://huggingface.co/papers/2610.39302",
+          "source": "HF Daily Papers",
+          "meta": "▲67 · Randall Balestriero, Yann LeCun"
+        },
+        {
+          "title": "R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
+          "url": "https://huggingface.co/papers/2610.22740",
+          "source": "HF Daily Papers",
+          "meta": "▲63 · Mingda Zhang, Yun Huang, Qiang Huang, Yanjin Li et al."
+        },
+        {
+          "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+          "url": "https://huggingface.co/papers/2610.39497",
+          "source": "HF Daily Papers",
+          "meta": "▲56 · Qi Wang, Yun Qu, Lizhou Cai, Heming Zou et al."
+        },
+        {
+          "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+          "url": "https://huggingface.co/papers/2610.40614",
+          "source": "HF Daily Papers",
+          "meta": "▲44 · Jinhyeok Choi, JoungBin Lee, Jongmin Lee, Minkyeong Jeon et al."
+        },
+        {
+          "title": "A Broader Look into MLLM's Retrieval Heads",
+          "url": "https://huggingface.co/papers/2610.32411",
+          "source": "HF Daily Papers",
+          "meta": "▲35 · Jia Wang, Yuqing Li, Jiangnan Li, Zheng Lin et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "We're releasing the weights of Mistral Large 4",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "source": "Hacker News",
+          "meta": "1720pts · 440 comments"
+        },
+        {
+          "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+          "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+          "source": "Hacker News",
+          "meta": "1002pts · 553 comments"
+        },
+        {
+          "title": "Serbia just elected the world's brainiest parliament",
+          "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+          "source": "Hacker News",
+          "meta": "912pts · 506 comments"
+        },
+        {
+          "title": "AI isn't replacing SREs, it's deskilling them",
+          "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+          "source": "Hacker News",
+          "meta": "675pts · 489 comments"
+        },
+        {
+          "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+          "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+          "source": "Hacker News",
+          "meta": "668pts · 526 comments"
+        },
+        {
+          "title": "Backdoors in official Claude Code extensions",
+          "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+          "source": "Hacker News",
+          "meta": "661pts · 17 comments"
+        }
+      ]
+    }
+  ]
+}

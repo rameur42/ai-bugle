@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-11-02",
+      "headline": "Extension Claude Code piégée sur le marketplace Cursor",
+      "counts": {
+        "essentiel": 8,
+        "papiers": 4,
+        "sorties": 1
+      },
+      "itemCount": 1104
+    },
+    {
       "date": "2026-10-29",
       "headline": "OpenAI lance GPT-6.1 Terra, niveau intermédiaire",
       "counts": {
