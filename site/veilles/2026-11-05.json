@@ -1,0 +1,528 @@
+{
+  "version": 1,
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T12:26:02.129Z",
+  "lookbackHours": 78,
+  "itemCount": 2363,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Recherche",
+        "title": "Astra et Qwen : un agent qui lit et réécrit des poids, controversé",
+        "lead": "Un billet affirmant qu'« Astra peut lire et écrire des poids pour améliorer Qwen » a dominé Hacker News (près de 3000 points), avant qu'un second billet le juge trompeur.",
+        "text": "Le démenti (1000+ points) et un test montrant que Qwen 3.8 27B interprète aussi des poids sur un laptop suggèrent que l'effet est moins exceptionnel qu'annoncé. Côté papiers, plusieurs travaux « recursive self-improvement » (agents robotiques, molécules, enzymes) surfent sur le même thème ; à lire avec scepticisme.",
+        "sources": [
+          {
+            "title": "Astra can read and write weights to improve Qwen",
+            "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+            "source": "rikiyat.github.io"
+          },
+          {
+            "title": "Astra can read and write weights to improve Qwen",
+            "url": "https://news.ycombinator.com/item?id=50341174",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+            "source": "honnibal.dev"
+          },
+          {
+            "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+            "url": "https://news.ycombinator.com/item?id=50351111",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+            "source": "simonwillison.net"
+          },
+          {
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://news.ycombinator.com/item?id=50355251",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "auto-amélioration récursive",
+          "interprétabilité des poids",
+          "agents de codage"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Vague de modèles ouverts et agentiques",
+        "lead": "Plusieurs modèles à contexte d'1M de tokens sont apparus : Tencent Hy4, Ripple-65B Preview, Crouton Alpha et GLM-5.3 FlashX Legal.",
+        "text": "Ripple-65B (ricursiveAI) se présente comme l'état de l'art américain en open-weight pour le code agentique, et Hy4 annonce de forts gains agentiques sur sa préversion ; ces chiffres viennent des éditeurs, sans vérification indépendante. Côté Hugging Face, Qwen3.8-27B (8M de téléchargements), Mistral-Large-4 (1T de paramètres, 52B actifs), Kimi-K3.1-Pro et DeepSeek-V4.1-Flash sont en tendance.",
+        "sources": [
+          {
+            "title": "New model: ricursiveAI/Ripple-65B-Preview",
+            "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: Tencent: Hy4",
+            "url": "https://openrouter.ai/tencent/hy4",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "url": "https://www.ricursive.com/ripple",
+            "source": "ricursive.com"
+          },
+          {
+            "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+            "url": "https://news.ycombinator.com/item?id=50369925",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Tencent Hy4",
+            "url": "https://hy.tencent.ai/research/hy4",
+            "source": "hy.tencent.ai"
+          },
+          {
+            "title": "Tencent Hy4",
+            "url": "https://news.ycombinator.com/item?id=50365780",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "open-weight",
+          "contexte long",
+          "Mixture of Experts",
+          "tool calling"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic : revenus massifs et IPO contestée",
+        "lead": "Anthropic annonce 17 Md$ de revenus au T3 et 895 Md$ d'engagements dans un S-1 révisé.",
+        "text": "Les commentaires critiquent l'ampleur des engagements ; une tribune demande à la SEC de bloquer l'IPO, et l'usage interne d'IA, aux prix publics, dépasserait la masse salariale. Anthropic travaille aussi sur un système de preuve d'identité des modèles.",
+        "sources": [
+          {
+            "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+            "source": "cnbc.com"
+          },
+          {
+            "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+            "url": "https://news.ycombinator.com/item?id=50337439",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+            "source": "techpolicy.press"
+          },
+          {
+            "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+            "url": "https://news.ycombinator.com/item?id=50344919",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+            "source": "businessinsider.com"
+          },
+          {
+            "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+            "url": "https://news.ycombinator.com/item?id=50339494",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic is working on a system to prove AI models&#8217; identity",
+            "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "S-1",
+          "engagements d'achat de compute",
+          "provenance des modèles"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Dette cachée et financement de l'IA",
+        "lead": "La dette liée à l'IA des géants américains, hors bilan, aurait bondi de 90 % en six mois pour atteindre 3,2 T$.",
+        "text": "Dans le même temps, Fal double sa valorisation à 16 Md$ et Palantir affiche un trimestre record, mais Apple réduit ses budgets d'IA interne et les data centers se tournent vers de vieux moteurs d'avion faute de réseau électrique. L'énergie et le financement deviennent les vrais goulots.",
+        "sources": [
+          {
+            "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+            "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+            "source": "asia.nikkei.com"
+          },
+          {
+            "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+            "url": "https://news.ycombinator.com/item?id=50358422",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+            "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Data centers are turning to old jet engines as the wait for power grows",
+            "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Apple is reportedly cutting budgets for its internal AI usage",
+            "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "dette hors bilan",
+          "inférence à la demande",
+          "capacité électrique"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "Google, l'IA et les écoles",
+        "lead": "Google couperait la recherche pour les écoles qui restreignent l'IA, ce qui provoque un fort rejet.",
+        "text": "DuckDuckGo en profite pour se présenter aux écoles. Autre irritant de confiance : Gemini entraînerait sur l'historique de chat, même pour les abonnés, et Postman installerait des plugins IA sans prévenir en tentant de partager des données d'API.",
+        "sources": [
+          {
+            "title": "Google will turn off search for schools that reject AI",
+            "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+            "source": "nytimes.com"
+          },
+          {
+            "title": "Google will turn off search for schools that reject AI",
+            "url": "https://news.ycombinator.com/item?id=50353192",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+            "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "DuckDuckGo pitches itself to schools amid backlash over Google&#8217;s AI policy",
+            "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+            "url": "https://news.ycombinator.com/item?id=50363461",
+            "source": "Hacker News"
+          },
+          {
+            "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+            "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+            "source": "github.com"
+          },
+          {
+            "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+            "url": "https://news.ycombinator.com/item?id=50354960",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "consentement",
+          "données d'entraînement",
+          "gouvernance des plugins"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "OpenAI renforce sa sécurité et la cyberdéfense",
+        "lead": "OpenAI annonce un nouveau « security sprint », des primes de bug bounty plus élevées et un programme Grid Protectors.",
+        "text": "Daybreak Red est disponible dans AWS GovCloud. Un papier sur Project Glasswing examine si l'IA de frontière renforce réellement la défense cyber ; sur ce point, aucun résultat n'est détaillé ici.",
+        "sources": [
+          {
+            "title": "Introducing the Grid Protectors Program",
+            "url": "https://openai.com/index/grid-protectors-program",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Rewarding defenders with bigger bug bounties",
+            "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Preparing our next security sprint to harden OpenAI",
+            "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+            "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Does Frontier AI Strengthen Cyber Defense? Evidence from Project Glasswing",
+            "url": "https://arxiv.org/abs/2611.06629v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "bug bounty",
+          "cyberdéfense assistée par IA",
+          "GovCloud"
+        ]
+      },
+      {
+        "cat": "Infra",
+        "title": "Nvidia RTX Spark : firmware chiffré et perte de vitesse sous Linux",
+        "lead": "Selon un fil Hacker News, le firmware chiffré de la RTX Spark ferait tomber l'inférence à 35 % de la vitesse sous Linux.",
+        "text": "L'information repose sur des témoignages d'utilisateurs, sans confirmation de Nvidia ici. Si elle se confirme, elle pèse sur l'inférence locale hors écosystème Nvidia officiel.",
+        "sources": [
+          {
+            "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+            "source": "mindstudio.ai"
+          },
+          {
+            "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+            "url": "https://news.ycombinator.com/item?id=50362905",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "firmware propriétaire",
+          "inférence locale"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Ce qu'apporte vraiment le RL multi-tours",
+        "lead": "Une étude analyse ce que le RL agentique multi-tours améliore réellement chez les agents LLM et montre que les gains dépendent fortement des contraintes d'interaction.",
+        "text": "Elle invite à ne pas conclure d'un gain de benchmark à une meilleure capacité générale. Un papier voisin propose un crédit au niveau du tour pour la vidéo en streaming.",
+        "sources": [
+          {
+            "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+            "url": "https://huggingface.co/papers/2611.06483",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+            "url": "https://huggingface.co/papers/2611.06728",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "GRPO",
+          "RL agentique",
+          "credit assignment"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Le contexte long : la compétition compte plus que la longueur",
+        "lead": "Un papier montre que, pour la récupération, la longueur du contexte coûte peu et que l'attention en compétition entre éléments prédit la dégradation.",
+        "text": "Testé sur cinq modèles ouverts de 0,5B à 3B. Un autre papier soutient qu'on n'a pas besoin de long contexte grâce à une compaction fréquente, les tokens tardifs coûtant jusqu'à 7 fois plus.",
+        "sources": [
+          {
+            "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+            "url": "https://huggingface.co/papers/2611.04169",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "You don't need long context",
+            "url": "https://huggingface.co/papers/2611.05306",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "context rot",
+          "compaction de contexte",
+          "attention"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Transformers bouclés : Dory1.0-4B et compression du KV cache",
+        "lead": "Dory1.0-4B est un modèle bouclé de 4 milliards de paramètres à profondeur élastique, où un seul checkpoint sert plusieurs budgets de calcul.",
+        "text": "LoopVQ vise une quantification du KV cache sous 1 bit pour ces modèles. La famille devient un axe d'efficacité en paramètres.",
+        "sources": [
+          {
+            "title": "Dory1.0-4B: A Looped Normalized-GPT",
+            "url": "https://huggingface.co/papers/2611.03998",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+            "url": "https://huggingface.co/papers/2611.05304",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "looped transformer",
+          "KV cache",
+          "profondeur élastique"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Distillation on-policy multi-enseignants : limites de généralisation",
+        "lead": "Un papier montre que la distillation on-policy multi-enseignants, annoncée presque parfaite en distribution, généralise mal ailleurs.",
+        "text": "Plusieurs autres travaux de la période (SpecOPD, OPSD adaptatif) explorent cette famille de méthodes.",
+        "sources": [
+          {
+            "title": "On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation",
+            "url": "https://huggingface.co/papers/2611.05609",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+            "url": "https://huggingface.co/papers/2610.40574",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "on-policy distillation",
+          "consolidation post-RL"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Agents : un benchmark de physique de bout en bout",
+        "lead": "FrontierPhysics évalue des agents sur des tâches de recherche en physique de bout en bout, au lieu de questions isolées ou de simples reproductions.",
+        "text": "Cela mesure mieux l'utilité réelle des agents scientifiques.",
+        "sources": [
+          {
+            "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+            "url": "https://huggingface.co/papers/2611.06910",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "benchmark d'agents",
+          "IA pour la science"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B",
+        "lead": "Qwen3.8-27B, un modèle multimodal ouvert, est le plus téléchargé de la période, avec plus de 8M de téléchargements.",
+        "text": "Aucune capacité n'est détaillée dans les items bruts, mais la discussion indique qu'il tourne sur laptop et sert à interpréter des poids.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          },
+          {
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+            "source": "simonwillison.net"
+          },
+          {
+            "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+            "url": "https://news.ycombinator.com/item?id=50355251",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "modèle multimodal",
+          "inférence locale"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
+          "url": "https://huggingface.co/papers/2611.00617",
+          "source": "HF Daily Papers",
+          "meta": "▲74 · Mengxi Xiao, Jingjing Chen, Ziyan Kuang, Jiarong Song et al."
+        },
+        {
+          "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+          "url": "https://huggingface.co/papers/2611.06728",
+          "source": "HF Daily Papers",
+          "meta": "▲71 · Shuai Dong, Kanghui Tian, Linghan Chen, Wenqi Shao et al."
+        },
+        {
+          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+          "url": "https://huggingface.co/papers/2611.05377",
+          "source": "HF Daily Papers",
+          "meta": "▲54 · Jisoo Kim, Chaehyun Kim, Junsu Kim, Jiho Park et al."
+        },
+        {
+          "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
+          "url": "https://huggingface.co/papers/2611.04814",
+          "source": "HF Daily Papers",
+          "meta": "▲53 · Muyao Yuan, Liyan Xu, Weizhan Zhang, Muyan Jiao et al."
+        },
+        {
+          "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+          "url": "https://huggingface.co/papers/2611.06918",
+          "source": "HF Daily Papers",
+          "meta": "▲51 · Weichen Fan, Haiwen Diao, Penghao Wu, Siyuan Hu et al."
+        },
+        {
+          "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
+          "url": "https://huggingface.co/papers/2611.05193",
+          "source": "HF Daily Papers",
+          "meta": "▲45 · WonJun Moon, Seongchan Kim, Dahun Kim, Seungryong Kim et al."
+        },
+        {
+          "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
+          "url": "https://huggingface.co/papers/2611.05036",
+          "source": "HF Daily Papers",
+          "meta": "▲36 · Guanting Dong, Zhichao Sun, Xinyu Yang, Rui Wang et al."
+        },
+        {
+          "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+          "url": "https://huggingface.co/papers/2610.37257",
+          "source": "HF Daily Papers",
+          "meta": "▲33 · Kang He, Wenshuo Peng, Chuanhao Li, Zihui Gao et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Astra can read and write weights to improve Qwen",
+          "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+          "source": "Hacker News",
+          "meta": "2949pts · 892 comments"
+        },
+        {
+          "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+          "source": "Hacker News",
+          "meta": "1505pts · 487 comments"
+        },
+        {
+          "title": "AI is forcing us to pay off 40 years of technical debt",
+          "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+          "source": "Hacker News",
+          "meta": "1209pts · 707 comments"
+        },
+        {
+          "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+          "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+          "source": "Hacker News",
+          "meta": "1032pts · 208 comments"
+        },
+        {
+          "title": "Jailbreaking my car's navigation system just so I can change the time",
+          "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+          "source": "Hacker News",
+          "meta": "941pts · 377 comments"
+        },
+        {
+          "title": "Stringman, an $800 open-source room scale gripper robot",
+          "url": "https://neufangled.com/",
+          "source": "Hacker News",
+          "meta": "824pts · 245 comments"
+        }
+      ]
+    }
+  ]
+}
