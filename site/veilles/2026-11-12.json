@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T12:46:59.025Z",
+  "lookbackHours": 78,
+  "itemCount": 1709,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Modèles",
+        "title": "Claude Fable 5.2 en tête des classements",
+        "lead": "Anthropic sort Claude Fable 5.2, présenté comme son modèle le plus capable, avec 65 sur l'index Artificial Analysis, le meilleur score à ce jour.",
+        "text": "Il apporte des gains en code, raisonnement et vision par rapport à Fable 5.1, avec un contexte d'1 M de tokens et une version batch. Les chiffres viennent des annonces et d'un classement tiers, pas d'une évaluation indépendante de notre part.",
+        "sources": [
+          {
+            "title": "New model: Anthropic: Claude Fable 5.2",
+            "url": "https://openrouter.ai/anthropic/claude-fable-5.2",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+            "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+            "source": "artificialanalysis.ai"
+          },
+          {
+            "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+            "url": "https://news.ycombinator.com/item?id=50431144",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+            "source": "anthropic.com"
+          },
+          {
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "url": "https://news.ycombinator.com/item?id=50429906",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "Artificial Analysis Intelligence Index",
+          "fenêtre de contexte",
+          "batch API"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Gemini 4 Carbon et la vague de petits modèles",
+        "lead": "Google lance Gemini 4 Carbon, un modèle phare multimodal (texte, image, audio, vidéo) pour le code, les agents et le raisonnement complexe, avec 1 M de tokens de contexte.",
+        "text": "Dans la même fenêtre, Meta publie Muse Ember, son modèle le plus petit, pensé pour les tâches répétitives d'agents. Thinking Machines sort Inkling 2 Small (MoE, 17B actifs sur 594B) et Baidu deux modèles ERNIE à 1 M de contexte. La course se joue à la fois sur le haut de gamme et sur le coût par appel d'agent.",
+        "sources": [
+          {
+            "title": "New model: Google: Gemini 4 Carbon",
+            "url": "https://openrouter.ai/google/gemini-4-carbon",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Gemini 4 Carbon is now available",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+            "source": "blog.google"
+          },
+          {
+            "title": "Gemini 4 Carbon is now available",
+            "url": "https://news.ycombinator.com/item?id=50442303",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "New model: Meta: Muse Ember",
+            "url": "https://openrouter.ai/meta/muse-ember",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: Thinking Machines: Inkling 2 Small (free)",
+            "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "modèles agentiques",
+          "paramètres actifs"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic lance son IPO, OpenAI dépasse 10 Md$ par trimestre",
+        "lead": "Anthropic a démarré sa roadshow d'introduction en bourse, et chacun de ses sept cofondateurs encaisserait environ 250 M$.",
+        "text": "OpenAI aurait de son côté dépassé 10 Md$ de revenu trimestriel pour la première fois, et lance « Businesses in ChatGPT ». Les deux principaux labos entrent dans une phase de financement public ou de monétisation en entreprise, ce qui pèsera sur la tarification et les engagements contractuels.",
+        "sources": [
+          {
+            "title": "Anthropic's IPO roadshow video",
+            "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+            "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "OpenAI&#8217;s quarterly revenue reportedly crosses $10B for the first time",
+            "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "revenu récurrent",
+          "ChatGPT Enterprise"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Crise de gouvernance chez Nvidia",
+        "lead": "Nvidia traverse une crise autour de Jensen Huang, accusé d'une liaison avec une dirigeante, avec un conseil qui préparerait son éviction selon la presse et une audition au Congrès.",
+        "text": "L'action a chuté, et un volet d'espionnage chinois allégué a attiré l'attention du Congrès. Ces éléments restent des informations rapportées, non confirmées. Le risque porte sur la stabilité du premier fournisseur de GPU IA.",
+        "sources": [
+          {
+            "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+            "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+            "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Jensen Huang said to have had relationship with executive who reports to him",
+            "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+            "source": "nytimes.com"
+          },
+          {
+            "title": "Jensen Huang said to have had relationship with executive who reports to him",
+            "url": "https://news.ycombinator.com/item?id=50459321",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "gouvernance d'entreprise",
+          "contrôle des exportations de puces"
+        ]
+      },
+      {
+        "cat": "Infra",
+        "title": "Les data centers butent sur le financement et les oppositions",
+        "lead": "La construction de data centers ralentit sous l'effet de l'opposition locale et des lourdeurs administratives, alors que CoreWeave se finance par prépaiements clients et contrats plus courts.",
+        "text": "Fractile lève 720 M$ pour des puces d'inférence, Google dévoile les TPU 8tx et 8i Max, et Meta perd son responsable infrastructure. Le goulot est autant politique et financier que matériel.",
+        "sources": [
+          {
+            "title": "Why the data center you dread might never even be built",
+            "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+            "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "With $720M round, Britain&#8217;s Fractile gets a leg up in the race for AI chips",
+            "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "TPU 8tx and TPU 8i Max",
+            "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+            "source": "blog.google"
+          },
+          {
+            "title": "TPU 8tx and TPU 8i Max",
+            "url": "https://news.ycombinator.com/item?id=50432831",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "TPU",
+          "puces d'inférence",
+          "financement des data centers"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "Loi new-yorkaise sur la sécurité IA en vigueur",
+        "lead": "La loi de New York sur la sécurité de l'IA entre en application et soumet OpenAI et Anthropic à une nouvelle supervision.",
+        "text": "Parallèlement, United Airlines interdit aux agents IA de réserver des vols pour les voyageurs. Les plateformes commencent donc à restreindre l'accès des agents à leurs services.",
+        "sources": [
+          {
+            "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+            "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+            "source": "cbsnews.com"
+          },
+          {
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "url": "https://news.ycombinator.com/item?id=50458900",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "RAISE Act",
+          "agents autonomes",
+          "conformité IA"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Google accusé d'envoyer des données Drive et Gmail à des annotateurs",
+        "lead": "Un article très commenté affirme que Gemini route des fichiers Drive et des emails personnels vers des annotateurs humains.",
+        "text": "La source primaire n'est pas dans nos items, donc l'ampleur reste à vérifier. Cela relance la question des réglages de confidentialité des assistants branchés sur les données personnelles.",
+        "sources": [
+          {
+            "title": "Google Gemini routes personal Drive files and emails to human annotators",
+            "url": "https://github.com/thisisme6598/gemini_files/",
+            "source": "github.com"
+          },
+          {
+            "title": "Google Gemini routes personal Drive files and emails to human annotators",
+            "url": "https://news.ycombinator.com/item?id=50429426",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "annotation humaine",
+          "confidentialité des données",
+          "RLHF"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Gemini Decisions API et local-first chez Apple",
+        "lead": "Google lance une Decisions API, et Apple préparerait une app Mac pour faire tourner facilement des modèles en local.",
+        "text": "Les « decision models » rendent des décisions structurées en un seul passage, sans générer de texte. L'app Apple viserait à rendre l'IA locale accessible au grand public. Le détail technique de l'API n'est pas précisé dans les items.",
+        "sources": [
+          {
+            "title": "Gemini Decisions API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+            "source": "blog.google"
+          },
+          {
+            "title": "Gemini Decisions API",
+            "url": "https://news.ycombinator.com/item?id=50456791",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Gemini Decisions API",
+            "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "Apple has new Mac app coming to make running local AI models easy",
+            "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+            "source": "9to5mac.com"
+          },
+          {
+            "title": "Apple has new Mac app coming to make running local AI models easy",
+            "url": "https://news.ycombinator.com/item?id=50446520",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "decision models",
+          "IA locale",
+          "structured output"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Supprimer moins de 0,05 % des poids suffit",
+        "lead": "Mettre à zéro moins de 0,05 % des poids d'un LLM préentraîné, sans autre modification, lui fait acquérir de nouvelles capacités.",
+        "text": "Cela suggère que le post-entraînement modifie très peu le modèle de base. Le résultat reste à reproduire sur d'autres familles.",
+        "sources": [
+          {
+            "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+            "url": "https://huggingface.co/papers/2611.10866",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "post-training",
+          "pruning",
+          "sparsité des poids"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Mémoire d'agent liée aux preuves",
+        "lead": "Une mémoire externe qui conserve le lien vers les preuves réduit la dégradation causée par la mémoire chez les agents LLM.",
+        "text": "Une mémoire de leçons mal fondée peut nuire aux nouvelles tâches. Lier chaque leçon à son épisode source atténue ce biais.",
+        "sources": [
+          {
+            "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+            "url": "https://huggingface.co/papers/2611.14320",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "agent memory",
+          "évidence",
+          "expérience d'agent"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Quantification d'agents guidée par un professeur",
+        "lead": "SteerDistill montre que les agents quantifiés échouent surtout en négligeant les exigences de la tâche, et corrige cela par distillation guidée en boucle fermée.",
+        "text": "L'approche vise à garder le taux de réussite des agents à faible précision, donc à baisser le coût d'inférence.",
+        "sources": [
+          {
+            "title": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+            "url": "https://huggingface.co/papers/2611.13410",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "quantization",
+          "distillation",
+          "agents LLM"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Programmer les poids par un agent LLM",
+        "lead": "Une série de travaux de « weight-space programming » montre qu'un agent LLM peut lire les poids d'un réseau et écrire des corrections sans entraînement par gradient.",
+        "text": "Les applications vont de la réparation de modèles (Tree-Ising) à l'imagerie médicale et aux circuits quantiques. Ce sont des démonstrations préliminaires, à valider hors cas choisis.",
+        "sources": [
+          {
+            "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+            "url": "https://huggingface.co/papers/2611.14210",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Mixed Signals: Weight-Space Programming for EEG and ECG",
+            "url": "https://huggingface.co/papers/2611.13758",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Weight-Space Programming for Medical Imaging: Do We Still Need Training Data?",
+            "url": "https://arxiv.org/abs/2611.12066v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "weight-space programming",
+          "édition de poids",
+          "Ising"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Benchmarks d'agents sur tâches longues",
+        "lead": "Infrathon teste si des agents peuvent améliorer durablement de l'infrastructure IA réelle sur de longs horizons.",
+        "text": "D'autres travaux comparent des agents sur la révision de code experte et le raisonnement long terme. Ils mettent en avant l'écart entre démos et performance soutenue.",
+        "sources": [
+          {
+            "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
+            "url": "https://huggingface.co/papers/2611.11995",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases",
+            "url": "https://arxiv.org/abs/2611.13246v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "benchmark agentique",
+          "long-horizon",
+          "SWE-bench"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Science",
+        "title": "AlphaProof Code vérifie le chiffrement de Signal",
+        "lead": "DeepMind affirme que ses agents AlphaProof Code ont écrit trois millions de lignes de preuves Lean pour vérifier le cœur du chiffrement de Signal.",
+        "text": "C'est une démonstration de vérification formelle de logiciel à grande échelle, annoncée par le labo sans évaluation externe. AlphaGenome 2 et Gemini Robotics 2.5 sont aussi annoncés, avec peu de détails.",
+        "sources": [
+          {
+            "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+            "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+            "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+            "source": "Google DeepMind"
+          }
+        ],
+        "notions": [
+          "Lean",
+          "vérification formelle",
+          "AlphaProof"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Émulateur AWS officiel",
+        "lead": "AWS publie aws-emulator, un émulateur officiel pour tester en local contre un clone de ses services.",
+        "text": "Utile pour les tests d'intégration sans compte cloud. Le périmètre exact des services couverts n'est pas détaillé.",
+        "sources": [
+          {
+            "title": "aws-emulator",
+            "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "émulation cloud",
+          "tests d'intégration"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+          "url": "https://huggingface.co/papers/2611.14210",
+          "source": "HF Daily Papers",
+          "meta": "▲86 · Hadi Salloum, Ammar Ali"
+        },
+        {
+          "title": "Few-Step Streaming Video Generation via Condition Shifting",
+          "url": "https://huggingface.co/papers/2611.14033",
+          "source": "HF Daily Papers",
+          "meta": "▲84 · Deyuan Liu, Jungang Li, Kaiwen Zheng, Kai Jiang et al."
+        },
+        {
+          "title": "World In-Context Learning for Agentic Robot Manipulation",
+          "url": "https://huggingface.co/papers/2611.12885",
+          "source": "HF Daily Papers",
+          "meta": "▲67 · Heng Fang, Zehui Guo, Yuehan Zhang, Mingyang Du et al."
+        },
+        {
+          "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+          "url": "https://huggingface.co/papers/2611.14320",
+          "source": "HF Daily Papers",
+          "meta": "▲62 · Yukyeong Lee, Yumin Choi, Jinheon Baek, Sung Ju Hwang et al."
+        },
+        {
+          "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+          "url": "https://huggingface.co/papers/2611.13001",
+          "source": "HF Daily Papers",
+          "meta": "▲37 · Yuanrui Wang, Kaifang Li, Xuanyue Li, Ziyun Li et al."
+        },
+        {
+          "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
+          "url": "https://huggingface.co/papers/2611.11995",
+          "source": "HF Daily Papers",
+          "meta": "▲35 · Zhengyu Hu, Zheyuan Xiao, Yike Wang, Hamish Ivison et al."
+        },
+        {
+          "title": "dNaViT: Discrete Codes are General-Purpose Visual Representations",
+          "url": "https://huggingface.co/papers/2611.12426",
+          "source": "HF Daily Papers",
+          "meta": "▲33 · Xiaotong Li, Zhengrong Yue, Xu Huang, Jialv Zou et al."
+        },
+        {
+          "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+          "url": "https://huggingface.co/papers/2610.40394",
+          "source": "HF Daily Papers",
+          "meta": "▲31 · Youqing Fang, Zhouqi Hua, Yinhao Tang, Yuzhe Gu et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Foldable Flight: The Best Paper Airplanes",
+          "url": "https://www.foldableflight.com",
+          "source": "Hacker News",
+          "meta": "1256pts · 167 comments"
+        },
+        {
+          "title": "My AI agents found an unmapped Maya site?",
+          "url": "https://pietromiotti.com/latest/maya-site",
+          "source": "Hacker News",
+          "meta": "1005pts · 369 comments"
+        },
+        {
+          "title": "Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "source": "Hacker News",
+          "meta": "996pts · 8 comments"
+        },
+        {
+          "title": "Google Gemini routes personal Drive files and emails to human annotators",
+          "url": "https://github.com/thisisme6598/gemini_files/",
+          "source": "Hacker News",
+          "meta": "737pts · 148 comments"
+        },
+        {
+          "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+          "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+          "source": "Hacker News",
+          "meta": "723pts · 258 comments"
+        },
+        {
+          "title": "AI usage generates a fragile codebase",
+          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+          "source": "Hacker News",
+          "meta": "636pts · 617 comments"
+        }
+      ]
+    }
+  ]
+}
