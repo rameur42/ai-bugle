@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T12:49:11.444Z",
+  "lookbackHours": 102,
+  "itemCount": 849,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Business",
+        "title": "Jensen Huang quitte la direction de Nvidia dans la tourmente",
+        "lead": "Jensen Huang a démissionné de son poste de CEO de Nvidia avec effet immédiat, ce qui domine l'actualité tech de la période.",
+        "text": "D'après la couverture de TechCrunch, il s'agit d'un « scandale » à rebondissements : pétition de dirigeants (dont Musk) pour sa réintégration, enquête de parlementaires démocrates sur un « schéma » avec Trump, doutes sur son successeur. Les VC craignent un trou dans le financement des startups IA ; plusieurs gouvernements asiatiques ont réagi. Les motifs précis restent à confirmer, les sources fournies étant des titres.",
+        "sources": [
+          {
+            "title": "Jensen Huang resigns as Nvidia CEO immediately",
+            "url": "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
+            "source": "reuters.com"
+          },
+          {
+            "title": "Jensen Huang resigns as Nvidia CEO immediately",
+            "url": "https://news.ycombinator.com/item?id=50467132",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "The unfolding Jensen Huang scandal: a timeline",
+            "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+            "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "gouvernance d'entreprise",
+          "financement des startups IA",
+          "succession CEO"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Nvidia accusé d'avoir organisé la rareté des GPU",
+        "lead": "Des accusations, relayées massivement sur Hacker News, affirment que Nvidia a financé des startups pour qu'elles lui achètent ses propres GPU et maintenir les prix élevés.",
+        "text": "Ce « financement circulaire » nourrit le débat sur la solidité de la demande IA et s'ajoute à la crise de direction. Il s'agit d'allégations, pas de faits établis.",
+        "sources": [
+          {
+            "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+            "source": "techpowerup.com"
+          },
+          {
+            "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "url": "https://news.ycombinator.com/item?id=50493251",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+            "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+            "source": "techspot.com"
+          },
+          {
+            "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+            "url": "https://news.ycombinator.com/item?id=50501631",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "financement circulaire",
+          "bulle IA",
+          "antitrust"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "Les modèles chinois de pointe tournent sur des GPU sous embargo",
+        "lead": "Selon une analyse relayée par TechCrunch et Hacker News, les modèles chinois les plus puissants portent la « signature » de GPU Nvidia soumis au contrôle des exportations.",
+        "text": "Cela suggère un contournement de l'embargo et ajoute de la pression politique sur Nvidia. La méthode de détection n'est pas détaillée dans les sources.",
+        "sources": [
+          {
+            "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "url": "https://unemploymentlabs.com/checkpoint-forensics",
+            "source": "unemploymentlabs.com"
+          },
+          {
+            "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+            "url": "https://news.ycombinator.com/item?id=50474883",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Export-banned Nvidia chips are behind China&#8217;s most powerful AI models — uh-oh, Jensen!",
+            "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "export controls",
+          "contournement d'embargo",
+          "empreinte de modèle"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Gemini 4 Hydrogen : le cheval de bataille de Google",
+        "lead": "Google lance Gemini 4 Hydrogen, modèle « haute efficacité » du Gemini 4, visant agents, code et routage à coût réduit, avec 1M de tokens de contexte.",
+        "text": "Il est déjà dans l'API (OpenRouter, version batch) et déployé dans Google Search. Un « Orchestrator » est associé au lancement.",
+        "sources": [
+          {
+            "title": "Introducing Gemini 4 Hydrogen",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "New model: Google: Gemini 4 Hydrogen",
+            "url": "https://openrouter.ai/google/gemini-4-hydrogen",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+            "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+            "source": "Google AI"
+          }
+        ],
+        "notions": [
+          "Gemini 4",
+          "orchestration d'agents",
+          "fenêtre de contexte 1M"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Qwen4 Max, nouveau flagship d'Alibaba",
+        "lead": "Alibaba sort Qwen4 Max, modèle phare multimodal (texte, image, vidéo en entrée) avec 1M de tokens de contexte et raisonnement activé par défaut.",
+        "text": "Il est disponible sur OpenRouter et a suscité une forte discussion sur Hacker News. Dans le même temps Qwen3.8-27B reste très téléchargé.",
+        "sources": [
+          {
+            "title": "New model: Qwen: Qwen4 Max",
+            "url": "https://openrouter.ai/qwen/qwen4-max",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Qwen4-Max",
+            "url": "https://qwen.ai/blog?id=qwen4-max",
+            "source": "qwen.ai"
+          },
+          {
+            "title": "Qwen4-Max",
+            "url": "https://news.ycombinator.com/item?id=50513215",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "modèle de raisonnement",
+          "Qwen",
+          "multimodal"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic IPO et panne de Claude",
+        "lead": "Un sujet « Anthropic IPO » a dépassé 1000 points sur Hacker News, alors que Claude.ai, Claude Code et la plateforme ont connu des erreurs élevées.",
+        "text": "Les détails de l'introduction en bourse ne sont pas dans les items. L'incident rappelle le risque de dépendance à un fournisseur unique.",
+        "sources": [
+          {
+            "title": "Anthropic IPO",
+            "url": "https://ipo.anthropic.com/us/",
+            "source": "ipo.anthropic.com"
+          },
+          {
+            "title": "Anthropic IPO",
+            "url": "https://news.ycombinator.com/item?id=50465829",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://status.claude.com/incidents/nn11wk485zfn",
+            "source": "status.claude.com"
+          },
+          {
+            "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+            "url": "https://news.ycombinator.com/item?id=50481187",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "introduction en bourse",
+          "fiabilité des API",
+          "dépendance fournisseur"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Lovable : passeports et 200 000 messages exposés",
+        "lead": "Des applications générées avec Lovable exposent des passeports et plus de 200 000 messages privés.",
+        "text": "Cela illustre le risque du code généré par IA livré sans revue de sécurité, en lien avec le débat sur l'ouverture obligatoire de ce code.",
+        "sources": [
+          {
+            "title": "Lovable apps expose passport details and more than 200K private messages",
+            "url": "https://www.crissyfield.de/research/lovable-en/",
+            "source": "crissyfield.de"
+          },
+          {
+            "title": "Lovable apps expose passport details and more than 200K private messages",
+            "url": "https://news.ycombinator.com/item?id=50499017",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "All AI-generated code should be Open Source",
+            "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+            "source": "jakub.jankiewicz.org"
+          },
+          {
+            "title": "All AI-generated code should be Open Source",
+            "url": "https://news.ycombinator.com/item?id=50507303",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "vibe coding",
+          "contrôle d'accès",
+          "Row Level Security"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "ChatGPT Wallet : les agents achètent pour vous",
+        "lead": "OpenAI lance ChatGPT Wallet, qui permet à des agents IA de faire des achats et de payer à la place de l'utilisateur.",
+        "text": "Cela ouvre le commerce agentique, avec des enjeux de fraude et d'autorisation. Dans le même temps, OpenAI multiplie partenariats et cas clients autour de Codex.",
+        "sources": [
+          {
+            "title": "Introducing ChatGPT Wallet",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet",
+            "source": "OpenAI"
+          },
+          {
+            "title": "ChatGPT&#8217;s new Wallet lets AI agents shop and check out for you",
+            "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "commerce agentique",
+          "paiement par agent",
+          "Codex"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Les décisions de modèles « System One »",
+        "lead": "Plusieurs travaux évaluent des modèles « System One » qui prennent des décisions rapides sans générer de longs raisonnements, avec SO-Arena comme banc d'essai.",
+        "text": "SO-Arena mesure l'éventail de capacités et la fiabilité de ces modèles. Un autre papier propose de les construire à partir de LLM avec calcul adaptatif, pour ne pas payer tout le backbone à chaque décision.",
+        "sources": [
+          {
+            "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+            "url": "https://huggingface.co/papers/2611.15777",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "From Large Language Models to Efficient System One Models via Adaptive Computation",
+            "url": "https://huggingface.co/papers/2611.16321",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "System One",
+          "calcul adaptatif",
+          "decision head"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Vidéo générative directement dans l'espace pixel",
+        "lead": "JVT et « Back to Pixels » proposent de faire de la diffusion vidéo dans l'espace pixel plutôt que dans un espace latent de VAE.",
+        "text": "JVT vise la simplicité avec un transformeur unique ; l'autre papier relève que la compression latente limite la haute résolution.",
+        "sources": [
+          {
+            "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
+            "url": "https://huggingface.co/papers/2611.18549",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+            "url": "https://huggingface.co/papers/2611.17336",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "diffusion vidéo",
+          "espace latent VAE",
+          "pixel-space diffusion"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Accélérer les VLM par décodage spéculatif",
+        "lead": "MMFlash propose un décodage spéculatif plus rapide pour les modèles vision-langage grâce à un modèle brouillon par diffusion.",
+        "text": "L'idée prolonge DFlash au cas multimodal. Les gains chiffrés ne figurent pas dans l'extrait.",
+        "sources": [
+          {
+            "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+            "url": "https://huggingface.co/papers/2611.18482",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "speculative decoding",
+          "drafter par diffusion",
+          "VLM"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Hyper-Connections simplifiées pour les LLM",
+        "lead": "Un papier analyse les Hyper-Connections, déjà adoptées dans des modèles de pointe, et propose de les simplifier et de les stabiliser.",
+        "text": "Il part du constat que leurs composants sont mal compris et coûteux à entraîner.",
+        "sources": [
+          {
+            "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
+            "url": "https://huggingface.co/papers/2611.05984",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Hyper-Connections",
+          "connexions résiduelles",
+          "stabilité d'entraînement"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "L'alignement ne se transfère pas aux équipes d'agents",
+        "lead": "« Aligning AI Teams » étudie pourquoi l'alignement d'agents individuels échoue en contexte multi-agents.",
+        "text": "Les auteurs analysent les mécanismes de cet échec, un enjeu pour les systèmes d'agents en production.",
+        "sources": [
+          {
+            "title": "Aligning AI Teams",
+            "url": "https://huggingface.co/papers/2611.17820",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "alignement multi-agents",
+          "sécurité des agents",
+          "généralisation"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Gemini 4 Hydrogen",
+        "lead": "Modèle d'efficacité de la famille Gemini 4, pensé pour agents, code et routage, contexte 1M, disponible en API et dans Google Search.",
+        "text": "Vaut un test si vous cherchez un compromis coût/débit pour des workflows agentiques.",
+        "sources": [
+          {
+            "title": "Introducing Gemini 4 Hydrogen",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "New model: Google: Gemini 4 Hydrogen",
+            "url": "https://openrouter.ai/google/gemini-4-hydrogen",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "Gemini 4",
+          "agents",
+          "routage de modèles"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Qwen4 Max",
+        "lead": "Flagship d'Alibaba : entrées texte, image et vidéo, 1M de contexte, raisonnement par défaut.",
+        "text": "Disponible via OpenRouter ; à comparer à Gemini 4 sur vos cas d'usage.",
+        "sources": [
+          {
+            "title": "New model: Qwen: Qwen4 Max",
+            "url": "https://openrouter.ai/qwen/qwen4-max",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "Qwen4",
+          "raisonnement",
+          "vidéo"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "llama.cpp v1.0.0",
+        "lead": "llama.cpp atteint la version 1.0.0, présentée comme une base plus solide pour l'IA locale.",
+        "text": "Jalon de stabilité pour l'inférence locale. Les détails des changements ne sont pas fournis dans l'extrait.",
+        "sources": [
+          {
+            "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+            "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+            "source": "Hugging Face"
+          }
+        ],
+        "notions": [
+          "llama.cpp",
+          "inférence locale",
+          "GGUF"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+          "url": "https://huggingface.co/papers/2611.15777",
+          "source": "HF Daily Papers",
+          "meta": "▲85 · Lichen Li, Ziping Dong, Sicheng Feng, Qi Li et al."
+        },
+        {
+          "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+          "url": "https://huggingface.co/papers/2611.18359",
+          "source": "HF Daily Papers",
+          "meta": "▲83 · Grid Robotics, Qingfeng Lan, Duo Li, Siyao Li et al."
+        },
+        {
+          "title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+          "url": "https://huggingface.co/papers/2611.15789",
+          "source": "HF Daily Papers",
+          "meta": "▲78 · Yuzhe Chen, Muxi Diao, Lele Yang, Wenbin Xu et al."
+        },
+        {
+          "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+          "url": "https://huggingface.co/papers/2611.18397",
+          "source": "HF Daily Papers",
+          "meta": "▲67 · Run Luo, Kuan Zhang, Qi Deng, Yukun Chen et al."
+        },
+        {
+          "title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+          "url": "https://huggingface.co/papers/2611.14815",
+          "source": "HF Daily Papers",
+          "meta": "▲54 · Junyoung Seo, Jaewoo Seo, Seungryong Kim, Laura Leal-Taixé et al."
+        },
+        {
+          "title": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+          "url": "https://huggingface.co/papers/2611.13004",
+          "source": "HF Daily Papers",
+          "meta": "▲46 · Xu Huang, Ye Huang, Xiaotong Li, Zhengrong Yue et al."
+        },
+        {
+          "title": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+          "url": "https://huggingface.co/papers/2611.15131",
+          "source": "HF Daily Papers",
+          "meta": "▲44 · Hengyuan Cao, Biao Gong, Guoshan Lu, Qiyuan Zhang et al."
+        },
+        {
+          "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+          "url": "https://huggingface.co/papers/2611.16748",
+          "source": "HF Daily Papers",
+          "meta": "▲41 · Yuxuan Chen, Xiaojie Li, Hao Chen, Juncheng Ma et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "All AI-generated code should be Open Source",
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "source": "Hacker News",
+          "meta": "1179pts · 624 comments"
+        },
+        {
+          "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+          "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+          "source": "Hacker News",
+          "meta": "1104pts · 651 comments"
+        },
+        {
+          "title": "Anthropic IPO",
+          "url": "https://ipo.anthropic.com/us/",
+          "source": "Hacker News",
+          "meta": "1004pts · 919 comments"
+        },
+        {
+          "title": "Lovable apps expose passport details and more than 200K private messages",
+          "url": "https://www.crissyfield.de/research/lovable-en/",
+          "source": "Hacker News",
+          "meta": "990pts · 372 comments"
+        },
+        {
+          "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+          "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+          "source": "Hacker News",
+          "meta": "795pts · 224 comments"
+        },
+        {
+          "title": "Qwen4-Max",
+          "url": "https://qwen.ai/blog?id=qwen4-max",
+          "source": "Hacker News",
+          "meta": "620pts · 268 comments"
+        }
+      ]
+    }
+  ]
+}
