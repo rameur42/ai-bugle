@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T13:16:49.018Z",
+  "lookbackHours": 78,
+  "itemCount": 2147,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Modèles",
+        "title": "OpenAI lance GPT-6.2 Astra et Sol",
+        "lead": "OpenAI a sorti la série GPT-6.2 : Astra, le modèle phare pour l'ingénierie et la science, et Sol, une version plus économique, chacun avec une variante « Pro ».",
+        "text": "Les deux modèles ont un contexte d'environ 1,05 M de tokens. Les variantes Pro sont le même modèle servi avec un mode de raisonnement « pro », pour de meilleures réponses au prix de plus de calcul. OpenAI publie aussi un cas d'usage juridique (Astra for Law). Le sujet a fait 1341 points sur Hacker News.",
+        "sources": [
+          {
+            "title": "New model: OpenAI: GPT-6.2 Astra",
+            "url": "https://openrouter.ai/openai/gpt-6.2-astra",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: OpenAI: GPT-6.2 Sol",
+            "url": "https://openrouter.ai/openai/gpt-6.2-sol",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "GPT‑6.2 Astra and Sol",
+            "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+            "source": "openai.com"
+          },
+          {
+            "title": "GPT‑6.2 Astra and Sol",
+            "url": "https://news.ycombinator.com/item?id=50535230",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+            "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "reasoning mode",
+          "fenêtre de contexte",
+          "routage de modèles"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Google sort Gemini 4 Neon, orienté code et agents",
+        "lead": "Google a lancé Gemini 4 Neon, un modèle rapide et de gamme intermédiaire, conçu pour le code et les tâches agentiques.",
+        "text": "Il propose 1 M de tokens de contexte et est disponible sur OpenRouter dès le lancement, y compris en batch. Un fil HN s'interroge sur le retard de Gemini 4 Carbon, le modèle plus haut de gamme. Google annonce aussi Genie 4, son modèle de mondes interactifs, désormais disponible.",
+        "sources": [
+          {
+            "title": "New model: Google: Gemini 4 Neon",
+            "url": "https://openrouter.ai/google/gemini-4-neon",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Gemini 4 Neon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+            "source": "blog.google"
+          },
+          {
+            "title": "Gemini 4 Neon",
+            "url": "https://news.ycombinator.com/item?id=50552424",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+            "source": "Google DeepMind"
+          },
+          {
+            "title": "Why is Gemini 4 Carbon taking so long?",
+            "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+            "source": "kernel.dev"
+          },
+          {
+            "title": "Why is Gemini 4 Carbon taking so long?",
+            "url": "https://news.ycombinator.com/item?id=50541790",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "agentic coding",
+          "batch API",
+          "world model"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Anthropic fixe le prix de son introduction en bourse",
+        "lead": "Anthropic a fixé le prix de son IPO à 83 $ l'action, au-dessus de la fourchette annoncée.",
+        "text": "C'est un signal fort sur l'appétit des marchés pour les labos d'IA, et le fil HN dépasse 500 commentaires. Il survient alors que Nvidia traverse une crise de gouvernance.",
+        "sources": [
+          {
+            "title": "Anthropic prices initial public offering",
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "source": "anthropic.com"
+          },
+          {
+            "title": "Anthropic prices initial public offering",
+            "url": "https://news.ycombinator.com/item?id=50553843",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic prices IPO at $83 a share, above projected range",
+            "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "valorisation des labos IA"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Nvidia : départ de Jensen Huang et incertitude",
+        "lead": "Jensen Huang a quitté la direction de Nvidia, ce qui suscite de vives réactions et des doutes sur la suite de la stratégie.",
+        "text": "Les participations de Nvidia dans des startups atteignent 65 Md$, mais leur avenir est mis en question. Nvidia a aussi omis de déposer un rapport SEC de routine et précise quand il continuera ou non à financer les néoclouds. Satya Nadella se dit confiant, Elon Musk, Sam Altman et Palmer Luckey ont réagi publiquement.",
+        "sources": [
+          {
+            "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+            "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+            "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Nvidia clarifies when it will — and won&#8217;t — keep financing neoclouds",
+            "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "néoclouds",
+          "financement circulaire de l'IA"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Les agents de code déplacent le goulot vers la revue",
+        "lead": "Une étude de Harvard conclut que les agents de code ont déplacé le goulot d'étranglement du développement vers la revue de code.",
+        "text": "Cela rejoint le débat sur la vérification (comment l'équipe Claude Code la conçoit) et sur le choix du « harness » pour chaque modèle. Côté mesure, un papier affirme que des modèles de code mieux notés n'ont pas produit plus de travail utile.",
+        "sources": [
+          {
+            "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+            "source": "complexdiscovery.com"
+          },
+          {
+            "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+            "url": "https://news.ycombinator.com/item?id=50538303",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "How the Claude Code team thinks about verification",
+            "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+            "source": "claude.dev"
+          },
+          {
+            "title": "How the Claude Code team thinks about verification",
+            "url": "https://news.ycombinator.com/item?id=50529612",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "What is the best harness for each model?",
+            "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+            "source": "runta.com"
+          },
+          {
+            "title": "What is the best harness for each model?",
+            "url": "https://news.ycombinator.com/item?id=50532191",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "revue de code",
+          "agent harness",
+          "vérification"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "L'IA grignote le trafic web",
+        "lead": "Les réponses IA de Google réduiraient de 40 % le trafic de recherche, et un média local berlinois dit en mourir.",
+        "text": "Satya Nadella prédit que les agents vont rebattre l'économie du web. Google ajoute en parallèle un mode incognito à sa fonction IA de recherche.",
+        "sources": [
+          {
+            "title": "Google's AI answers reducing search traffic by 40%",
+            "url": "https://revscope.co/blog/search-seo-geo-2026/",
+            "source": "revscope.co"
+          },
+          {
+            "title": "Google's AI answers reducing search traffic by 40%",
+            "url": "https://news.ycombinator.com/item?id=50540178",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "AI is killing All About Berlin",
+            "url": "https://nicolasbouliane.com/blog/death-by-ai",
+            "source": "nicolasbouliane.com"
+          },
+          {
+            "title": "AI is killing All About Berlin",
+            "url": "https://news.ycombinator.com/item?id=50542705",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+            "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "zero-click search",
+          "économie des éditeurs"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Cyberattaques IA : les défenses à la traîne",
+        "lead": "Des dirigeants alertent sur des cyberattaques assistées par IA qui dépassent les défenses.",
+        "text": "Nadella juge que beaucoup d'infrastructures critiques sont « impatchables ». OpenAI annonce un travail avec l'OTAN sur la cyberdéfense. Des banques disent aussi que les clients utilisant des agents IA assument seuls les pertes en cas de piratage.",
+        "sources": [
+          {
+            "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is &#8216;unpatchable&#8217;",
+            "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: &#8216;It&#8217;s time to start running&#8217;",
+            "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Strengthening NATO and allied cyber defenses with AI",
+            "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+            "source": "OpenAI"
+          }
+        ],
+        "notions": [
+          "infrastructures critiques",
+          "prompt injection",
+          "responsabilité des agents"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Raisonner plus ne fait pas mieux acheter",
+        "lead": "Une étude montre que plus d'effort de raisonnement augmente la confiance des agents d'achat LLM mais pas la justesse de leurs choix.",
+        "text": "Le test porte sur des fiches produit multimodales. Il invite à ne pas payer de raisonnement supplémentaire sans mesurer la qualité réelle.",
+        "sources": [
+          {
+            "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+            "url": "https://huggingface.co/papers/2611.22033",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "reasoning effort",
+          "calibration"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Les LLM peuvent écrire des poids de réseaux",
+        "lead": "Plusieurs papiers étudient la « programmation dans l'espace des poids » : des LLM écrivent directement les paramètres d'un autre réseau.",
+        "text": "WeightBench évalue cette capacité, et des réplications avec des LLM de pointe, dont Claude, confirment qu'ils compilent des programmes en poids. Une application montre des poids écrits par LLM pilotant un vrai tracteur.",
+        "sources": [
+          {
+            "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+            "url": "https://huggingface.co/papers/2611.18553",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+            "url": "https://arxiv.org/abs/2611.21449v1",
+            "source": "arXiv"
+          },
+          {
+            "title": "Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor",
+            "url": "https://arxiv.org/abs/2611.21958v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "weight-space programming",
+          "hypernetwork"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Détecter les portes dérobées d'agents GUI",
+        "lead": "IDEA propose de détecter à l'inférence les portes dérobées dans des agents GUI open-weight téléchargés.",
+        "text": "Le risque : un agent passe les tests propres mais dérape quand un déclencheur visuel apparaît. Un autre papier, PIPETTE, fait du purple-teaming contre l'injection de prompt indirecte.",
+        "sources": [
+          {
+            "title": "IDEA: Intent-Dominance Evidence Audit for Inference-Time Backdoor Detection in GUI Agents",
+            "url": "https://huggingface.co/papers/2611.24102",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+            "url": "https://huggingface.co/papers/2611.24362",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "backdoor",
+          "injection de prompt indirecte"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Les benchmarks de modèles sont fragiles",
+        "lead": "Des papiers soulignent que les classements de LLM sont peu fiables : biais du vainqueur et contamination des benchmarks en hausse.",
+        "text": "Un autre mesure que le bruit de serving (moteur, batch, noyaux) peut égaler l'effet d'une quantification 8 ou 4 bits. Les comparaisons de quantification sont donc souvent mal calibrées.",
+        "sources": [
+          {
+            "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+            "url": "https://arxiv.org/abs/2611.22227v1",
+            "source": "arXiv"
+          },
+          {
+            "title": "Benchleaking Is Accelerating: Benchmark contamination has worsened sharply in the past month -- from post-training down to pre-training base models",
+            "url": "https://arxiv.org/abs/2611.21315v1",
+            "source": "arXiv"
+          },
+          {
+            "title": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
+            "url": "https://huggingface.co/papers/2611.15671",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "contamination",
+          "winner's curse",
+          "quantification"
+        ]
+      },
+      {
+        "cat": "Infra",
+        "title": "Inférence MoE de 180B sur 32 Go de RAM",
+        "lead": "Hugging Face montre comment faire tourner un MoE de 180B paramètres dans 32 Go de RAM avec Transformers.",
+        "text": "Le papier Tideway traite de la même idée, avec une gestion de mémoire par paliers selon la phase pour les MoE sur appareils grand public.",
+        "sources": [
+          {
+            "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+            "url": "https://huggingface.co/blog/moe-expert-streaming",
+            "source": "Hugging Face"
+          },
+          {
+            "title": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
+            "url": "https://huggingface.co/papers/2611.14848",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "Mixture of Experts",
+          "offloading"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B",
+        "lead": "Qwen3.8-27B est un modèle image-texte de 27 B paramètres, déjà téléchargé plus de 6,6 M de fois.",
+        "text": "Sa popularité l'a rapidement fait adopter par la communauté, avec des dérivés et des quantisations. Les capacités détaillées ne figurent pas dans les items.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "modèle multimodal",
+          "open-weight"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "Jeveration: System One Models Now Generate",
+          "url": "https://huggingface.co/papers/2611.24738",
+          "source": "HF Daily Papers",
+          "meta": "▲50 · Yuhe Liu, Qi Li, Shihua Zhang, Xinchao Wang et al."
+        },
+        {
+          "title": "Beyond Answering: Learning to Speak First and Act in Streaming Video",
+          "url": "https://huggingface.co/papers/2611.17048",
+          "source": "HF Daily Papers",
+          "meta": "▲36 · Shuhan Li, Huankang Guan, Xintong Guo, Yang Bo et al."
+        },
+        {
+          "title": "PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling",
+          "url": "https://huggingface.co/papers/2611.11318",
+          "source": "HF Daily Papers",
+          "meta": "▲27 · Minseo Yoon, Minseong Bae, Sojin Lee, Hyunwoo J. Kim et al."
+        },
+        {
+          "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+          "url": "https://huggingface.co/papers/2611.23068",
+          "source": "HF Daily Papers",
+          "meta": "▲24 · Yuanhao Zeng, Shaocheng Lan, Ao Lu, Kuang Yan et al."
+        },
+        {
+          "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+          "url": "https://huggingface.co/papers/2611.24154",
+          "source": "HF Daily Papers",
+          "meta": "▲23 · Xirui Jiang, Yuxi Chen, Rui Yang, Feng Luo et al."
+        },
+        {
+          "title": "ALIVE: Making Streaming Video Models Interactive",
+          "url": "https://huggingface.co/papers/2611.21366",
+          "source": "HF Daily Papers",
+          "meta": "▲23 · Jinzhao Li, Yuan Xu, Jinxuan Wu, Yukun Wang et al."
+        },
+        {
+          "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+          "url": "https://huggingface.co/papers/2611.24789",
+          "source": "HF Daily Papers",
+          "meta": "▲22 · Phuong Tuan Dat, Qi Li, Xinchao Wang"
+        },
+        {
+          "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+          "url": "https://huggingface.co/papers/2611.24654",
+          "source": "HF Daily Papers",
+          "meta": "▲20 · Zeguan Xiao, Zhuocheng Liang, Yun Chen, Yong Wang et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "GPT‑6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "source": "Hacker News",
+          "meta": "1341pts · 853 comments"
+        },
+        {
+          "title": "Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "source": "Hacker News",
+          "meta": "892pts · 702 comments"
+        },
+        {
+          "title": "AI is killing All About Berlin",
+          "url": "https://nicolasbouliane.com/blog/death-by-ai",
+          "source": "Hacker News",
+          "meta": "791pts · 701 comments"
+        },
+        {
+          "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+          "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+          "source": "Hacker News",
+          "meta": "728pts · 620 comments"
+        },
+        {
+          "title": "Google's AI answers reducing search traffic by 40%",
+          "url": "https://revscope.co/blog/search-seo-geo-2026/",
+          "source": "Hacker News",
+          "meta": "703pts · 556 comments"
+        },
+        {
+          "title": "Seven new models at scalable price-performance",
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+          "source": "Hacker News",
+          "meta": "567pts · 358 comments"
+        }
+      ]
+    }
+  ]
+}
