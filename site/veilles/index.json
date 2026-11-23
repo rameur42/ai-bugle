@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-11-23",
+      "headline": "Anthropic entre au Nasdaq, puis le marché IA décroche",
+      "counts": {
+        "essentiel": 7,
+        "papiers": 4,
+        "sorties": 3
+      },
+      "itemCount": 1178
+    },
+    {
       "date": "2026-11-19",
       "headline": "OpenAI lance GPT-6.2 Astra et Sol",
       "counts": {

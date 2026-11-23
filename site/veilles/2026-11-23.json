@@ -1,0 +1,495 @@
+{
+  "version": 1,
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T14:44:53.377Z",
+  "lookbackHours": 102,
+  "itemCount": 1178,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Business",
+        "title": "Anthropic entre au Nasdaq, puis le marché IA décroche",
+        "lead": "Anthropic a fait son entrée au Nasdaq lors d'une IPO record, mais le Nasdaq a effacé tous ses gains 2026 dès le deuxième jour, sur fond de correction des valeurs IA.",
+        "text": "Ses sept fondateurs auraient encaissé près de 2 Md$ et l'opération pourrait rapporter jusqu'à 156 Md$ à des œuvres caritatives. Un mix énergétique prévu à 87 % gaz et 11 % charbon en 2028 alimente la polémique sur l'empreinte des data centers.",
+        "sources": [
+          {
+            "title": "Anthropic’s Nasdaq debut",
+            "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+            "source": "reuters.com"
+          },
+          {
+            "title": "Anthropic’s Nasdaq debut",
+            "url": "https://news.ycombinator.com/item?id=50562754",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+            "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+            "source": "theguardian.com"
+          },
+          {
+            "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+            "url": "https://news.ycombinator.com/item?id=50574383",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic&#8217;s 7 founders cashed out nearly $2B in record-breaking IPO",
+            "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "valorisation IA",
+          "bulle IA",
+          "empreinte carbone data centers"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Hypothèse de Riemann généralisée : preuve annoncée avec Claude",
+        "lead": "Le mathématicien Levent Alpöge affirme avoir prouvé l'hypothèse de Riemann généralisée avec l'aide de Claude, et un autre chercheur, Alessandro Masullo, annonce aussi une preuve.",
+        "text": "Aucune vérification indépendante n'a encore eu lieu et l'annonce reste à prendre avec prudence. En parallèle, Claude aurait résolu deux problèmes ouverts sur la physique des trous noirs, ce qui renforce l'idée d'une IA contributrice en recherche.",
+        "sources": [
+          {
+            "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+            "url": "https://alpo.ge/remark.pdf",
+            "source": "alpo.ge"
+          },
+          {
+            "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+            "url": "https://news.ycombinator.com/item?id=50574968",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+            "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Quoting Levent Alpöge",
+            "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "hypothèse de Riemann",
+          "preuve assistée par IA",
+          "vérification formelle (Lean)"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Inkling 2 Mini : un transformer « bouclé » open-weight",
+        "lead": "Thinking Machines publie Inkling 2 Mini, un modèle multimodal open-weight MoE de 26,4 Md de paramètres dont 3,4 Md actifs, avec des couches centrales exécutées trois fois.",
+        "text": "Il offre un contexte d'environ 1 M de tokens et vise l'usage local, d'où un fort succès (quantisations, guide Hugging Face, HN). GLM-5.4 adopte aussi une architecture bouclée : le looping devient une piste sérieuse pour gagner en profondeur sans multiplier les paramètres.",
+        "sources": [
+          {
+            "title": "New model: Thinking Machines: Inkling 2 Mini",
+            "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+            "url": "https://huggingface.co/blog/inkling2mini",
+            "source": "Hugging Face"
+          },
+          {
+            "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "source": "z.ai"
+          },
+          {
+            "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+            "url": "https://news.ycombinator.com/item?id=50609685",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "looped transformer",
+          "Mixture of Experts",
+          "modèles open-weight"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B domine l'écosystème open",
+        "lead": "Qwen3.8-27B est le modèle ouvert le plus téléchargé de la période (plus de 6 M de téléchargements) et sert déjà de base à des dérivés.",
+        "text": "DaisyRose 27B en est un exemple : entraîné par RL seul à partir de Qwen3.8. Hugging Face lance aussi des « harness adapters » pour adapter un modèle à son harnais d'agent afin d'améliorer performances et coûts.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          },
+          {
+            "title": "New model: RadixArk: DaisyRose 27B",
+            "url": "https://openrouter.ai/radixark/daisyrose-27b",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+            "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+            "source": "Hugging Face"
+          }
+        ],
+        "notions": [
+          "harness adapters",
+          "RL post-training",
+          "agent harness"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Crise de gouvernance chez Nvidia",
+        "lead": "Nvidia a rappelé Jensen Huang au poste de PDG après un scandale dont les suites se poursuivent.",
+        "text": "Les détails restent dans les articles de TechCrunch (chronologie, retombées). Pour une équipe produit, le risque est surtout un signal d'instabilité chez le principal fournisseur de GPU.",
+        "sources": [
+          {
+            "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+            "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+            "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "The unfolding Jensen Huang scandal: a timeline",
+            "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "gouvernance d'entreprise",
+          "Nvidia",
+          "chaîne d'approvisionnement GPU"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Distillation adverse et protection des données face aux agents",
+        "lead": "OpenAI publie sur la lutte contre la distillation adverse, tandis que Signal limite les captures d'écran mobiles face à la surveillance par IA.",
+        "text": "Le débat sur la restriction des agents IA dans les OS mobiles s'intensifie. Des incidents de traitement de données chez des fournisseurs d'inférence sont aussi discutés.",
+        "sources": [
+          {
+            "title": "Combatting adversarial distillation",
+            "url": "https://openai.com/index/combatting-adversarial-distillation",
+            "source": "OpenAI"
+          },
+          {
+            "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+            "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "source": "signal.org"
+          },
+          {
+            "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+            "url": "https://news.ycombinator.com/item?id=50572348",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "adversarial distillation",
+          "agents mobiles et vie privée",
+          "sécurité des fournisseurs d'inférence"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Tool Retrieval dans l'API Gemini",
+        "lead": "Google ajoute à l'API Gemini une récupération d'outils pour donner à un agent accès à des centaines d'outils sans saturer le contexte.",
+        "text": "L'idée est de ne charger que les outils pertinents à chaque étape, ce qui réduit les tokens et les erreurs de sélection. Gemini 4 Neon est par ailleurs signalé n°1 d'un classement de modèles.",
+        "sources": [
+          {
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+            "source": "Google AI"
+          },
+          {
+            "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "url": "https://git-aarvin.github.io/mei/",
+            "source": "git-aarvin.github.io"
+          },
+          {
+            "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+            "url": "https://news.ycombinator.com/item?id=50568130",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "tool retrieval",
+          "function calling",
+          "context engineering"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Programmer les poids d'un réseau avec un LLM",
+        "lead": "Plusieurs travaux montrent qu'un LLM peut modifier directement les poids d'un réseau (« weight-space programming ») pour lui installer des capacités sans entraînement par gradient.",
+        "text": "Des variantes visent aussi les risques, comme des portes dérobées insérées en un coup dans un VLM. Cela rejoint le débat HN sur des modèles qui réécrivent leurs propres poids.",
+        "sources": [
+          {
+            "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+            "url": "https://huggingface.co/papers/2611.26408",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "TrojanMaxxing: One-shotting VLM Backdoors with Weight-Space Programming",
+            "url": "https://arxiv.org/abs/2611.27425v1",
+            "source": "arXiv"
+          },
+          {
+            "title": "Language Models Can Rewrite Their Own Weights",
+            "url": "https://arxiv.org/abs/2611.21885",
+            "source": "arxiv.org"
+          },
+          {
+            "title": "Language Models Can Rewrite Their Own Weights",
+            "url": "https://news.ycombinator.com/item?id=50577265",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "weight-space programming",
+          "model editing",
+          "backdoor"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Clover-35B-A3B : un LLM de diffusion MoE",
+        "lead": "Clover-35B-A3B-Preview est un modèle de langage à diffusion MoE de 35 Md de paramètres dont 3 Md actifs, avec mode raisonnement.",
+        "text": "Il s'ajoute à une série de travaux sur les LLM de diffusion et les modèles bouclés, comme dLoop. C'est une alternative aux modèles autorégressifs, à confirmer sur les benchmarks.",
+        "sources": [
+          {
+            "title": "Clover-35B-A3B-Preview Technical Report",
+            "url": "https://huggingface.co/papers/2611.24636",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "dLoop: Looped Diffusion Language Models via Recurrent Latent Refinement",
+            "url": "https://arxiv.org/abs/2611.26275v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "diffusion language model",
+          "MoE",
+          "dLoop"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "Hyper-connexions stabilisées par contraction géométrique",
+        "lead": "cmHC corrige l'équilibre du mélange entre flux dans les hyper-connexions contraintes par variété (mHC) grâce à une contraction géométrique.",
+        "text": "Le papier est très plébiscité sur HF (81 votes). Il vise des connexions résiduelles multi-flux plus stables à l'entraînement.",
+        "sources": [
+          {
+            "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+            "url": "https://huggingface.co/papers/2611.27193",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "hyper-connections",
+          "connexions résiduelles",
+          "manifold-constrained"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "La recherche par embeddings est-elle vraiment supérieure à grep ?",
+        "lead": "Une étude interroge l'avantage des encodeurs denses sur BM25 en recherche de code, alors que les agents de code se débrouillent bien avec grep.",
+        "text": "Elle suggère que les benchmarks actuels ne distinguent pas ce que mesure cet avantage. À retenir pour concevoir la recherche de contexte des agents.",
+        "sources": [
+          {
+            "title": "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search",
+            "url": "https://huggingface.co/papers/2611.20455",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "dense retrieval",
+          "BM25",
+          "code search"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Inkling 2 Mini (Thinking Machines)",
+        "lead": "Modèle multimodal open-weight MoE à 3,4 Md de paramètres actifs, doté d'un contexte de 1 M de tokens et pensé pour l'exécution locale.",
+        "text": "Ses couches centrales bouclées trois fois visent de meilleures performances à coût d'inférence contenu. Il est disponible sur Hugging Face et OpenRouter.",
+        "sources": [
+          {
+            "title": "thinkingmachines/Inkling-2-Mini",
+            "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+            "source": "HF Models"
+          },
+          {
+            "title": "New model: Thinking Machines: Inkling 2 Mini",
+            "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+            "url": "https://huggingface.co/blog/inkling2mini",
+            "source": "Hugging Face"
+          }
+        ],
+        "notions": [
+          "looped transformer",
+          "inférence locale",
+          "open-weight"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B",
+        "lead": "Qwen3.8-27B est un modèle ouvert multimodal de 27 Md de paramètres, très adopté (plus de 6 M de téléchargements).",
+        "text": "Il sert de base à des variantes comme DaisyRose 27B, dont les capacités sont décrites : raisonnement multimodal entraîné par RL.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          },
+          {
+            "title": "New model: RadixArk: DaisyRose 27B",
+            "url": "https://openrouter.ai/radixark/daisyrose-27b",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "Qwen",
+          "raisonnement multimodal",
+          "RL"
+        ]
+      },
+      {
+        "cat": "Outils",
+        "title": "Tool Retrieval pour l'API Gemini",
+        "lead": "Fonction qui sélectionne dynamiquement les outils pertinents parmi des centaines pour un agent.",
+        "text": "Elle limite la consommation de contexte et simplifie les agents à grand catalogue d'outils.",
+        "sources": [
+          {
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+            "source": "Google AI"
+          }
+        ],
+        "notions": [
+          "tool retrieval",
+          "agents",
+          "Gemini API"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+          "url": "https://huggingface.co/papers/2611.27193",
+          "source": "HF Daily Papers",
+          "meta": "▲81 · Haowei He, Ziwen Zhao, Chenshuo Pan, Gang Lin et al."
+        },
+        {
+          "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+          "url": "https://huggingface.co/papers/2611.26444",
+          "source": "HF Daily Papers",
+          "meta": "▲57 · Yuzhi Huang, Jie Wu, Fanding Huang, Junchao Lin et al."
+        },
+        {
+          "title": "Non-penetrating World Models",
+          "url": "https://huggingface.co/papers/2611.27963",
+          "source": "HF Daily Papers",
+          "meta": "▲51 · Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji et al."
+        },
+        {
+          "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+          "url": "https://huggingface.co/papers/2611.26409",
+          "source": "HF Daily Papers",
+          "meta": "▲49 · Changli Tang, Jie Yang, Tianyi Wang, Lei Li et al."
+        },
+        {
+          "title": "Posterior Matching Distillation",
+          "url": "https://huggingface.co/papers/2611.26629",
+          "source": "HF Daily Papers",
+          "meta": "▲42 · Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag et al."
+        },
+        {
+          "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+          "url": "https://huggingface.co/papers/2611.26590",
+          "source": "HF Daily Papers",
+          "meta": "▲36 · Jiahao Huang, Jun Wang"
+        },
+        {
+          "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+          "url": "https://huggingface.co/papers/2611.26603",
+          "source": "HF Daily Papers",
+          "meta": "▲36 · Peiyun Hu, Marko Mihajlovic, Lyndon Duong, Lahav Lipson et al."
+        },
+        {
+          "title": "Clover-35B-A3B-Preview Technical Report",
+          "url": "https://huggingface.co/papers/2611.24636",
+          "source": "HF Daily Papers",
+          "meta": "▲34 · DiffuSpace Technical Team"
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+          "url": "https://alpo.ge/remark.pdf",
+          "source": "Hacker News",
+          "meta": "2918pts · 2094 comments"
+        },
+        {
+          "title": "Inkling 2 Mini",
+          "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+          "source": "Hacker News",
+          "meta": "1469pts · 293 comments"
+        },
+        {
+          "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+          "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+          "source": "Hacker News",
+          "meta": "1375pts · 309 comments"
+        },
+        {
+          "title": "Anthropic’s Nasdaq debut",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "source": "Hacker News",
+          "meta": "1143pts · 2338 comments"
+        },
+        {
+          "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+          "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+          "source": "Hacker News",
+          "meta": "994pts · 975 comments"
+        },
+        {
+          "title": "I'll never buy Framework hardware again",
+          "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+          "source": "Hacker News",
+          "meta": "834pts · 638 comments"
+        }
+      ]
+    }
+  ]
+}
