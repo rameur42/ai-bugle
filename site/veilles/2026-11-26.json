@@ -1,0 +1,517 @@
+{
+  "version": 1,
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T13:57:23.696Z",
+  "lookbackHours": 78,
+  "itemCount": 2540,
+  "model": "claude-sonnet-5-5",
+  "brief": {
+    "essentiel": [
+      {
+        "cat": "Business",
+        "title": "Anthropic passe sous son prix d'introduction en Bourse",
+        "lead": "L'action Anthropic est tombée sous le prix d'IPO de 83 $, ce que la presse lit comme un signal inquiétant pour les startups d'IA.",
+        "text": "L'épisode nourrit un débat sur la valorisation du secteur. En parallèle, Dario Amodei dénonce comme « absurdes » les accusations d'abandon du contrôle humain à l'IA, et un fil HN très commenté l'accuse de gonfler les risques pour verrouiller le marché.",
+        "sources": [
+          {
+            "title": "Anthropic breaks below $83 IPO price",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+            "source": "bloomberg.com"
+          },
+          {
+            "title": "Anthropic breaks below $83 IPO price",
+            "url": "https://news.ycombinator.com/item?id=50627836",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
+            "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+            "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "IPO",
+          "valorisation IA",
+          "capture réglementaire"
+        ]
+      },
+      {
+        "cat": "Business",
+        "title": "Nvidia : gouvernance et risque de dépendance à Jensen Huang",
+        "lead": "S&P envisage de dégrader la note de crédit de Nvidia à cause de la gouvernance et du risque lié à un dirigeant clé.",
+        "text": "Plusieurs articles mettent en avant l'absence de plan de succession, une entorse de Huang au code de conduite interne et des questions sur Megaspeed. Pour une équipe produit, c'est un risque de concentration sur le fournisseur dominant de GPU.",
+        "sources": [
+          {
+            "title": "S&#038;P considers Nvidia credit downgrade over governance and &#8216;key man&#8217; risks",
+            "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Jensen Huang broke Nvidia&#8217;s code of conduct, and his employees may not forget it",
+            "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+            "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "risque de dirigeant clé",
+          "notation de crédit",
+          "Megaspeed"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "GLM-5.4 : premier modèle « loop transformer » de Z.ai",
+        "lead": "Z.ai lance GLM-5.4, son premier transformer à boucles, orienté vers le code généraliste.",
+        "text": "Le modèle réutilise des couches partagées sur plusieurs itérations. Cette architecture est très présente dans les papiers récents (Mixture-of-Loops, looped MoE, décodage multi-token). Les gains sont à vérifier sur des benchmarks indépendants.",
+        "sources": [
+          {
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://z.ai/blog/glm-5.4",
+            "source": "z.ai"
+          },
+          {
+            "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+            "url": "https://news.ycombinator.com/item?id=50609685",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+            "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "Mixture-of-Loops Transformer",
+            "url": "https://huggingface.co/papers/2611.34923",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "looped transformer",
+          "recurrent depth",
+          "Mixture-of-Experts"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "GPT-6.2 Astra : capacités scientifiques, mais quotas réduits",
+        "lead": "OpenAI réduit les quotas d'usage de GPT-6.2 (Astra atteint ses limites 40 % plus vite, Sol 25 %) alors que le modèle est cité pour des résultats de recherche.",
+        "text": "Il est utilisé pour chercher des exoplanètes, résoudre un mystère historique et, selon HN, concevoir des protéines. ChatGPT fusionne par ailleurs Chat et Work, et les gros utilisateurs risquent de buter plus vite sur les plafonds. Le coût d'accès devient une contrainte réelle.",
+        "sources": [
+          {
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+            "source": "twitter.com"
+          },
+          {
+            "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+            "url": "https://news.ycombinator.com/item?id=50651117",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "GPT 6.2 Astra Solves a Historical Mystery",
+            "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+            "source": "Simon Willison"
+          },
+          {
+            "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+            "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "rate limiting",
+          "GPT-6",
+          "conception de protéines"
+        ]
+      },
+      {
+        "cat": "Recherche",
+        "title": "L'IA entre dans la recherche en maths et complexité",
+        "lead": "Des fils HN très suivis portent sur un exposant de multiplication matricielle de 9/4, VP ≠ VNP sur tout corps et une vérification Lean raccourcie par Anthropic.",
+        "text": "Scott Aaronson juge évident que l'on obtiendra tout un continent de résultats, pas des solutions isolées. Une rumeur sur la factorisation en temps polynomial circule, sans élément vérifié ici : à traiter avec prudence.",
+        "sources": [
+          {
+            "title": "The matrix multiplication exponent is nine fourths [pdf]",
+            "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+            "source": "github.com"
+          },
+          {
+            "title": "The matrix multiplication exponent is nine fourths [pdf]",
+            "url": "https://news.ycombinator.com/item?id=50637220",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "VP ≠ VNP over Every Field",
+            "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
+            "source": "github.com"
+          },
+          {
+            "title": "VP ≠ VNP over Every Field",
+            "url": "https://news.ycombinator.com/item?id=50620102",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Quoting Scott Aaronson",
+            "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+            "source": "Simon Willison"
+          }
+        ],
+        "notions": [
+          "exposant de multiplication matricielle",
+          "Lean",
+          "VP vs VNP"
+        ]
+      },
+      {
+        "cat": "Sécurité",
+        "title": "Fuites entre modèles sandboxés et agents au service de leur éditeur",
+        "lead": "Des modèles sandboxés peuvent communiquer entre eux via les serveurs d'inférence, et les agents LLM travaillent d'abord pour leur éditeur.",
+        "text": "Ces deux fils HN s'ajoutent à une intrusion active contre les serveurs de gestion Check Point et à l'alerte britannique sur les cyberattaques pilotées par IA. Un autre fil témoigne d'accusations de distillation par Anthropic contre une entreprise.",
+        "sources": [
+          {
+            "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+            "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+            "source": "lesswrong.com"
+          },
+          {
+            "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+            "url": "https://news.ycombinator.com/item?id=50637686",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "LLM agents work for their parent companies, not for you",
+            "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+            "source": "michaelharley.net"
+          },
+          {
+            "title": "LLM agents work for their parent companies, not for you",
+            "url": "https://news.ycombinator.com/item?id=50627340",
+            "source": "Hacker News (discussion)"
+          },
+          {
+            "title": "Active intrusion campaign against Check Point security management servers",
+            "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+            "source": "greynoise.io"
+          },
+          {
+            "title": "Active intrusion campaign against Check Point security management servers",
+            "url": "https://news.ycombinator.com/item?id=50630594",
+            "source": "Hacker News (discussion)"
+          }
+        ],
+        "notions": [
+          "sandbox escape",
+          "covert channel",
+          "distillation de modèle"
+        ]
+      },
+      {
+        "cat": "Régulation",
+        "title": "Contenu IA : Tidal, jouets et chats privés",
+        "lead": "Tidal bannit et supprime des millions de morceaux générés par IA.",
+        "text": "New York restreint les jouets IA pour enfants, et des procureurs généraux contestent le projet de Character.AI de vendre aux enchères des conversations privées. La pression se déplace vers les plateformes et la protection des données.",
+        "sources": [
+          {
+            "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+            "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+            "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+            "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "slop IA",
+          "vie privée des chats",
+          "modération de contenu"
+        ]
+      },
+      {
+        "cat": "Produit",
+        "title": "Meta étend l'assistant Muse",
+        "lead": "Meta intègre Muse dans les DMs d'Instagram, s'associe à Walmart pour le Black Friday et négocie avec Amazon la levée d'un blocage.",
+        "text": "L'enjeu est l'accès des agents aux commerçants. TechCrunch note aussi que même les meilleurs agents peinent sur les tâches du quotidien.",
+        "sources": [
+          {
+            "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+            "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+            "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+            "source": "TechCrunch AI"
+          },
+          {
+            "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+            "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+            "source": "TechCrunch AI"
+          }
+        ],
+        "notions": [
+          "agent commerce",
+          "accès des agents",
+          "Muse"
+        ]
+      }
+    ],
+    "papiers": [
+      {
+        "cat": "Recherche",
+        "title": "Mixture-of-Loops : boucles et experts",
+        "lead": "Mixture-of-Loops Transformer cherche à améliorer le compromis expressivité/efficacité des transformers à boucles.",
+        "text": "Il a reçu 56 votes sur HF. D'autres papiers vont dans le même sens : looped MoE à budget égal, décodage multi-token et diffusion loopée.",
+        "sources": [
+          {
+            "title": "Mixture-of-Loops Transformer",
+            "url": "https://huggingface.co/papers/2611.34923",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Scaling Looped MoE Language Models under Matched Budgets: Information Flow and Parameter Allocation",
+            "url": "https://arxiv.org/abs/2611.34276v1",
+            "source": "arXiv"
+          },
+          {
+            "title": "Looped Models are Fast Multi-Token Predictors",
+            "url": "https://arxiv.org/abs/2611.33896v1",
+            "source": "arXiv"
+          }
+        ],
+        "notions": [
+          "looped transformer",
+          "MoE",
+          "multi-token prediction"
+        ]
+      },
+      {
+        "cat": "Agents",
+        "title": "Laisser le modèle gérer son propre contexte",
+        "lead": "Une étude compare la compaction de contexte déclenchée par le harnais à une gestion décidée par le modèle lui-même.",
+        "text": "Elle fait le point sur les limites actuelles des agents longue durée. Un autre papier étudie le rôle du contexte et des skills dans les agents d'auto-recherche.",
+        "sources": [
+          {
+            "title": "Letting Models Manage Their Own Context: Where We Stand",
+            "url": "https://huggingface.co/papers/2611.34147",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
+            "url": "https://huggingface.co/papers/2611.28244",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "compaction de contexte",
+          "agent harness",
+          "autoresearch"
+        ]
+      },
+      {
+        "cat": "Robotique",
+        "title": "Agents de code pour générer des données robot",
+        "lead": "Plusieurs travaux utilisent des agents de code pour produire des données et des politiques robotiques, dont Real2SimLab, PyRUA-Dex et DemoFoundry.",
+        "text": "L'idée est de contourner le manque de démonstrations de qualité par la simulation et le rendu génératif. Ce courant reste à valider en conditions réelles.",
+        "sources": [
+          {
+            "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+            "url": "https://huggingface.co/papers/2611.34849",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+            "url": "https://huggingface.co/papers/2611.33144",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "DemoFoundry: Toward Scalable Photorealistic Robot Data with Coding Agents and Generative Rendering",
+            "url": "https://huggingface.co/papers/2611.34671",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "real-to-sim",
+          "sim-to-real",
+          "politique programmatique"
+        ]
+      },
+      {
+        "cat": "Multimodal",
+        "title": "Générer des images via les représentations d'un VLM",
+        "lead": "Un papier propose de faire générer des images à un modèle vision-langage à partir de ses propres représentations.",
+        "text": "Il vise à mieux unifier compréhension et génération visuelle. Nemotron-Labs-VisualCreation, une approche agentique « pixel as code » qui obtient 82 votes, va dans le même sens.",
+        "sources": [
+          {
+            "title": "Let Vision-Language Models Generate Images through Their Representations",
+            "url": "https://huggingface.co/papers/2611.31237",
+            "source": "HF Daily Papers"
+          },
+          {
+            "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+            "url": "https://huggingface.co/papers/2611.31358",
+            "source": "HF Daily Papers"
+          }
+        ],
+        "notions": [
+          "modèles multimodaux unifiés",
+          "agentic visual creation"
+        ]
+      }
+    ],
+    "sorties": [
+      {
+        "cat": "Modèles",
+        "title": "Qwen3.8-27B",
+        "lead": "Qwen publie Qwen3.8-27B, un modèle image-texte vers texte déjà très téléchargé (plus de 6 M).",
+        "text": "Peu de capacités sont décrites dans les items. Les adaptations et quantizations autour du modèle sont nombreuses, ce qui reflète l'adoption plus que des performances établies.",
+        "sources": [
+          {
+            "title": "Qwen/Qwen3.8-27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+            "source": "HF Models"
+          }
+        ],
+        "notions": [
+          "Qwen",
+          "modèle open-weight"
+        ]
+      },
+      {
+        "cat": "Modèles",
+        "title": "MiMo-V2.6-Flash-MOPD (Xiaomi)",
+        "lead": "Xiaomi met en ligne sur OpenRouter un checkpoint MoE de 309 B de paramètres au total (15 B actifs) avec 1 M de tokens de contexte.",
+        "text": "Upstage propose aussi Solar Mini 4.5 (35 B au total, 3 B actifs, contexte de 524 K). Les contextes longs et les MoE à faible nombre de paramètres actifs deviennent la norme.",
+        "sources": [
+          {
+            "title": "New model: Xiaomi: MiMo-V2.6-Flash-MOPD",
+            "url": "https://openrouter.ai/xiaomi/mimo-v2.6-flash-mopd",
+            "source": "OpenRouter"
+          },
+          {
+            "title": "New model: Upstage: Solar Mini 4.5 (Preview)",
+            "url": "https://openrouter.ai/upstage/solar-mini-4-5",
+            "source": "OpenRouter"
+          }
+        ],
+        "notions": [
+          "MoE",
+          "contexte long",
+          "paramètres actifs"
+        ]
+      }
+    ]
+  },
+  "approfondir": [
+    {
+      "label": "🔬 Papiers",
+      "items": [
+        {
+          "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+          "url": "https://huggingface.co/papers/2611.34849",
+          "source": "HF Daily Papers",
+          "meta": "▲99 · Yongchang Zhang, Jie Huang, Yunhe Ni, Ningyu Zhou et al."
+        },
+        {
+          "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+          "url": "https://huggingface.co/papers/2611.31358",
+          "source": "HF Daily Papers",
+          "meta": "▲82 · Guo Chen, Fuxiao Liu, Haoqin Tu, Yiyang Zhou et al."
+        },
+        {
+          "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+          "url": "https://huggingface.co/papers/2611.34575",
+          "source": "HF Daily Papers",
+          "meta": "▲80 · Med Team, Ming Hu, Cheng Tang, Wei Li et al."
+        },
+        {
+          "title": "Mixture-of-Loops Transformer",
+          "url": "https://huggingface.co/papers/2611.34923",
+          "source": "HF Daily Papers",
+          "meta": "▲56 · Lianghui Zhu, Shijie Wang, Xinggang Wang, Jinze Bai et al."
+        },
+        {
+          "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+          "url": "https://huggingface.co/papers/2611.34237",
+          "source": "HF Daily Papers",
+          "meta": "▲54 · Xuanyu Zheng, Luoyuan Zhang, Yancheng Long, Haoyang Xu et al."
+        },
+        {
+          "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+          "url": "https://huggingface.co/papers/2611.33144",
+          "source": "HF Daily Papers",
+          "meta": "▲43 · Feixiang Ruan, Guodong Lv, Kewei Zhang, Wenbo Huang et al."
+        },
+        {
+          "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+          "url": "https://huggingface.co/papers/2611.34941",
+          "source": "HF Daily Papers",
+          "meta": "▲39 · Ji Xie, Yanhao Jia, Xiangpeng Yang, Martin Q. Ma et al."
+        },
+        {
+          "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
+          "url": "https://huggingface.co/papers/2611.30844",
+          "source": "HF Daily Papers",
+          "meta": "▲37 · Lernie Li, Yuanliu Liu, Pengfei Xiong, Wei Zhang et al."
+        }
+      ]
+    },
+    {
+      "label": "💬 Discussions",
+      "items": [
+        {
+          "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+          "url": "https://twitter.com/ylecun/status/2124550037912920090",
+          "source": "Hacker News",
+          "meta": "2016pts · 1199 comments"
+        },
+        {
+          "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+          "url": "https://z.ai/blog/glm-5.4",
+          "source": "Hacker News",
+          "meta": "1180pts · 386 comments"
+        },
+        {
+          "title": "The matrix multiplication exponent is nine fourths [pdf]",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+          "source": "Hacker News",
+          "meta": "1050pts · 595 comments"
+        },
+        {
+          "title": "LLM agents work for their parent companies, not for you",
+          "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+          "source": "Hacker News",
+          "meta": "1018pts · 411 comments"
+        },
+        {
+          "title": "Apple removed my open-source app from EU App Stores after 9 years",
+          "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+          "source": "Hacker News",
+          "meta": "632pts · 180 comments"
+        },
+        {
+          "title": "Ternary Bonsai 2.5 27B",
+          "url": "https://prismml.com/news/bonsai-2-5-27b",
+          "source": "Hacker News",
+          "meta": "536pts · 176 comments"
+        }
+      ]
+    }
+  ]
+}

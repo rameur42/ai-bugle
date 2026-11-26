@@ -2,6 +2,16 @@
   "version": 1,
   "veilles": [
     {
+      "date": "2026-11-26",
+      "headline": "Anthropic passe sous son prix d'introduction en Bourse",
+      "counts": {
+        "essentiel": 8,
+        "papiers": 4,
+        "sorties": 2
+      },
+      "itemCount": 2540
+    },
+    {
       "date": "2026-11-23",
       "headline": "Anthropic entre au Nasdaq, puis le marché IA décroche",
       "counts": {
